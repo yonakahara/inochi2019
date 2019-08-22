@@ -1,0 +1,1098 @@
+/* =====================================
+  Bootstrap media queries
+======================================*/
+
+/* extra large devices (laptop & desktop) */
+
+@media (min-width:1200px) {
+  /* about */
+  #about-copy h2 {
+    font-size: 40px;
+  }
+
+  #about-body p {
+    font-size: 18px;
+  }
+
+  #about-02 .heading{
+    margin: 0 0 50px 15px;
+  }
+
+  /* event */
+  .event-summary {
+    margin-bottom: 50px;
+  }
+
+  .event-summary p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  /* event guests */
+  .main-guest {
+    margin: 10px 20px 45px 30px;
+  }
+
+  .guest-right {
+    margin-left: 25px;
+  }
+
+  .guests h4 {
+    font-size: 20px;
+  }
+
+  .guests h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .guests h2 {
+    font-size: 26px;
+  }
+
+  .guests h2 span {
+    font-size: 18px;
+  }
+
+  .other-guest{
+    max-width: 180px;
+    max-height: 180px;
+    min-width: 180px;
+    min-height: 180px;
+    margin: 45px;
+  }
+
+  .guest-info p {
+    font-size: 12px;
+  }
+
+  /* organizers */
+  #backups h5 {
+    margin-bottom: 15px;
+  }
+
+
+  #supporters h3,
+  #supporters h4,
+  #supporters h5,
+  #supporters h6 {
+    margin: 15px 0 15px 15px;
+  }
+}
+
+/* large devices (laptop & desktop) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #logo img {
+    height: 50px;
+    margin-bottom: 5px;
+  }
+
+  /* about */
+  #about-copy h2 {
+    font-size: 32px;
+  }
+
+  #about-body p {
+    font-size: 16px;
+  }
+
+  /* event */
+  .event-summary {
+    margin-bottom: 50px;
+  }
+
+  .event-summary p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  /* event guests */
+  .main-guest {
+    margin: 10px 20px 45px 30px;
+  }
+
+  .guest-right {
+    margin-left: 25px;
+  }
+
+  .guests h4 {
+    font-size: 20px;
+  }
+
+  .guests h5 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .guests h2 {
+    font-size: 26px;
+  }
+
+  .guests h2 span {
+    font-size: 18px;
+  }
+
+  .presenter-info {
+    padding: 70px 20px;
+  }
+
+  .other-guest{
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    margin: 50px;
+  }
+
+  .guest-info {
+    padding: 40px 10px;
+  }
+
+  .guest-info p {
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  /* organizers */
+
+  #backups h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  #supporters h3,
+  #supporters h4,
+  #supporters h5,
+  #supporters h6 {
+    margin: 15px 0 15px 15px;
+  }
+}
+
+/* medium devices (tablets) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #preloader img {
+    width: 100px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -50px;
+  }
+
+  /* Navbar */
+  #logo img {
+    height: 45px;
+    margin-bottom: 5px;
+  }
+
+  .navbar-toggler {
+    font-size: 30px ;
+  }
+  /* Navbar */
+  .site-new-wrapper {
+    padding: 0;
+  }
+  ul.navbar-nav {
+    background: #fff;
+    opacity: 0.9;
+    padding: 10px 0 30px 0;
+  }
+  ul.navbar-nav>li>a {
+    font-size: 18px;
+    margin: 10px 0 10px 30px;
+    color: #212226;
+  }
+
+  /* general */
+
+  .content-box-lg {
+    padding: 96px 0;
+  }
+  .content-box-md {
+    padding: 80px 0;
+  }
+
+  /* about */
+  #about-body p {
+    font-size: 14px;
+  }
+
+  #about-info {
+    margin: 45px 0;
+  }
+
+  .about-events-title h3 {
+    color: #E03838;
+    font-size: 16px;
+  }
+
+  .about-events-title h4 {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+
+  /* events */
+  .event-summary p {
+    font-size: 13px;
+  }
+
+  #event-02 h2{
+    line-height: 50px;
+  }
+
+  /* guests */
+
+  .guests h4 {
+    font-size: 18px;
+  }
+
+  .guests h5 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .guests h2 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .guests h2 span {
+    font-size: 22px;
+  }
+
+  .presenter-info {
+    padding: 50px 20px;
+  }
+
+  .presenter-info h6 {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 2px 0;
+  }
+
+  .presenter-info p{
+    font-size: 12px;
+    line-height: 16px;
+    margin: 8px 0;
+  }
+
+  .guest-info {
+    padding: 40px 10px;
+  }
+
+  .guest-info p {
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  /* organizers */
+  #main-organizers h3{
+    font-size: 18px;
+  }
+
+  #backups h5 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+  }
+
+  #backups img {
+    margin-top: 30px;
+  }
+  /* #supporters h6 {
+    font-size: 12px;
+  } */
+
+}
+
+/* small devices */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Navbar */
+  #logo img {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .navbar-toggler {
+    font-size: 28px ;
+  }
+
+  .site-new-wrapper {
+    padding: 0;
+  }
+
+  ul.navbar-nav {
+    background: #fff;
+    opacity: 0.9;
+    padding: 10px 0 30px 0;
+  }
+  ul.navbar-nav>li>a {
+    margin: 10px 0 10px 30px;
+    color: #212226;
+  }
+
+  /* general */
+
+  .content-box-lg {
+    padding: 96px 0;
+  }
+  .content-box-md {
+    padding: 80px 0;
+  }
+
+  .content-box-sm {
+    padding: 60px 0;
+  }
+
+  /* home */
+  #home-heading {
+    margin: 45px 0 0 0;
+  }
+
+  #home-heading h1 {
+    font-size: 40px;
+  }
+
+  /* about */
+  #about-body p {
+    font-size: 10px;
+    line-height: 20px;
+    margin: 0 8px 8px 8px;
+  }
+
+  .about-events-title h4 {
+    font-size: 13px;
+  }
+
+  .about-events-title h5 {
+    font-size: 11px;
+  }
+
+  /* map */
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+
+  /* Events */
+  .event-summary p {
+    font-size: 10px;
+    line-height: 20px;
+    margin: 3px 8px 3px 8px;
+  }
+
+  .event-summary h2 {
+    font-size: 26px;
+  }
+
+  /* Guests */
+  .guests h4 {
+    font-size: 16px;
+  }
+
+  .guests h5 {
+    font-size: 14px;
+  }
+
+  .guests h2 {
+    font-size: 22px;
+  }
+
+  .guests h2 span {
+    font-size: 14px;
+  }
+
+  .guests p {
+    font-size: 12px;
+  }
+
+  .guest-icon-lg {
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .presenter-info {
+    padding: 120px 20px;
+  }
+
+  .presenter-info h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .presenter-info p{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 8px 0;
+  }
+
+  .other-guest{
+    max-width: 120px;
+    max-height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    margin: 25px;
+  }
+
+  .guest-info {
+    height: 100%;
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  .guest-info p {
+    font-size: 8px;
+    line-height: 10px;
+    margin: 5px 0;
+  }
+
+  /* Organizers */
+  #main-organizers h3{
+    font-size: 14px;
+  }
+
+  #backups h5 {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 50px;
+  }
+
+  #backups h6 {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 50px;
+  }
+
+  #backups p{
+    font-size: 9px;
+  }
+
+  #platinum img {
+    height: 70px;
+  }
+
+  #silver img {
+    height: 65px;
+  }
+
+  #bronze img {
+    height: 55px;
+  }
+
+  #friends img {
+    height: 40px;
+  }
+
+  #supporters h6 {
+    font-size: 18px;
+  }
+
+  /* Contact */
+
+  ul.contact-info li {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+/* extra small devices (phones) */
+@media (min-width: 321px) and (max-width: 575px) {
+
+  #preloader img {
+    width: 90px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -55px;
+    margin-left: -45px;
+  }
+
+  .site-new-wrapper {
+    padding: 0;
+  }
+
+  /* navbar */
+  #logo img {
+    height: 32px;
+    margin-bottom: 5px;
+  }
+
+  .navbar-toggler {
+    font-size: 22px;
+  }
+
+  ul.navbar-nav {
+    background: #fff;
+    opacity: 0.9;
+    padding: 10px 0 30px 0;
+  }
+  ul.navbar-nav>li>a {
+    margin: 10px 0 10px 20px;
+    color: #212226;
+  }
+
+  .content-box-lg {
+    padding: 35px 0;
+  }
+  .content-box-md {
+    padding: 30px 0;
+  }
+
+  .content-box-sm {
+    padding: 28px 0;
+  }
+
+
+  .heading {
+    margin: 0 0 0 12px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .btn-back-to-top {
+    bottom: 25px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  /* home */
+  #home-heading h1 {
+    font-size: 45px;
+  }
+
+  /* about */
+  #about-copy h2 {
+    font-size: 22px;
+  }
+
+  #about-body p {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 2px 8px;
+  }
+
+  #about-info h3 {
+    font-size: 16px;
+  }
+
+  #about-info h4 {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+  }
+
+
+  .about-events-title h4 {
+    font-size: 13px;
+  }
+
+  .about-events-title h5 {
+    font-size: 11px;
+  }
+
+  /* map */
+  #map {
+    height: 250px;
+    width: 100%;
+  }
+
+  /* Events */
+  .event-summary h2 {
+    font-size: 18px;
+  }
+
+  .event-summary p {
+    font-size: 11px;
+    line-height: 20px;
+    margin: 3px 10px;
+  }
+
+  #event-01 .heading h4, #event-02 .heading h4, #event-03 .heading h4{
+    font-size: 11px;
+  }
+
+  #event-01 .heading h3, #event-02 .heading h3, #event-03 .heading h3{
+    font-size: 13px;
+  }
+
+  #event-02 .event-summary h3 {
+    font-size: 14px;
+  }
+
+  #wakazo-presentation h3 {
+    font-size: 14px;
+  }
+
+  /* Guests */
+  .guests h3 {
+    font-size: 14px;
+  }
+
+  .guests h4 {
+    font-size: 12px;
+  }
+
+  .guests h5 {
+    font-size: 11px;
+    line-height: 12px;
+    margin-bottom: 8px;
+  }
+
+  .guests h2 {
+    font-size: 15px;
+  }
+
+  .guests h2 span {
+    font-size: 11px;
+  }
+
+  .guests p {
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .guest-right {
+    margin: 0;
+  }
+
+  .guest-icon-lg {
+    max-width: 110px;
+    max-height: 110px;
+    min-width: 110px;
+    min-height: 110px;
+  }
+
+  .other-guest{
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .guest-info {
+    padding: 25px 10px;
+  }
+
+  .guest-info h6 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .guest-info h6 span {
+    font-size: 8px;
+  }
+
+  .guest-info p {
+    font-size: 7px;
+    line-height: 10px;
+    margin: 5px 0;
+  }
+
+  /* shedule */
+  #time-table {
+    margin-top: 10px;
+  }
+
+  #time-table h5 {
+    font-size: 13px;
+  }
+
+  #time-table h6 {
+    font-size: 11px;
+  }
+
+  /* organizers */
+  #main-organizers h2, #backups h2, #supporters h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #main-organizer-logo img {
+    height: 90px;
+  }
+
+  #main-organizers h3{
+    font-size: 9px;
+  }
+
+  #backups h5 {
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 30px;
+  }
+
+  #backups h6 {
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 40px;
+  }
+
+  #backups img {
+    margin-top: 15px;
+  }
+
+  #backups p{
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  #platinum img {
+    height: 58px;
+  }
+
+  #silver img {
+    height: 57px;
+  }
+
+  #bronze img {
+    height: 50px;
+  }
+
+  #friends img {
+    height: 35px;
+  }
+
+  #supporters h3{
+    font-size: 20px;
+  }
+
+  #supporters h4{
+    font-size: 18px;
+  }
+
+  #supporters h5{
+    font-size: 16px;
+  }
+
+  #supporters h6 {
+    font-size: 14px;
+  }
+
+  /* Tickets */
+  #tickets-table h4 {
+    font-size: 11px;
+  }
+
+  /* Contact */
+  #contact p {
+    font-size: 11px;
+  }
+
+  /* footer */
+  footer p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  #preloader img {
+    width: 80px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -40px;
+  }
+
+
+  #logo img {
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .navbar {
+    padding: 5px 0 0 0;
+  }
+
+  .navbar-toggler {
+    font-size: 18px ;
+  }
+
+  ul.navbar-nav {
+    background: #fff;
+    opacity: 0.9;
+    padding: 10px 0 30px 0;
+  }
+  ul.navbar-nav>li>a {
+    margin: 10px 0 10px 20px;
+    color: #212226;
+  }
+
+  .content-box-lg {
+    padding: 30px 0;
+  }
+  .content-box-md {
+    padding: 25px 0;
+  }
+
+  .content-box-sm {
+    padding: 25px 0;
+  }
+
+
+  .btn-general {
+    font-size: 11px;
+    padding: 8px 24px;
+  }
+
+  .btn-back-to-top {
+    bottom: 25px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  .heading {
+    margin: 0 0 0 10px;
+  }
+
+  .heading h2 {
+    font-size: 22px;
+  }
+
+  /* home */
+  #home-heading h1 {
+    font-size: 45px;
+  }
+
+  /* about */
+  #about-copy h2 {
+    font-size: 22px;
+  }
+
+  #about-body p {
+    font-size: 11px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  #about-info h3 {
+    font-size: 16px;
+  }
+
+  #about-info h4 {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+  }
+
+
+  .about-events-title h4 {
+    font-size: 13px;
+  }
+
+  .about-events-title h5 {
+    font-size: 11px;
+  }
+
+  /* map */
+  #map {
+    height: 200px;
+    width: 100%;
+  }
+
+  /* Events */
+  .event-summary h2 {
+    font-size: 16px;
+  }
+
+  .event-summary p {
+    font-size: 10px;
+    line-height: 22px;
+    margin:  8px 15px;
+  }
+
+  #event-01 .heading h4, #event-02 .heading h4, #event-03 .heading h4{
+    font-size: 10px;
+  }
+
+  #event-01 .heading h3, #event-02 .heading h3, #event-03 .heading h3{
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  #event-02 .event-summary h3 {
+    font-size: 14px;
+  }
+
+  #wakazo-presentation h3 {
+    font-size: 14px;
+  }
+
+  /* Guests */
+  .guests h3{
+    font-size: 14px;
+  }
+
+  .guests h4 {
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+
+  .guests h5 {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .guests h2 {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+
+  .guests h2 span {
+    font-size: 10px;
+  }
+
+  .guests p {
+    font-size: 8px;
+    line-height: 13px;
+  }
+
+  .guest-right {
+    margin: 0;
+    padding: 0 0 0 7px;
+  }
+
+  .guest-icon-lg {
+    max-width: 88px;
+    max-height: 88px;
+    min-width: 88px;
+    min-height: 88px;
+  }
+
+  .presenter-info {
+    padding: 65px 20px;
+  }
+
+  .other-guest{
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  .guest-info {
+    padding: 12px 10px;
+  }
+
+  .guest-info h6 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .guest-info h6 span {
+    font-size: 7px;
+  }
+
+  .guest-info p {
+    color: #E03838;
+    font-size: 6px;
+    line-height: 8px;
+    margin: 4px 0;
+  }
+
+  /* shedule */
+  #time-table {
+    margin-top: 10px;
+  }
+
+  #time-table h5 {
+    font-size: 12px;
+  }
+
+  #time-table h6 {
+    font-size: 10px;
+  }
+
+  /* contact */
+  ul.contact-lists li i a {
+    font-size: 14px;
+  }
+
+  /* organizers */
+  #main-organizers h2, #backups h2, #supporters h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #main-organizer-logo img {
+    height: 80px;
+  }
+
+  #main-organizers h3{
+    font-size: 7px;
+  }
+
+  #backups h5 {
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 40px;
+  }
+
+  #backups h6 {
+    font-size: 9px;
+    line-height: 15px;
+    margin-top: 40px;
+  }
+
+  #backups img {
+    margin-top: 15px;
+  }
+
+  #backups p{
+    font-size: 7px;
+    line-height: 10px;
+  }
+
+  #platinum img {
+    height: 54px;
+  }
+
+  #silver img {
+    height: 52px;
+  }
+
+  #bronze img {
+    height: 48px;
+  }
+
+  #friends img {
+    height: 45px;
+  }
+
+  #supporters h3{
+    font-size: 18px;
+  }
+
+  #supporters h4{
+    font-size: 16px;
+  }
+
+  #supporters h5{
+    font-size: 15px;
+  }
+
+  #supporters h6 {
+    font-size: 14px;
+  }
+
+
+  /* Contact */
+  #contact p {
+    font-size: 11px;
+  }
+
+  /* footer */
+  footer p {
+    font-size: 8px;
+  }
+}

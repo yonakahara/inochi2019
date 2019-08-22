@@ -1,0 +1,958 @@
+/* =====================================
+  Default Theme
+  -------------------------------------
+  Fonts: Anton & Open Sans & Noto Sans JP
+  -------------------------------------
+  Colors:
+    CG Red:  #E03838
+    Grey:         #212226
+    White Smoke:  #F4F4F4
+    White:        #FFFFFF
+    Black:        #000000
+======================================*/
+
+/* =====================================
+  Html, body
+======================================*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #212226;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Anton", "Noto Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section {
+  background: #fff;
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* =====================================
+  Preloader
+======================================*/
+
+#preloader {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#preloader img {
+  width: 120px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -65px;
+  margin-left: -60px;
+}
+
+#status {
+  background-image: url("../img/preloader/preloader.gif");
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -45px;
+}
+
+/* =====================================
+  Navbar
+#======================================*/
+#logo img {
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.navbar {
+  background: #212226;
+  color: #fff;
+  padding: 5px 0 0 0;
+  transition: all 300ms linear;
+}
+
+.navbar-toggler {
+  color: #E03838;
+}
+
+.navbar .navbar-toggler {
+  padding: 13px 15px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.navbar-brand {
+  padding: 5px 15px 0 15px;
+}
+
+ul.nav.navbar-nav.nav-pills{
+  background: #212226;
+}
+
+.navbar-collapse ul.navbar-nav>li>a{
+  color: #fff;
+  padding-left: 5px;
+}
+
+ul.navbar-nav>li>a {
+  font-family: "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+
+ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-nav>li>a:focus {
+  color: #E03838;
+}
+
+/* white navigaton */
+
+.white-navbar {
+  background: #212226;
+  /* padding: 10px 0; */
+  -webkit-box-shadow: 0 5px 3px -9px #000;
+  box-shadow: 0 5px 3px -9px #000;
+  z-index: 2;
+}
+
+
+.white-navbar .navbar-toggler {
+  color: #fff;
+}
+
+.white-navbar .navbar-toggler:hover {
+  color: #E03838;
+}
+
+/* .white-navbar ul.navbar-nav>li>a {
+  color: #212226;
+} */
+
+/* .white-navbar ul.navbar-nav>li>a:hover, .white-navbar ul.navbar-nav>li>a:focus {
+  color: #212226;
+} */
+
+/* =====================================
+  Home
+======================================*/
+#home {
+  background: none;
+  height: 100%;
+}
+
+#home-bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 135%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  /* background: url("../video/inochi-forum.gif") no-repeat; */
+  background-size: cover;
+}
+
+#home-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#home-content {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home-heading h1 {
+  color: #fff;
+  font-size: 65px;
+  font-weight: 100;
+  /* text-transform: uppercase; */
+  margin: 0;
+  display: inline-block;
+}
+
+#home-heading h1 span {
+  color: #E03838;
+  font-weight: 500;
+}
+
+#home-btn {
+  margin-top: 60px;
+}
+
+
+/* =====================================
+  Buttons
+======================================*/
+
+.btn-general {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 28px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0 6px;
+  padding: 12px 46px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn-red {
+  color: #E03838;
+  border: 1px solid #E03838;
+}
+
+.btn-red:hover, .btn-red:focus {
+  color: #fff;
+  background-color: #E03838;
+  border: 1px solid #E03838;
+}
+
+.btn-home {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-home:hover, .btn-home:focus, .btn-conversion:hover, .btn-conversion:focus {
+  color: #fff;
+  background-color: #E03838;
+  border: 1px solid #E03838;
+}
+
+.btn-conversion {
+  color: #E03838;
+  border: 1px solid #E03838;
+}
+
+.ticket-btn {
+  margin: 30px 0 20px 0;
+}
+
+
+.btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 3px 15px;
+  border-radius: 4px;
+  font-size: 22px;
+  display: none;
+}
+/* =====================================
+  Arrow down
+======================================*/
+
+#arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-left: -16px;
+  z-index: 1;
+}
+
+#arrow-down:hover, #arrow-down:focus {
+  color: #E03838
+}
+
+
+/* =====================================
+  Content Boxes
+======================================*/
+
+.content-box-lg {
+  padding: 120px 0;
+}
+
+.content-box-md {
+  padding: 100px 0;
+}
+
+.content-box-sm {
+  padding: 90px 0;
+}
+
+/* =====================================
+  Headings
+======================================*/
+
+.heading {
+  margin: 0 0 15px 30px;
+}
+
+.heading h2 {
+  font-size: 28px;
+  line-height: 30px;
+  display: inline-block;
+  padding-left: 5px;
+  border-left: 5px solid #E03838;
+}
+
+.heading h3 {
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.heading h4 {
+  font-size: 16px;
+  line-height: 15px;
+  margin-bottom: 0;
+  color: #E03838;
+}
+
+/* =====================================
+  About
+======================================*/
+
+/* #about-copy h2, #about-body p{
+  text-align: center;
+} */
+#about .content-box-lg {
+  padding-bottom: 0px;
+}
+
+#about-copy h2 {
+  margin: 20px 0 35px 0;
+}
+
+#about-copy h2 span {
+  color: #e03838;
+}
+
+#about-info {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+#about-info h3, h4{
+  font-family:  "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
+  /* text-align: center; */
+}
+
+#about-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+#about-info h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 25px 0 0 0;
+}
+
+.about-events {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#about-02{
+  background-color: #f4f4f4;
+}
+
+#about-02 .heading{
+  margin: 0 0 20px 15px;
+}
+
+#about-02 .content-box-sm {
+  padding-bottom: 0;
+}
+
+#about-02 .container-fluid {
+  padding: 0;
+}
+
+.row.no-gutters [class*=col-] {
+  padding: 0;
+}
+
+.about-events img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* overlay effect */
+
+.about-events-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 14, 19, 0.9);
+  cursor: -webkit-pointer;
+  cursor: pointer;
+  opacity: 0;
+  -webkittransition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* item details effect */
+
+.about-events-title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.about-events-title h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkittransition: all .8s;
+  transition: all .8s;
+}
+
+.about-events-title h3 {
+  color: #E03838;
+  font-size: 18px;
+}
+
+.about-events-title h5 {
+  color: #E03838;
+  font-size: 14px;
+}
+
+.about-events-title h4 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+/* show overlay on mouse over */
+
+.about-events:hover .about-events-overlay {
+  opacity: 1;
+}
+
+.about-events:hover .about-events-title h4 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* =====================================
+  Map
+======================================*/
+
+#google-map .container-fluid {
+  padding: 0;
+}
+
+#map {
+  height: 450px;
+  width: 100%;
+}
+
+
+/* =====================================
+  gusests
+======================================*/
+
+.guests h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
+}
+
+.guests h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.guests h3 {
+  font-size: 24px;
+}
+
+.guests h4 {
+  font-size: 22px;
+}
+
+.guests h5 {
+  font-size: 24px;
+}
+
+.guests h2 span {
+  font-size: 24px;
+}
+
+.main-guest {
+  margin: 10px 0 45px 0;
+}
+
+.main-guest img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guest-right {
+  margin-left: 15px;
+}
+
+.guest-icon-lg {
+  /* width: 200px; */
+  /* height: 200px; */
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 0;
+}
+
+.presenter {
+  margin:8px;
+  position: relative;
+}
+
+.other-guest{
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 150px;
+  min-height: 150px;
+  margin: 8px;
+  position: relative;
+}
+
+.other-guest img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guest-overlay {
+  background-color: rgba(33, 34, 38, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+.presenter-info,
+.guest-info {
+  height: 100%;
+  width: 100%;
+}
+.guest-info {
+  padding: 60px 10px;
+}
+
+.presenter-info {
+  padding: 90px 20px;
+}
+
+.presenter-info h6 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0 0 3px 0;
+}
+
+.guest-info h6 {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 3px 0;
+}
+
+.guest-info h6 span{
+  font-size: 12px;
+}
+
+.presenter-info p{
+  color: #E03838;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 12px 0;
+}
+
+.guest-info p {
+  color: #E03838;
+  font-size: 10px;
+  line-height: 14px;
+  margin: 5px 0;
+}
+
+.presenter:hover .guest-overlay,
+.other-guest:hover .guest-overlay {
+  opacity: 1;
+}
+
+/* =====================================
+  Events
+======================================*/
+.event-summary {
+  margin-bottom: 30px;
+}
+
+.event-summary h2 {
+  margin: 20px 0 35px 0;
+  font-weight: 700;
+}
+
+.event-summary p {
+  margin: 0;
+  line-height: 35px;
+}
+
+
+/* =====================================
+  Event 01
+======================================*/
+#event-01{
+  background-color: #f4f4f4;
+}
+
+/* =====================================
+  Event 02
+======================================*/
+#event-02 {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+#event-02 .event-summary h2 {
+  margin: 20px 0 10px 0;
+  font-weight: 700;
+}
+
+#event-02 .event-summary h3 {
+  margin: 0 0 35px 0;
+}
+
+
+#wakazo-presentation img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#wakazo-contents {
+  margin: 20px 0;
+}
+
+/* overlay effect */
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 14, 19, 0.9);
+  cursor: -webkit-pointer;
+  cursor: pointer;
+  opacity: 0;
+  -webkittransition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* item details effect */
+
+.content-title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.content-title h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkittransition: all .8s;
+  transition: all .8s;
+}
+
+.content-title h3 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.content-title h4 {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.content-title h4 span {
+  color: #fff;
+  font-size: 10px;
+}
+
+/* show overlay on mouse over */
+
+.wakazo-content:hover .content-overlay {
+  opacity: 1;
+}
+
+.wakazo-content:hover .content-title h4, .wakazo-content:hover .content-title h3 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* =====================================
+  Event 03
+======================================*/
+
+#event-03{
+  background-color: #f4f4f4;
+}
+
+#event-03 h2 {
+  font-family:  "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
+}
+
+#event-03 .main-guest {
+  margin: 20px 0 50px 0;
+}
+
+/* =====================================
+  Schedule
+======================================*/
+
+#time-table {
+  margin: 0 auto;
+}
+
+#time-table h6 {
+  margin-left: 5px;
+}
+
+
+/* =====================================
+  Contact
+======================================*/
+#contact {
+  background-color: #f4f4f4;
+}
+
+#contact p {
+  font-size: 16px;
+  margin: 20px 50px;
+}
+
+ul.contact-lists {
+  list-style: none;
+  padding: 0;
+}
+
+ul.contact-lists li {
+  font-family:  "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
+  margin-top: 12px;
+  display: block;
+}
+
+ul.contact-lists li i {
+  font-size: 20px;
+  width: 45px;
+}
+
+ul.contact-lists li a {
+  color: #212226;
+}
+
+/* =====================================
+  organizers
+======================================*/
+
+
+#main-organizers, #backups, #supporters {
+  margin: 35px 0 25px 0;
+}
+
+#main-organizers h2, #backups h2, #supporters h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#main-organizers h3{
+  font-size: 16px;
+}
+
+#main-organizer-logo img {
+  height: 120px;
+}
+
+
+#backups h5 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 50px;
+}
+
+#backups h6 {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+#backups img {
+  height: 80px;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+#backups p{
+  font-size: 10px;
+}
+
+
+#supporters h3,
+#supporters h4,
+#supporters h5,
+#supporters h6 {
+  margin: 15px 0;
+}
+
+#supporters h3{
+  font-size: 24px;
+}
+
+#supporters h4{
+  font-size: 22px;
+}
+
+#supporters h5{
+  font-size: 20px;
+}
+
+#supporters h6{
+  font-size: 20px;
+}
+
+#supporters img{
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+#platinum img {
+  height: 80px;
+}
+
+#silver img {
+  height: 75px;
+}
+
+#bronze img {
+  height: 60px;
+}
+
+#friends img {
+  height: 45px;
+}
+
+/* =====================================
+  Caution
+======================================*/
+#caution p {
+  font-size: 11px;
+  line-height : 12px;
+  margin-bottom: 3px;
+}
+
+#caution{
+  padding: 0 0 10px 0;
+  background-color: #fff;
+}
+
+/* =====================================
+  Footer
+======================================*/
+
+footer {
+  background: #212226;
+  padding: 30px;
+}
+
+footer p {
+  color: #fff;
+  line-height: 20px;
+  margin: 0;
+}
+
+footer p span {
+  color: #E03838;
+}
+
+/* =====================================
+  Animation
+======================================*/
+
+#home-heading-1, #home-heading-2, #home-btn, #arrow-down i {
+  -webkit-animation-duration: 2.0s;
+  animation-duration: 2.0s;
+}
+
+#home-heading-1 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+#home-heading-2 {
+  -webkit-animation-delay: 2.0s;
+  animation-delay: 2.0s;
+}
+
+#home-btn {
+  -webkit-animation-delay: 3.0s;
+  animation-delay: 3.0s;
+}
+
+#arrow-down i {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
