@@ -29,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
-  font-size: 13px;
+  font-size: 15px; 
+  /* 13pxだったけどデカくした */
   font-weight: 400;
   line-height: 24px;
 }
