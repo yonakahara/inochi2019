@@ -9,6 +9,7 @@
     White Smoke:  #F4F4F4
     White:        #FFFFFF
     Black:        #000000
+    Yellow:       #F3EA5A
 ======================================*/
 
 /* =====================================
@@ -29,8 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
-  font-size: 15px; 
-  /* 13pxだったけどデカくした */
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -95,7 +95,7 @@ section {
 }
 
 .navbar-toggler {
-  color: #E03838;
+  color: #F3EA5A;
 }
 
 .navbar .navbar-toggler {
@@ -128,7 +128,7 @@ ul.navbar-nav>li>a {
 }
 
 ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-nav>li>a:focus {
-  color: #E03838;
+  color: #F3EA5A;
 }
 
 /* white navigaton */
@@ -147,7 +147,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .white-navbar .navbar-toggler:hover {
-  color: #E03838;
+  color: #F3EA5A;
 }
 
 /* .white-navbar ul.navbar-nav>li>a {
@@ -212,7 +212,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 #home-heading h1 span {
-  color: #E03838;
+  color: #F3EA5A;
   font-weight: 500;
 }
 
@@ -237,14 +237,14 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .btn-red {
-  color: #E03838;
-  border: 1px solid #E03838;
+  color: #F3EA5A;
+  border: 1px solid #F3EA5A;
 }
 
 .btn-red:hover, .btn-red:focus {
   color: #fff;
-  background-color: #E03838;
-  border: 1px solid #E03838;
+  background-color: #F3EA5A;
+  border: 1px solid #F3EA5A;
 }
 
 .btn-home {
@@ -254,13 +254,13 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 
 .btn-home:hover, .btn-home:focus, .btn-conversion:hover, .btn-conversion:focus {
   color: #fff;
-  background-color: #E03838;
-  border: 1px solid #E03838;
+  background-color: #F3EA5A;
+  border: 1px solid #F3EA5A;
 }
 
 .btn-conversion {
-  color: #E03838;
-  border: 1px solid #E03838;
+  color: #F3EA5A;
+  border: 1px solid #F3EA5A;
 }
 
 .ticket-btn {
@@ -295,7 +295,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 #arrow-down:hover, #arrow-down:focus {
-  color: #E03838
+  color: #F3EA5A
 }
 
 
@@ -328,7 +328,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   line-height: 30px;
   display: inline-block;
   padding-left: 5px;
-  border-left: 5px solid #E03838;
+  border-left: 5px solid #F3EA5A;
 }
 
 .heading h3 {
@@ -340,7 +340,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   font-size: 16px;
   line-height: 15px;
   margin-bottom: 0;
-  color: #E03838;
+  color: #F3EA5A;
 }
 
 /* =====================================
@@ -359,7 +359,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 #about-copy h2 span {
-  color: #e03838;
+  color: #F3EA5A;
 }
 
 #about-info {
@@ -455,12 +455,12 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .about-events-title h3 {
-  color: #E03838;
+  color: #F3EA5A;
   font-size: 18px;
 }
 
 .about-events-title h5 {
-  color: #E03838;
+  color: #F3EA5A;
   font-size: 14px;
 }
 
@@ -612,14 +612,14 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .presenter-info p{
-  color: #E03838;
+  color: #F3EA5A;
   font-size: 14px;
   line-height: 20px;
   margin: 12px 0;
 }
 
 .guest-info p {
-  color: #E03838;
+  color: #F3EA5A;
   font-size: 10px;
   line-height: 14px;
   margin: 5px 0;
@@ -892,9 +892,14 @@ ul.contact-lists li a {
   height: 60px;
 }
 
-#friends img {
+#donation img {
   height: 45px;
 }
+
+#friends img {
+  height: 45px;
+｝
+
 
 /* =====================================
   Caution
@@ -926,7 +931,7 @@ footer p {
 }
 
 footer p span {
-  color: #E03838;
+  color: #F3EA5A;
 }
 
 /* =====================================
