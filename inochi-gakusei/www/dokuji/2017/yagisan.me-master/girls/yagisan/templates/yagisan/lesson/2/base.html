@@ -1,0 +1,13 @@
+{% extends "yagisan/lesson/base.html" %}
+{% load static %}
+
+{% block lesson_window %}
+
+<input type="hidden" name="group_id" value={{ group_id }}>
+<input type="hidden" name="page_id" value={{ page_id }}>
+<input type="hidden" name="page_max" value=5>
+
+{% block lesson_window_inner %}
+{% endblock %}
+
+{% endblock %}

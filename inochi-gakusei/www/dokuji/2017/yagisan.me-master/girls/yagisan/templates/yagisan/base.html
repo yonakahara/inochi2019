@@ -1,0 +1,146 @@
+{% load static %}<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ほぐれて、八木さん | 働く女性のメンタルヘルスケアプロジェクト「働く女性の、心を守る。」 inochi Girls' Project</title>
+    <meta name="description" content="『ほぐれて八木さん』は、働く女性が、自分のストレス状況や考え方のくせを知り、自分のストレス原因に対する考え方、対処の仕方を見つめ直しながら、より柔軟にストレスに対処できるよう、応援する教材です" />
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'yagisan/favicon.ico' %}" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link href="{% static 'yagisan/css/base.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{% static 'yagisan/css/' %}{{ assets }}.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="{% static 'yagisan/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'yagisan/js/base.js' %}"></script>
+    <script src="{% static 'yagisan/js/' %}{{ assets }}.js"></script>
+    {% csrf_token %}
+  </head>
+  <body>
+
+    <input type="hidden" name="assets" value="{{ assets }}" />
+    {% block session %}
+    {% endblock %}
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
+
+    {% block top %}
+    {% endblock %}
+
+    <div id="header" class="header">
+      <div class="header_background">
+        <img src="{% static 'yagisan/img/header_background.png' %}">
+      </div>
+      <div id="header_items" class="header_items">
+        <a href="/#top">
+          <div class="header_items_logo">
+            <img src="{% static 'yagisan/img/header_items_logo.png' %}">
+          </div>
+        </a>
+        <div class="header_items_content">
+          <div class="header_items_content_icons">
+            <a href="https://www.facebook.com/Inochi-Girls-Project-304849383282761" target="blank">
+              <img src="{% static 'yagisan/img/header_items_facebook.png' %}">
+            </a>
+            <!--
+                 <img src="{% static 'yagisan/img/header_items_sound_off.png' %}">
+                 <img src="{% static 'yagisan/img/header_items_sound_on.png' %}">
+               -->
+          </div>
+          <div class="header_items_content_navi">
+            <a href="{% if assets != 'index' %}/{% endif %}#top">
+              <div class="header_navi_menu">
+                <img src="{% static 'yagisan/img/header_navi_top.png' %}">
+              </div>
+            </a>
+            <a href="{% if 'about' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}about{% endif %}">
+              <div class="header_navi_menu">
+                <img src="{% static 'yagisan/img/header_navi_about.png' %}">
+              </div>
+            </a>
+            <a href="{% if 'lesson' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}lesson{% endif %}">
+              <div class="header_navi_menu">
+                <img src="{% static 'yagisan/img/header_navi_lesson.png' %}">
+              </div>
+            </a>
+            <a href="{% if 'column' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}column{% endif %}">
+              <div class="header_navi_menu">
+                <img src="{% static 'yagisan/img/header_navi_column.png' %}">
+              </div>
+            </a>
+            <a href="{% if 'professor' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}professor{% endif %}">
+              <div class="header_navi_menu">
+                <img src="{% static 'yagisan/img/header_navi_professor.png' %}">
+              </div>
+            </a>
+            <a href="{% if 'contact' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}contact{% endif %}">
+              <div class="header_navi_menu">
+                <img src="{% static 'yagisan/img/header_navi_contact.png' %}">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% block body %}
+    {% endblock %}
+
+    <div id="footer" class="footer">
+      <div class="footer_wrap">
+        <div class="footer_logo">
+          <img src="{% static 'yagisan/img/footer_logo.png' %}">
+          <div class="footer_logo_sentence">
+            produced by inochi Girlsʼ Project
+          </div>
+        </div>
+        <div class="footer_navi">
+          <div class="footer_navi_menu">
+            <img src="{% static 'yagisan/img/footer_navi_menu.png' %}">
+          </div>
+          <div class="footer_navi_items">
+            <a href="{% if assets != 'index' %}/{% endif %}#top">
+              <img src="{% static 'yagisan/img/footer_navi_top.png' %}">
+            </a>
+            <a href="{% if 'about' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}about{% endif %}">
+              <img src="{% static 'yagisan/img/footer_navi_about.png' %}">
+            </a>
+            <a href="{% if 'lesson' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}lesson{% endif %}">
+              <img src="{% static 'yagisan/img/footer_navi_lesson.png' %}">
+            </a>
+          </div>
+          <div class="footer_navi_items">
+            <a href="{% if 'column' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}column{% endif %}">
+              <img src="{% static 'yagisan/img/footer_navi_column.png' %}">
+            </a>
+            <a href="{% if 'professor' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}professor{% endif %}">
+              <img src="{% static 'yagisan/img/footer_navi_professor.png' %}">
+            </a>
+            <a href="{% if 'contact' not in assets %}{% if assets == 'index' %}#{% else %}/{% endif %}contact{% endif %}">
+              <img src="{% static 'yagisan/img/footer_navi_contact.png' %}">
+            </a>
+          </div>
+        </div>
+        <div class="footer_facebook">
+          <div class="fb-page" data-href="https://www.facebook.com/Inochi-Girls-Project-304849383282761" data-tabs="timeline" data-width="260" data-height="260" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Inochi-Girls-Project-304849383282761" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Inochi-Girls-Project-304849383282761">Inochi Girls&#039; Project</a></blockquote></div>
+        </div>
+        <div class="footer_sentence">
+          <div class="footer_sentence_first">
+            <p>Copyright©2017 inochi学生・未来プロジェクト All right reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% block modal %}
+    {% endblock %}
+
+  </body>
+</html>

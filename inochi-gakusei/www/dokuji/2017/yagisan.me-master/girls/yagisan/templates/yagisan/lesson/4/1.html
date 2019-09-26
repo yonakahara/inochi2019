@@ -1,0 +1,29 @@
+{% extends "yagisan/lesson/4/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>Lesson3のおさらい〜気持ちの伝え方〜</h3>
+  <div class='lesson_content'>
+    <p>自分の気持ちの伝え方には3通りあります。</p>
+    <div class="expressions">
+      <div class="left">
+        <p class="expression_title"><span class="expression_title_kind">攻撃的</span>な自己表現</p>
+        <p>自分のことは大切にするが相手のことを無視したり、軽視したり、相手を大切にしない自己表現である。過剰な自己表現ともいえる。</p>
+        <img src="{% static 'yagisan/img/lesson/3/2/offensive.png' %}" alt="" class="expression_img">
+      </div>
+      <div class="center">
+        <p class="expression_title"><span class="expression_title_kind">アサーティブ</span>な自己表現</p>
+        <p>自分も相手も大切にした自己表現である。自分の考えや意見、それに気持ちや信念を率直に正直にその場にふさわしい方法で自己表現する。</p>
+        <img src="{% static 'yagisan/img/lesson/3/2/assertive.png' %}" alt="" class="expression_img">
+      </div>
+      <div class="right">
+        <p class="expression_title"><span class="expression_title_kind">非主張的</span>な自己表現</p>
+        <p>相手のことは大切にするが、自分は二の次にし、自分を大切にしない自己表現のことである。</p>
+        <img src="{% static 'yagisan/img/lesson/3/2/non_assertive.png' %}" alt="" class="expression_img_right">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

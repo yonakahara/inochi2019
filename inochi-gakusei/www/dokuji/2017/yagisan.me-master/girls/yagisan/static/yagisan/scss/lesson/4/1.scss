@@ -1,0 +1,81 @@
+.lesson_content {
+  height: 380px;
+}
+
+.expressions {
+  margin-top: 30px;
+  height: 380px;
+
+  .expression_title {
+    margin-bottom: 20px;
+
+    .expression_title_kind {
+      color: #741b47;
+    }
+  }
+
+  .expression_img {
+    width: 45%;
+    position: relative;
+    top: -40px;
+    left: 130px;
+  }
+
+  .expression_img_right {
+    width: 50%;
+    position: relative;
+    top: 20px;
+    left: 130px;
+  }
+}
+
+.left, .center, .right {
+  width: 30%;
+  float: left;
+  margin: 0px 10px 0px 10px;
+}
+
+.example_title {
+  background-color: #f6b26b;
+  width: 80%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: solid #c89866;
+  text-align: center;
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.example_expressions {
+  margin-top: 50px;
+
+  .example_text {
+    font-size: 0.8rem !important;
+  }
+
+  .example_img_left, .example_img_center, .example_img_right {
+    width: 45%;
+    position: relative;
+  }
+
+  .example_img_left {
+    top: 110px;
+    left: 130px;
+  }
+
+  .example_img_center {
+    top: -20px;
+    left: 130px;
+  }
+
+  .example_img_right {
+    width: 50%;
+    top: 70px;
+    left: 130px;
+  }
+}

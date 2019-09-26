@@ -1,0 +1,27 @@
+{% extends "yagisan/lesson/5/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>自分の隠れた考え方のクセをチェックしてみましょう！</h3>
+  <div class='lesson_content'>
+    <table>
+      <tr data-id=0>
+        <th class="first"></th>
+        <th class="second">まったくあてはまらない</th>
+        <th class="third">あまりあてはまらない</th>
+        <th class="fourth">ややあてはまる</th>
+        <th class="fifth">とてもあてはまる</th>
+      </tr>
+      <tr id='tr_template' class="offscreen" data-id=0>
+        <td class="first"></td>
+        <td class="second"><img src="{% static 'yagisan/img/lesson/5/3/1.png' %}" alt=""></td>
+        <td class="third"><img src="{% static 'yagisan/img/lesson/5/3/2.png' %}" alt=""></td>
+        <td class="fourth"><img src="{% static 'yagisan/img/lesson/5/3/3.png' %}" alt=""></td>
+        <td class="fifth"><img src="{% static 'yagisan/img/lesson/5/3/4.png' %}" alt=""></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

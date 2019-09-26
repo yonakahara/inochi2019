@@ -1,0 +1,512 @@
+/* --------------------
+   definitions
+   -------------------- */
+/* --------------------
+   mixins
+   -------------------- */
+/* --------------------
+   index page
+   -------------------- */
+/* line 141, ../scss/index_xs.scss */
+header {
+  overflow: hidden;
+  *zoom: 1;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+}
+/* line 145, ../scss/index_xs.scss */
+header .header_left {
+  float: left;
+  width: 2rem;
+  margin: 0 auto 0 20px;
+}
+/* line 150, ../scss/index_xs.scss */
+header .header_left .header_left_icon {
+  height: auto;
+  width: 2rem;
+  margin: 0 0 0.3rem 0;
+}
+/* line 157, ../scss/index_xs.scss */
+header .header_right {
+  overflow: hidden;
+  *zoom: 1;
+  float: right;
+  margin: 0 20px 0 auto;
+}
+/* line 162, ../scss/index_xs.scss */
+header .header_right .header_right_entry {
+  border: solid 2px #fff;
+  float: left;
+  width: 7.5rem;
+  margin: 0 0 0 0.5rem;
+  padding: 0.5rem 0;
+}
+/* line 100, ../scss/index_xs.scss */
+header .header_right .header_right_entry:hover {
+  background-color: #fff;
+}
+/* line 103, ../scss/index_xs.scss */
+header .header_right .header_right_entry:hover div {
+  color: #bf1920;
+}
+/* line 170, ../scss/index_xs.scss */
+header .header_right .header_right_entry .header_right_entry_first {
+  font-size: 1rem;
+  text-align: center;
+}
+/* line 175, ../scss/index_xs.scss */
+header .header_right .header_right_entry .header_right_entry_second {
+  font-size: 0.6rem;
+  text-align: center;
+}
+/* line 180, ../scss/index_xs.scss */
+header .header_right .header_right_entry .narrow {
+  letter-spacing: -1px;
+}
+
+/* line 187, ../scss/index_xs.scss */
+.first_view {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+  margin-top: 150px;
+}
+/* line 191, ../scss/index_xs.scss */
+.first_view .first_view_wrap {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 194, ../scss/index_xs.scss */
+.first_view .first_view_wrap .first_view_image {
+  float: left;
+  width: 142px;
+}
+/* line 199, ../scss/index_xs.scss */
+.first_view .first_view_wrap .left {
+  padding: 0 8px 0 0;
+}
+/* line 203, ../scss/index_xs.scss */
+.first_view .first_view_wrap .right {
+  padding: 0 0 0 8px;
+}
+/* line 208, ../scss/index_xs.scss */
+.first_view .first_view_title {
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  padding: 30px 0 0 0;
+}
+/* line 213, ../scss/index_xs.scss */
+.first_view .first_view_desc {
+  text-align: center;
+  font-size: 0.5rem;
+  letter-spacing: 0.5rem;
+  padding: 10px 0 0 0;
+}
+/* line 218, ../scss/index_xs.scss */
+.first_view .first_view_subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  padding: 10px 0 0 0;
+}
+
+/* line 224, ../scss/index_xs.scss */
+.about {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 227, ../scss/index_xs.scss */
+.about .about_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 231, ../scss/index_xs.scss */
+.about .about_sentence {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  margin: 30px 0 0 0;
+}
+
+/* line 237, ../scss/index_xs.scss */
+.theme {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 240, ../scss/index_xs.scss */
+.theme .theme_box {
+  border: solid 2px #fff;
+  width: 300px;
+  margin: 0 auto;
+}
+/* line 245, ../scss/index_xs.scss */
+.theme .theme_box .theme_title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 30px 0 0 0;
+}
+/* line 250, ../scss/index_xs.scss */
+.theme .theme_box .theme_sentence {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  margin: 20px 0 40px 0;
+}
+
+/* line 257, ../scss/index_xs.scss */
+.background {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 260, ../scss/index_xs.scss */
+.background .background_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 264, ../scss/index_xs.scss */
+.background .background_sentence {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  margin: 30px 0 0 0;
+}
+/* line 269, ../scss/index_xs.scss */
+.background .background_table {
+  margin: 30px auto 0 auto;
+  width: 300px;
+  font-size: 0.9rem;
+}
+/* line 274, ../scss/index_xs.scss */
+.background .background_table td {
+  padding: 7.5px 0;
+}
+/* line 278, ../scss/index_xs.scss */
+.background .background_table td.left {
+  width: 30%;
+  text-align: right;
+}
+/* line 283, ../scss/index_xs.scss */
+.background .background_table td.right {
+  width: 70%;
+  text-align: center;
+}
+/* line 288, ../scss/index_xs.scss */
+.background .background_table td.border {
+  border: solid 2px #fff;
+}
+
+/* line 294, ../scss/index_xs.scss */
+.goals {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 297, ../scss/index_xs.scss */
+.goals .goals_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 301, ../scss/index_xs.scss */
+.goals .goals_content {
+  margin: 30px 0 0 0;
+}
+/* line 305, ../scss/index_xs.scss */
+.goals .goals_content .goals_block {
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+/* line 310, ../scss/index_xs.scss */
+.goals .goals_content .goals_block .goals_block_large {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+/* line 314, ../scss/index_xs.scss */
+.goals .goals_content .goals_block .goals_block_small {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+}
+
+/* line 322, ../scss/index_xs.scss */
+.features {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 325, ../scss/index_xs.scss */
+.features .features_title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+/* line 330, ../scss/index_xs.scss */
+.features .features_content {
+  overflow: hidden;
+  *zoom: 1;
+  width: 300px;
+}
+/* line 334, ../scss/index_xs.scss */
+.features .features_content .features_block {
+  float: left;
+  width: 300px;
+  margin: 15px 0 0 0;
+}
+/* line 339, ../scss/index_xs.scss */
+.features .features_content .features_block .features_block_image {
+  margin: 25px 30px;
+}
+/* line 342, ../scss/index_xs.scss */
+.features .features_content .features_block .features_block_image img {
+  width: 100%;
+}
+/* line 347, ../scss/index_xs.scss */
+.features .features_content .features_block .features_block_large {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+/* line 351, ../scss/index_xs.scss */
+.features .features_content .features_block .features_block_small {
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  margin: 20px auto 0 auto;
+}
+
+/* line 365, ../scss/index_xs.scss */
+.schedule {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 368, ../scss/index_xs.scss */
+.schedule .schedule_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 372, ../scss/index_xs.scss */
+.schedule .schedule_list {
+  margin: 30px 0;
+}
+/* line 375, ../scss/index_xs.scss */
+.schedule .schedule_list .schedule_list_title {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  margin: 30px 0 10px 0;
+}
+/* line 380, ../scss/index_xs.scss */
+.schedule .schedule_list .schedule_list_content {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 0 0 0 25px;
+}
+/* line 386, ../scss/index_xs.scss */
+.schedule .schedule_block {
+  border: solid 2px #fff;
+  margin: 0;
+  padding: 30px;
+}
+/* line 391, ../scss/index_xs.scss */
+.schedule .schedule_block .schedule_block_title {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  margin: 10px 0 20px 0;
+}
+/* line 396, ../scss/index_xs.scss */
+.schedule .schedule_block .schedule_block_content {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+/* line 400, ../scss/index_xs.scss */
+.schedule .schedule_block .center {
+  text-align: center;
+}
+/* line 404, ../scss/index_xs.scss */
+.schedule .schedule_block .schedule_block_subtitle {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 40px 0 10px 0;
+}
+/* line 409, ../scss/index_xs.scss */
+.schedule .schedule_block .schedule_block_subcontent {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+/* line 415, ../scss/index_xs.scss */
+.alumni {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 418, ../scss/index_xs.scss */
+.alumni .alumni_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 422, ../scss/index_xs.scss */
+.alumni .alumni_subtitle {
+  margin: 30px 0 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+}
+/* line 427, ../scss/index_xs.scss */
+.alumni .alumni_messages {
+  margin: 30px 0 0 0;
+}
+/* line 430, ../scss/index_xs.scss */
+.alumni .alumni_messages .alumni_message_image {
+  width: 300px;
+}
+/* line 433, ../scss/index_xs.scss */
+.alumni .alumni_messages .alumni_message_image img {
+  width: 100%;
+}
+/* line 438, ../scss/index_xs.scss */
+.alumni .alumni_messages .alumni_message {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  width: 300px;
+  margin: 10px 0 0 0;
+}
+/* line 445, ../scss/index_xs.scss */
+.alumni .alumni_schools {
+  width: 300px;
+  margin: 0 auto;
+}
+/* line 449, ../scss/index_xs.scss */
+.alumni .alumni_schools .alumni_school {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  width: 300px;
+  margin: 30px auto 0 auto;
+}
+
+/* line 457, ../scss/index_xs.scss */
+.message {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 460, ../scss/index_xs.scss */
+.message .message_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 464, ../scss/index_xs.scss */
+.message .message_wrap {
+  margin: 30px 0 0 0;
+}
+/* line 467, ../scss/index_xs.scss */
+.message .message_wrap .message_image {
+  width: 300px;
+}
+/* line 470, ../scss/index_xs.scss */
+.message .message_wrap .message_image img {
+  width: 100%;
+}
+/* line 475, ../scss/index_xs.scss */
+.message .message_wrap .message_content {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  width: 300px;
+  margin: 10px 0 0 0;
+}
+
+/* line 483, ../scss/index_xs.scss */
+.faq {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 486, ../scss/index_xs.scss */
+.faq .faq_title {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+/* line 490, ../scss/index_xs.scss */
+.faq .faq_sentence {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 30px 0 0 0;
+}
+
+/* line 496, ../scss/index_xs.scss */
+.adviser {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 499, ../scss/index_xs.scss */
+.adviser .adviser_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 503, ../scss/index_xs.scss */
+.adviser .adviser_sentence {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  margin: 30px 0 0 0;
+}
+
+/* line 509, ../scss/index_xs.scss */
+.recruit {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 512, ../scss/index_xs.scss */
+.recruit .recruit_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 516, ../scss/index_xs.scss */
+.recruit .recruit_subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  margin: 30px 0 0 0;
+}
+/* line 521, ../scss/index_xs.scss */
+.recruit .recruit_sentence {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 30px 0 0 0;
+}
+
+/* line 527, ../scss/index_xs.scss */
+.organizer {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+}
+/* line 530, ../scss/index_xs.scss */
+.organizer .organizer_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* line 534, ../scss/index_xs.scss */
+.organizer .organizer_sentence {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 20px 0 0 0;
+}
+/* line 538, ../scss/index_xs.scss */
+.organizer .organizer_sentence img {
+  width: 75px;
+  height: auto;
+}
+
+/* line 544, ../scss/index_xs.scss */
+footer {
+  max-width: 300px;
+  margin: 48px auto 0 auto;
+  margin-bottom: 50px;
+}
+/* line 548, ../scss/index_xs.scss */
+footer .copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}

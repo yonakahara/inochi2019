@@ -1,0 +1,404 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+
+// About
+.about {
+  width: 100%;
+  position: relative;
+  background-image: url("../../img/about/background_m.png");
+
+  .about_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .about_title {
+      padding: 10% 0 5% 0;
+      margin: 0 50px;
+      width: 290px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .about_wrap {
+      margin: 0 50px;
+
+      .about_desc {
+        margin: 0 0 0 50px;
+        font-size: 1.2rem;
+        line-height: 30px;
+      }
+
+      .about_image {
+        position: absolute;
+        top: 310px;
+        right: 50px;
+        width: 400px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .founder_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .founder_title {
+      padding: 10% 0 5% 0;
+      margin: 0 50px;
+      width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .founder_wrap {
+      @include clearfix;
+      margin: 0 50px;
+
+      .founder_image {
+        float: left;
+        width: 160px;
+        margin: 0 0 0 50px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .founder_desc {
+        float: left;
+        width: 600px;
+        margin: 0 0 0 40px;
+
+        .founder_desc_first {
+          font-size: 1.5rem;
+          line-height: 3rem;
+          font-weight: bold;
+        }
+
+        .founder_desc_second {
+          font-size: 1rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+
+  .member_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .member_title {
+      padding: 10% 0 5% 0;
+      margin: 0 50px;
+      width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .member_images {
+      @include clearfix;
+      margin: 0 50px;
+
+      .member_image_wrap {
+        float: left;
+        width: 300px;
+
+        .member_image {
+          width: 300px;
+          margin: 0;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .partners_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto 0 auto;
+
+    .partners_title {
+      padding: 10% 0 5% 0;
+      margin: 0 50px;
+      width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .partners_groups {
+      margin: 0 50px;
+
+      .partners_group {
+        @include clearfix;
+        margin: 0 50px;
+        padding: 0 0 50px 0;
+
+        .partners_group_image {
+          float: left;
+          width: 160px;
+          margin: 30px 0 0 0;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .partners_group_desc {
+          float: left;
+          width: 600px;
+          margin: 0 0 0 40px;
+
+          .partners_group_desc_first {
+            font-size: 1rem;
+            line-height: 2rem;
+          }
+
+          .partners_group_desc_second {
+            font-size: 1.5rem;
+            line-height: 3rem;
+            font-weight: bold;
+          }
+
+          .partners_group_desc_third {
+            font-size: 1rem;
+            line-height: 2rem;
+          }
+
+          .partners_group_desc_fourth {
+            font-size: 1rem;
+
+            &:hover {
+              color: $BasePink;
+            }
+          }
+        }
+      }
+    }
+
+    .partners_directors_title {
+      margin: 50px 0 50px 90px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .partners_directors {
+      @include clearfix;
+      margin: 0 90px;
+
+      .partners_director_wrap {
+        @include clearfix;
+        float: left;
+        width: 240px;
+        height: 143px;
+        margin: 0 0 50px 0;
+
+        .partners_director_image {
+          float: left;
+          width: 110px;
+          height: 143px;
+          margin: 0 3px 0 2px;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+
+        .partners_director_desc {
+          position: relative;
+          float: left;
+          width: 110px;
+          height: 143px;
+          margin: 0 2px 0 3px;
+
+          .partners_director_desc_first {
+            font-size: 0.8rem;
+            line-height: 1rem;
+          }
+
+          .partners_director_desc_second {
+            font-size: 1.2rem;
+            line-height: 2rem;
+          }
+
+          .partners_director_desc_third {
+            position: absolute;
+            bottom: -3px;
+            font-size: 0.8rem;
+            line-height: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .creative_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .creative_title {
+      padding: 10% 0 5% 0;
+      margin: 0 50px;
+      width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .creative_desc {
+      margin: 0 100px;
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+
+    .creative_wrap {
+      position: relative;
+      width: 800px;
+      height: 300px;
+      margin: 0 100px;
+
+      .creative_members {
+        @include clearfix;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 300px;
+
+        .creative_members_title {
+          width: 500px;
+          height: 50px;
+          margin: 30px 0;
+          font-size: 1.5rem;
+          line-height: 3rem;
+          font-weight: bold;
+        }
+
+        .creative_member {
+          position: relative;
+          float: left;
+          width: 100px;
+          height: 190px;
+          margin: 0 25px 0 0;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          .creative_member_name {
+            width: 100%;
+            font-size: 1.1rem;
+            line-height: 3.5rem;
+            text-align: center;
+          }
+
+          .creative_member_desc {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .creative_degi {
+        position: absolute;
+        bottom: 0;
+        left: 500px;
+        width: 300px;
+
+        .creative_degi_desc_first {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        .creative_degi_desc_second {
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+
+        .creative_degi_desc_third {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        .creative_degi_desc_fourth {
+          font-size: 1rem;
+          line-height: 1rem;
+        }
+
+        .creative_degi_image {
+          width: 100%;
+          margin: 0.5rem 0;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about_background_e {
+  width: 100%;
+  position: relative;
+  height: 100px;
+
+  img {
+    width: 100%;
+  }
+}

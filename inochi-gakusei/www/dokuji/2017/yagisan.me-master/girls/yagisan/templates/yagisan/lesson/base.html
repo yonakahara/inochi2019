@@ -1,0 +1,104 @@
+{% load static %}<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ほぐれて、八木さん</title>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'yagisan/favicon.ico' %}" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link href="{% static 'yagisan/css/base.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{% static 'yagisan/css/lesson/base.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    {% if assets %}
+    <link href="{% static 'yagisan/css/' %}{{ assets }}.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    {% else %}
+    <link href="{% static 'yagisan/css/lesson/' %}{{ group_id }}/base.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{% static 'yagisan/css/lesson/' %}{{ group_id }}/{{ page_id }}.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    {% endif %}
+    {% block pre_question_css %}
+    {% endblock %}
+    <script src="{% static 'yagisan/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'yagisan/js/base.js' %}"></script>
+    <script src="{% static 'yagisan/js/lesson/base.js' %}"></script>
+    {% if assets %}
+    <script src="{% static 'yagisan/js/' %}{{ assets }}.js"></script>
+    {% else %}
+    <script src="{% static 'yagisan/js/lesson/' %}{{ group_id }}/base.js"></script>
+    <script src="{% static 'yagisan/js/lesson/' %}{{ group_id }}/{{ page_id }}.js"></script>
+    {% endif %}
+    {% block pre_question_js %}
+    {% endblock %}
+    {% csrf_token %}
+  </head>
+  <body>
+
+    <input type="hidden" name="assets" value="{{ assets }}" />
+    {% block session %}
+    {% endblock %}
+
+    <div class="lesson_frame">
+
+      {% if assets == 'lesson/index' %}
+
+      {% block lesson_frame %}
+      {% endblock %}
+
+      {% elif assets == 'lesson/pre_question' %}
+
+      <div class="lesson_header">
+      </div>
+      <div class="lesson_window">
+        {% block lesson_window_pre_question %}
+        {% endblock %}
+      </div>
+
+      {% else %}
+
+      <div class="lesson_header">
+        <div class="lesson_group_image">
+          <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/group.png">
+        </div>
+        <div class="lesson_group_desc">
+          <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/desc.png">
+        </div>
+        <div class="lesson_page">
+          <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/page.png">
+          <div class="lesson_page_number">
+            {{ page_id }}
+          </div>
+        </div>
+      </div>
+      <div class="lesson_window">
+        {% block lesson_window %}
+        {% endblock %}
+      </div>
+      <div class="lesson_navi">
+        <a href="/lesson/{{ group_id }}/{{ page_id }}">
+          <div id="lesson_navi_button_pre" class="lesson_navi_button">
+            <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/pre.png" class="default">
+            <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/pre_over.png" class="over offscreen">
+          </div>
+        </a>
+        <a href="/lesson/{{ group_id }}/{{ page_id }}">
+          <div id="lesson_navi_button_post" class="lesson_navi_button">
+            <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/post.png" class="default">
+            <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/post_over.png" class="over offscreen">
+          </div>
+        </a>
+        <div id="lesson_navi_button_close" class="lesson_navi_button_right offscreen">
+          <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/close.png" class="default">
+          <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/close_over.png" class="over offscreen">
+        </div>
+        <div id="lesson_navi_button_return" class="lesson_navi_button_right offscreen">
+          <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/return.png" class="default">
+          <img src="{% static 'yagisan/img/lesson/' %}{{ group_id }}/return_over.png" class="over offscreen">
+        </div>
+      </div>
+
+      {% endif %}
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.lesson_content {
+  height: 300px;
+
+  .yagisan {
+    width: 500px;
+    margin-top: 70px;
+
+    img {
+      width: 100%;
+    }
+
+    .second {
+      display: none;
+    }
+  }
+
+  .message {
+    width: 450px;
+    position: relative;
+    top: -500px;
+    left: 500px;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      width: 380px;
+      position: relative;
+      top: -210px;
+      left: 60px;
+    }
+  }
+}

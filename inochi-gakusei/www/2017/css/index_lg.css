@@ -1,0 +1,530 @@
+/* --------------------
+   definitions
+   -------------------- */
+/* --------------------
+   mixins
+   -------------------- */
+/* --------------------
+   index page
+   -------------------- */
+/* line 141, ../scss/index_lg.scss */
+header {
+  overflow: hidden;
+  *zoom: 1;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+/* line 145, ../scss/index_lg.scss */
+header .header_left {
+  float: left;
+  margin: 0 auto 0 40px;
+}
+/* line 149, ../scss/index_lg.scss */
+header .header_left .header_left_icon {
+  height: auto;
+  width: 2.5rem;
+  margin: 0 1rem 0 0;
+}
+/* line 156, ../scss/index_lg.scss */
+header .header_right {
+  float: right;
+  margin: 0 40px 0 auto;
+}
+/* line 160, ../scss/index_lg.scss */
+header .header_right .header_right_entry {
+  border: solid 2px #fff;
+  width: 10rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 0.3rem;
+}
+/* line 100, ../scss/index_lg.scss */
+header .header_right .header_right_entry:hover {
+  background-color: #fff;
+}
+/* line 103, ../scss/index_lg.scss */
+header .header_right .header_right_entry:hover div {
+  color: #bf1920;
+}
+/* line 167, ../scss/index_lg.scss */
+header .header_right .header_right_entry .header_right_entry_first {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* line 172, ../scss/index_lg.scss */
+header .header_right .header_right_entry .header_right_entry_second {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* line 180, ../scss/index_lg.scss */
+.first_view {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+  margin-top: 100px;
+}
+/* line 184, ../scss/index_lg.scss */
+.first_view .first_view_wrap {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 187, ../scss/index_lg.scss */
+.first_view .first_view_wrap .first_view_image {
+  float: left;
+  width: 422px;
+}
+/* line 192, ../scss/index_lg.scss */
+.first_view .first_view_wrap .left {
+  padding: 0 28px 0 50px;
+}
+/* line 196, ../scss/index_lg.scss */
+.first_view .first_view_wrap .right {
+  padding: 0 50px 0 28px;
+}
+/* line 201, ../scss/index_lg.scss */
+.first_view .first_view_title {
+  color: #bf1920;
+  text-shadow: #fff 1px 1px 0px, #fff -1px 1px 0px, #fff -1px -1px 0px, #fff 1px -1px 0px, #fff 1px 0px 0px, #fff 0px 1px 0px, #fff -1px 0px 0px, #fff 0px -1px 0px;
+  text-align: center;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  padding: 50px 0 0 0;
+}
+/* line 207, ../scss/index_lg.scss */
+.first_view .first_view_desc {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1rem;
+}
+/* line 211, ../scss/index_lg.scss */
+.first_view .first_view_subtitle {
+  color: #bf1920;
+  text-shadow: #fff 1px 1px 0px, #fff -1px 1px 0px, #fff -1px -1px 0px, #fff 1px -1px 0px, #fff 1px 0px 0px, #fff 0px 1px 0px, #fff -1px 0px 0px, #fff 0px -1px 0px;
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  padding: 15px 0 0 0;
+}
+
+/* line 218, ../scss/index_lg.scss */
+.about {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 221, ../scss/index_lg.scss */
+.about .about_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 225, ../scss/index_lg.scss */
+.about .about_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 50px 0 0 0;
+}
+
+/* line 231, ../scss/index_lg.scss */
+.theme {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 234, ../scss/index_lg.scss */
+.theme .theme_box {
+  border: solid 4px #fff;
+  width: 700px;
+  margin: 0 auto;
+}
+/* line 239, ../scss/index_lg.scss */
+.theme .theme_box .theme_title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 50px 0 0 0;
+}
+/* line 244, ../scss/index_lg.scss */
+.theme .theme_box .theme_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 20px 0 50px 0;
+}
+
+/* line 251, ../scss/index_lg.scss */
+.background {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 254, ../scss/index_lg.scss */
+.background .background_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 258, ../scss/index_lg.scss */
+.background .background_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 50px 0 0 0;
+}
+/* line 263, ../scss/index_lg.scss */
+.background .background_table {
+  margin: 50px auto 0 auto;
+  width: 600px;
+  font-size: 1.25rem;
+}
+/* line 268, ../scss/index_lg.scss */
+.background .background_table td {
+  padding: 7.5px 15px;
+}
+/* line 272, ../scss/index_lg.scss */
+.background .background_table td.left {
+  width: 40%;
+  text-align: right;
+}
+/* line 277, ../scss/index_lg.scss */
+.background .background_table td.right {
+  width: 60%;
+  text-align: center;
+}
+/* line 282, ../scss/index_lg.scss */
+.background .background_table td.border {
+  border: solid 2px #fff;
+}
+
+/* line 288, ../scss/index_lg.scss */
+.goals {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 291, ../scss/index_lg.scss */
+.goals .goals_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 295, ../scss/index_lg.scss */
+.goals .goals_content {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 50px 0 0 0;
+}
+/* line 299, ../scss/index_lg.scss */
+.goals .goals_content .goals_block {
+  float: left;
+  width: 33.33%;
+}
+/* line 303, ../scss/index_lg.scss */
+.goals .goals_content .goals_block .goals_block_large {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+/* line 307, ../scss/index_lg.scss */
+.goals .goals_content .goals_block .goals_block_small {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+/* line 315, ../scss/index_lg.scss */
+.features {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 318, ../scss/index_lg.scss */
+.features .features_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 322, ../scss/index_lg.scss */
+.features .features_content {
+  overflow: hidden;
+  *zoom: 1;
+  width: 800px;
+  margin: 50px 100px 0 100px;
+}
+/* line 327, ../scss/index_lg.scss */
+.features .features_content .features_block {
+  float: left;
+  width: 400px;
+}
+/* line 331, ../scss/index_lg.scss */
+.features .features_content .features_block .features_block_image {
+  margin: 25px 30px;
+}
+/* line 334, ../scss/index_lg.scss */
+.features .features_content .features_block .features_block_image img {
+  width: 100%;
+}
+/* line 339, ../scss/index_lg.scss */
+.features .features_content .features_block .features_block_large {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+/* line 343, ../scss/index_lg.scss */
+.features .features_content .features_block .features_block_small {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin: 20px auto 0 auto;
+}
+/* line 348, ../scss/index_lg.scss */
+.features .features_content .features_block .left {
+  padding-right: 40px;
+}
+/* line 352, ../scss/index_lg.scss */
+.features .features_content .features_block .right {
+  padding-left: 40px;
+}
+
+/* line 359, ../scss/index_lg.scss */
+.schedule {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 362, ../scss/index_lg.scss */
+.schedule .schedule_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 366, ../scss/index_lg.scss */
+.schedule .schedule_list {
+  margin: 50px 0;
+}
+/* line 369, ../scss/index_lg.scss */
+.schedule .schedule_list .schedule_list_title {
+  font-size: 2rem;
+  line-height: 4rem;
+  margin: 30px 0 10px 0;
+}
+/* line 374, ../scss/index_lg.scss */
+.schedule .schedule_list .schedule_list_content {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 50px;
+}
+/* line 380, ../scss/index_lg.scss */
+.schedule .schedule_block {
+  border: solid 2px #fff;
+  margin: 50px;
+  padding: 50px;
+}
+/* line 385, ../scss/index_lg.scss */
+.schedule .schedule_block .schedule_block_title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+  margin: 10px 0 20px 0;
+}
+/* line 390, ../scss/index_lg.scss */
+.schedule .schedule_block .schedule_block_content {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 50px;
+}
+/* line 395, ../scss/index_lg.scss */
+.schedule .schedule_block .center {
+  text-align: center;
+}
+/* line 399, ../scss/index_lg.scss */
+.schedule .schedule_block .schedule_block_subtitle {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  margin: 40px 0 10px 0;
+}
+/* line 404, ../scss/index_lg.scss */
+.schedule .schedule_block .schedule_block_subcontent {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 50px;
+}
+
+/* line 411, ../scss/index_lg.scss */
+.alumni {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 414, ../scss/index_lg.scss */
+.alumni .alumni_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 418, ../scss/index_lg.scss */
+.alumni .alumni_subtitle {
+  margin: 30px 0 0 0;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+/* line 423, ../scss/index_lg.scss */
+.alumni .alumni_messages {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 40px 0 0 0;
+}
+/* line 427, ../scss/index_lg.scss */
+.alumni .alumni_messages .alumni_message_image {
+  float: left;
+  width: 400px;
+}
+/* line 431, ../scss/index_lg.scss */
+.alumni .alumni_messages .alumni_message_image img {
+  width: 100%;
+}
+/* line 436, ../scss/index_lg.scss */
+.alumni .alumni_messages .alumni_message {
+  font-size: 1rem;
+  line-height: 2rem;
+  float: left;
+  width: 550px;
+  margin: 0 0 0 50px;
+}
+/* line 444, ../scss/index_lg.scss */
+.alumni .alumni_schools {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 40px auto 0 auto;
+  width: 720px;
+}
+/* line 449, ../scss/index_lg.scss */
+.alumni .alumni_schools .alumni_school {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  float: left;
+  width: 240px;
+}
+
+/* line 457, ../scss/index_lg.scss */
+.message {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 460, ../scss/index_lg.scss */
+.message .message_title {
+  font-size: 2.2rem;
+  line-height: 4.4rem;
+  margin: 0 0 0 280px;
+}
+/* line 465, ../scss/index_lg.scss */
+.message .message_wrap {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 40px 0 0 0;
+}
+/* line 469, ../scss/index_lg.scss */
+.message .message_wrap .message_image {
+  float: left;
+  width: 230px;
+}
+/* line 473, ../scss/index_lg.scss */
+.message .message_wrap .message_image img {
+  width: 100%;
+}
+/* line 478, ../scss/index_lg.scss */
+.message .message_wrap .message_content {
+  font-size: 1rem;
+  line-height: 2rem;
+  float: left;
+  width: 720px;
+  margin: 0 0 0 50px;
+}
+
+/* line 487, ../scss/index_lg.scss */
+.faq {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 490, ../scss/index_lg.scss */
+.faq .faq_title {
+  font-size: 2.2rem;
+  line-height: 4.4rem;
+}
+/* line 494, ../scss/index_lg.scss */
+.faq .faq_sentence {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 50px 0 0 0;
+}
+
+/* line 500, ../scss/index_lg.scss */
+.adviser {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 503, ../scss/index_lg.scss */
+.adviser .adviser_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 507, ../scss/index_lg.scss */
+.adviser .adviser_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 50px 0 0 0;
+}
+
+/* line 513, ../scss/index_lg.scss */
+.recruit {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 516, ../scss/index_lg.scss */
+.recruit .recruit_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 520, ../scss/index_lg.scss */
+.recruit .recruit_subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 40px 0 0 0;
+}
+/* line 525, ../scss/index_lg.scss */
+.recruit .recruit_sentence {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 20px 0 0 0;
+}
+
+/* line 531, ../scss/index_lg.scss */
+.organizer {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 534, ../scss/index_lg.scss */
+.organizer .organizer_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 538, ../scss/index_lg.scss */
+.organizer .organizer_sentence {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 800px;
+  margin: 20px auto 0 auto;
+}
+/* line 543, ../scss/index_lg.scss */
+.organizer .organizer_sentence img {
+  width: 125px;
+  height: auto;
+}
+
+/* line 549, ../scss/index_lg.scss */
+footer {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+  margin-bottom: 50px;
+}
+/* line 553, ../scss/index_lg.scss */
+footer .copyright {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+}

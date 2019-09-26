@@ -1,0 +1,51 @@
+{% extends "yagisan/lesson/4/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <!-- <h3>上手な会話の返し方</h3> -->
+  <div class='lesson_content'>
+    <div class="points">
+      <div class="first">
+        <p><span class="point_title">POINT1 相手を見下したり、自分を卑屈したりせず対等に向き合う</span> <br>
+          真摯に話し合いたいと思うなら、立場や役割に上下関係があったとしても、人間として対等に向き合うようにしましょう</p>
+      </div>
+      <div class="second">
+        <p><span class="point_title">POINT2 アクティブ・リスニングで相手の本音を引き出そう</span> <br>
+          アクティブ・リスニングとは、相手に「もっと話したい」と思わせるような聞き方・聞く姿勢のことです。
+          相手が話したくなるような雰囲気を作ることを心がけよう。
+          例えば、アイスブレイクや普段の頑張りを誉めてあげてから本題に入りましょう。</p>
+      </div>
+      <div class="third">
+        <p><span class="point_title">POINT3 反論・批判されてもきちんと受け留める</span> <br>
+          生産性のある話し合いを続けるには、真っ向から相手を全面否定するのではなく、
+          違う意見でもまずは受け止めることが大切です。
+          相手の意見のいいところを認めてあげてから、自分の意見を相手に伝えよう。</p>
+      </div>
+    </div>
+    <div id="others_answer" class="others_answer">
+      <p class="title">他の受講者はこのような会話の返し方をしています</p>
+      <input type="hidden" name="dialogue_sex" value="1">
+      <input type="hidden" name="dialogue_to" value="3">
+      <div id="dialogues" class="dialogues">
+        <div id="dialogue_wrap" class="dialogue_wrap offscreen">
+          <div id="dialogue_first" class="dialogue">
+            <div id="dialogue_type_1">D:&nbsp<span></span></div>
+            <div id="dialogue_type_2">E:&nbsp<span></span></div>
+            <div id="dialogue_type_3">S:&nbsp<span></span></div>
+          </div>
+          <div id="dialogue_second" class="dialogue">
+            <div id="dialogue_type_1">D:&nbsp<span></span></div>
+            <div id="dialogue_type_2">E:&nbsp<span></span></div>
+            <div id="dialogue_type_3">S:&nbsp<span></span></div>
+          </div>
+        </div>
+      </div>
+      <a href="/lesson/4/4">
+        <div id="return_to_dialogue_button" class="return_to_dialogue_button">他の会話を選ぶ</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

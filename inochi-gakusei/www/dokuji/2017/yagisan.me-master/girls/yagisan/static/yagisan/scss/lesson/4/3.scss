@@ -1,0 +1,132 @@
+.example {
+  height: 400px;
+
+  .title {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .illust {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .DES {
+    height: 300px;
+    position: relative;
+    top: 0px;
+  }
+
+  .message {
+    color: #e06666;
+    font-weight: bold;
+  }
+
+  .message + p {
+    font-size: 1.05rem;
+  }
+
+  .icon {
+    width: 200px;
+    position: relative;
+    top: -75px;
+    left: 470px;
+
+    img {
+      width: 170px;
+      height: 50px;
+    }
+
+    p {
+      position: relative;
+      top: -43px;
+      left: 11px;
+    }
+  }
+
+  .D {
+    position: relative;
+    top: 50px;
+
+    // .hukidashi {
+    //   width: 250px;
+    //   position: relative;
+    //   top: -220px;
+    //   left: 650px;
+    //
+    //   img {
+    //     width: 100%;
+    //   }
+    //
+    //   p {
+    //     width: 200px;
+    //     position: relative;
+    //     top: -110px;
+    //     left: 30px;
+    //   }
+    // }
+  }
+
+  .E {
+    position: relative;
+    top: 0px;
+
+    .icon {
+      top: -145px;
+    }
+
+    // .hukidashi {
+    //   width: 250px;
+    //   position: relative;
+    //   top: -350px;
+    //   left: 700px;
+    //
+    //   img {
+    //     width: 100%;
+    //   }
+    //
+    //   p {
+    //     width: 200px;
+    //     position: relative;
+    //     top: -110px;
+    //     left: 30px;
+    //   }
+    // }
+  }
+
+  .S {
+    height: 100px;
+    position: relative;
+    top: -50px;
+
+    .icon {
+      left: 730px;
+    }
+
+    // .hukidashi {
+    //   width: 300px;
+    //   position: relative;
+    //   top: -350px;
+    //   left: 650px;
+    //
+    //   img {
+    //     width: 100%;
+    //   }
+    //
+    //   p {
+    //     width: 200px;
+    //     position: relative;
+    //     top: -170px;
+    //     left: 50px;
+    //     font-size: 1rem;
+    //   }
+    // }
+  }
+}

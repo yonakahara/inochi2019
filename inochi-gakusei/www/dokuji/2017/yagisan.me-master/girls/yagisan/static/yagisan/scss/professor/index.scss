@@ -1,0 +1,105 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+
+// Professor
+.professor {
+  width: 100%;
+  position: relative;
+  background-image: url("../../img/professor/background_m.png");
+
+  .professor_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .professor_title {
+      padding: 10% 0 5% 0;
+      margin: 0 50px;
+      width: 240px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .professor_desc {
+      margin: 0 100px;
+      width: 800px;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+
+    .professor_infos {
+      width: 800px;
+      margin: 50px auto 0 auto;
+      padding: 0 0 50px 0;
+
+      .professor_info {
+        @include clearfix;
+        width: 100%;
+        margin: 50px 0 0 0;
+
+        .professor_info_box {
+          position: relative;
+          float: left;
+          width: 220px;
+
+          img.professor_info_box_frame {
+            width: 100%;
+            height: auto;
+            z-index: 10;
+          }
+
+          img.professor_info_box_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 88%;
+            height: auto;
+            margin: 6% auto 0 auto;
+            z-index: 20;
+          }
+        }
+
+        .professor_info_sentence_first {
+          float: left;
+          width: 540px;
+          margin: 0 0 0 40px;
+          font-size: 1.8rem;
+          line-height: 3rem;
+        }
+
+        .professor_info_sentence_second {
+          float: left;
+          width: 540px;
+          margin: 10px 0 0 40px;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        .professor_info_sentence_third {
+          float: left;
+          width: 540px;
+          margin: 30px 0 0 40px;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}

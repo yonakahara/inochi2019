@@ -1,0 +1,56 @@
+.habits {
+  table {
+    width: 923px;
+  }
+
+  .low_opacity {
+    opacity: 0.2;
+  }
+
+  td {
+    width: 300px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #dfd;
+    border: 1px solid #000;
+    vertical-align: top;
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    .illustration {
+      margin: 10px 0;
+      width: 150px;
+    }
+
+    .explain {
+      text-align: left;
+    }
+
+    .open_detail {
+      text-align: left;
+
+      .detail {
+        text-align: left;
+        width: 50px;
+      }
+    }
+
+    .explain_detail {
+      text-align: left;
+    }
+
+    .offscreen {
+      display: none;
+    }
+
+    .detail_question {
+      text-align: left;
+    }
+  }
+}
+
+.last_message {
+  margin-top: 20px;
+}

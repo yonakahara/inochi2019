@@ -1,0 +1,56 @@
+{% extends "yagisan/lesson/2/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>自分のストレスをチェックしよう！</h3>
+
+  <div class='lesson_content'>
+    <div class="first">
+      <p>副腎皮質から分泌されるストレスホルモンによって以下のような症状が現れます。</p>
+    </div>
+    <div class="first_detail">
+      <p>血糖値の上昇、不眠など</p>
+    </div>
+
+    <div class="second">
+      <p>交感神経が興奮することによって、以下のような症状が現れます。</p>
+    </div>
+    <div class="second_detail">
+      <table border="1" width="900" cellspacing="0" cellpadding="5" bordercolor="#333333">
+        <tr>
+          <td>【頭部】頭痛、頭重感など</td>
+          <td>【目】目の痛み、疲れ目など</td>
+        </tr>
+        <tr>
+          <td>【耳】耳鳴り、耳閉感など</td>
+          <td>【口】口の渇き、食べ物の味を感じにくい</td>
+        </tr>
+        <tr>
+          <td>【首】首の痛み、首のしびれなど</td>
+          <td>【肺】息苦しい、深く息を吸えないなど</td>
+        </tr>
+        <tr>
+          <td>【心臓】動悸、胸痛など</td>
+          <td>【消化管】喉の詰まり、吐き気、お腹が張った感覚、便秘、下痢、おならなど</td>
+        </tr>
+        <tr>
+          <td>【膀胱】頻尿、血尿、残尿感など</td>
+          <td>【皮膚】寝汗、発汗、かゆみ、じんましんなど</td>
+        </tr>
+        <tr>
+          <td>【四肢】手足のしびれ、脱力感、冷えなど</td>
+          <td>【全身】だるさ、めまい、ふらつき、眠気、微熱</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="yagisan">
+      <img src="{% static 'yagisan/img/lesson/2/2/yagisan.png' %}" alt="">
+    </div>
+    <div class="hukidashi">
+      <img src="{% static 'yagisan/img/lesson/2/2/hukidashi_with.png' %}" alt="">
+    </div>
+</div>
+
+{% endblock %}

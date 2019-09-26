@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (max-width: 1024px){
+	 
+	.container{
+	margin:0 auto;
+	padding:0 3%;
+	width: 94%;
+	}
+	
+	
+	.header-right {
+		display: none;
+	}
+	.header-left{
+	display: block;
+	float: right;
+	width:auto;
+	height: 40px;
+	margin-top: 5px;
+	}
+	
+	.toggle{
+	display: block;
+	position: fixed;
+	z-index: 30;
+	line-height: 50px;
+/*		top: 5px;*/
+		left: 3%;
+		font-size: 40px;
+		color: #D5D5D5;
+	}
+	.fa-times{
+	display: none;
+	color: #000;
+	}
+	.fa-bars{
+		display: block;
+		text-shadow: 2px 2px  #000000;
+		line-height: 50px;
+		top: 5px;
+		left: 3%;
+		font-size: 40px;
+	}
+	.toggle-menus{
+		display: none;
+	}
+	
+	.purpose-buttom{
+		background: linear-gradient(-180deg  ,#e6b2ad ,#FFFFFF, #e6b2ad);
+		margin:  50px auto;
+		color: #c12f20;
+		font-weight: bold;
+		line-height: 50px;
+		font-size: 30px;
+		
+	}
+	
+	/**/
+	
+	h2{
+	background-image: url(../image/h2_backgroundImage.png);
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	line-height: 80px;
+	font-size: 47px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #ffffff;
+}
+		h4{
+	height: 70px;
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 50px;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #c12f20;
+	border-bottom: solid 1px #c12f20;
+}
+	.privilege{
+	width: 42%;
+	height: 350px;
+	border-radius: 20px;
+	display: block;
+	float: left;
+	padding: 0 2%;
+	margin: 20px 2% 0 2%;
+	font-size: 20px;
+	background-color: #f4f4f4;
+}
+	.h3-image{
+		width: 100%;
+		height: auto;
+	}
+	
+	.h1-background{
+	width: 100%;
+	overflow: hidden;
+	height: 100px;
+	background-image: url(../image/kikin_h1_title.png);
+	background-position: center center;
+	background-size:auto 100%;
+	margin-top: 80px;
+	}
+	h1{
+	text-align: center;
+	font-size: 40px;
+	color: #ffffff;
+	line-height: 100px;
+	}
+
+
+	/**/
+	
+	
+
+
+	.umekomi-wrapper{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin: 30px auto;
+		float: clear;
+	}
+	.umekomi-wrapper iframe{
+		width: 340px;
+		height: 500px;
+	text-align: center;
+	display: block;
+	margin:0 auto;
+		float: clear;
+	}
+	
+/*	基金のCSS*/
+	.shien-box-a{
+	width:90%;
+	overflow:hidden;
+	margin: 0px auto;
+	padding: 50px 0;
+	text-align: center;
+	}
+	.shien-box-b{
+	width:90%;
+	overflow: hidden;
+	margin: 0px auto;
+	padding: 50px 0;
+	text-align: center;
+	}
+}
+
+
+
+
+@media screen and (max-width:640px){
+	
+	/**/
+
+	header{
+		display: none;
+	}
+	/**/
+	/**/
+	.purpose-buttom{
+		background: linear-gradient(-180deg ,#e6b2ad, #FFFFFF ,#e6b2ad);
+		margin:  0 auto;
+		color: #c12f20;
+		font-weight: bold;
+		line-height: 20px;
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		border-bottom: 0px;
+	}
+	
+	
+	
+	.wrapper{
+	padding: 40px 0 0 0;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	}
+	
+	h2{
+	background-image: url(../image/h2_backgroundImage.png);
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #ffffff;
+	}
+	h4{
+	height: 40px;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 24px;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #c12f20;
+	border-bottom: solid 1px #c12f20;
+	}
+	.h1-background{
+	width: 100%;
+	overflow: hidden;
+	height: 60px;
+	background-image: url(../image/kikin_h1_title.png);
+	background-position: right center;
+	background-size:auto 100%;
+	}
+	.top-space{
+	width: 100%;
+	height: 0px;
+	}
+	h1{
+	text-align: center;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 60px;
+	text-shadow: 0px 0px 20px #c12f20;
+	}
+	.top-wrapper{
+	background-image:url(../image/kikin_twoLogo_sumaho.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	}
+	.kikin-top_image{
+	display: none;
+	}
+	
+	
+	.about-textBox{
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	margin-top: 40px;
+	}
+	
+	
+	.carousel {
+
+		display: none;
+	  width: 100%;
+	  margin: 0 auto;
+	  text-align: center;
+	  color: #fff;
+
+	}
+	.carousel div{
+		display: none;
+	}
+
+	
+	.purpose-textBox{
+	width: 100%;
+	font-size: 15px;
+	margin: 0 auto;
+	display: block;
+	}
+	.purpose-contentsBox img{
+	display: block;
+/*	float: left;*/
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	}
+	.continue-textBox{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	font-size: 15px;
+	margin-top: 40px;
+	}
+	.privilege{
+	width: 96%;
+	height: auto;
+	border-radius: 20px;
+	display: block;
+	float: left;
+	padding: 10px 2% 20px 2%;
+	margin: 20px 0% 0 0%;
+	font-size: 15px;
+	background-color: #f4f4f4;
+	}
+	.privilege img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	
+	}
+	.card-image{
+		width: 100%;
+		height: auto;
+	}
+	.s2018-textBox{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	font-size: 15px;
+	margin-top: 40px;
+	}
+	.message-textBox{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		font-size: 15px;
+		margin-top: 0px;
+	}
+	.voice{
+	width: 96%;
+	padding: 10px 2% 10px 2%;
+	font-size: 15px;
+	background-color: #ffffff;
+	display: block;
+	float: right;
+	border-radius: 10px;
+	}
+	.voice-hukidasi{
+		display: none;
+	}
+	.voice-box{
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	float: left;
+	background-color: #f4f4f4;
+	margin-top: 40px;
+	}
+	.voice-human-box{
+		width: 100%;
+		float:left;
+		display: block;
+		overflow: hidden;
+	}
+	.voice-human{
+		width: 50%;
+		height: auto;
+		display: block;
+		margin:auto 25%;
+	}
+	.human-name{
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		display: block;
+		text-align: center;
+	}
+	.voice-textBox{
+		width: 100%;
+		display: block;
+		float: right;
+		background-color: #f4f4f4;
+	}
+	.wrapper-bottom{
+	padding-bottom: 40px;
+	}
+
+	
+	
+	footer{
+	margin: 0 auto;
+	overflow: hidden;
+	display: inline-block;
+	padding: 30px 0;
+	}
+	.information{
+	overflow: hidden;
+	width: 80%;
+	margin: 10px 10%;
+	float: clear;
+	display: inline-block;
+		
+	}
+	
+	.umekomi-wrapper iframe{
+	width: 340px;
+	height: 350px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	}
+	
+	.information-title{
+	border-bottom: solid 3px rgba(255,0,4,0.70);
+	width: 100%;
+	}
+	.information p{
+		font-size: 12px;
+	}
+	
+		/*基金のCSS*/
+	.kikin-wrapper{
+		width: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 70px;
+	}
+	.shien-box-a{
+		width:90%;
+		overflow:hidden;
+		margin: 0px auto;
+		padding: 50px 0;
+		text-align: center;
+	}
+	.shien_a{
+		width: 100%;
+		height: auto;
+		float: left;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.shien-box-b{
+		width:90%;
+		overflow: hidden;
+		margin: 0px auto;
+		padding: 50px 0;
+		text-align: center;
+	}
+	.shien_b{
+		width: 100%;
+		height: auto;
+		float: left;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.shien-kingaku{
+		color: #CC2F1F;
+		font-size:20px;
+		margin: 7px auto;
+	}
+	.submit_btn{
+		display: inline-block;
+		padding: 0.5em 1em;
+		text-decoration: none;
+		background: #DC0300;/*ボタン色*/
+		color: #FFF;
+		border-bottom: solid 4px #DC0300;
+		border-radius: 3px;
+	}
+	.submit_btn:active {/*ボタンを押したとき*/
+		-ms-transform: translateY(4px);
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);/*下に動く*/
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+		border-bottom: none;
+	}
+
+	
+	
+}
+	
+	
+	
+	

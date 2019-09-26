@@ -1,0 +1,228 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+p, div, span, label, input, textarea {
+  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 500;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$TextPink: #f35b85;
+$BaseBeige: #fff7e3;
+$BaseWidth: 1000px;
+
+.offscreen {
+  display: none;
+}
+
+.disable {
+  opacity: 0.2;
+
+  &:hover {
+    cursor: default !important;
+  }
+}
+
+
+// Background
+body {
+  background-color: $BasePink;
+}
+
+
+// Header
+.header {
+  width: 100%;
+  position: relative;
+
+  .header_background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -5px;
+    margin-bottom: -50px;
+    z-index: 100;
+
+    img {
+      width: 100%;
+      height: 160px; // fixed
+    }
+  }
+
+  .header_items {
+    @include clearfix;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+    z-index: 110;
+
+    .header_items_logo {
+      float: left;
+      width: 150px;
+      margin: 10px 0 0 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .header_items_content {
+      float: left;
+      width: 850px;
+
+      .header_items_content_icons {
+        width: 10%;
+        margin: 2% 0 0 90%;
+
+        img {
+          width: 30%;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .header_items_content_navi  {
+        @include clearfix;
+        width: 100%;
+        margin: 30px 0 0 0;
+        z-index: 110;
+
+        .header_navi_menu {
+          float: left;
+          height: 12px;
+          margin: 2px 30px;
+          text-align: center;
+
+          img {
+            width: auto;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .fixed {
+    @include clearfix;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: -5px auto 0 auto;
+    z-index: 110;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+// Footer
+.footer {
+  width: 100%;
+  position: relative;
+
+  .footer_wrap {
+    @include clearfix;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .footer_logo {
+      float: left;
+      width: 300px;
+
+      img {
+        width: 70%;
+        margin: 15% 15% 5% 15%;
+      }
+
+      .footer_logo_sentence {
+        text-align: center;
+        margin: 10px 0 0 0;
+        font-weight: bold;
+      }
+    }
+
+    .footer_navi {
+      @include clearfix;
+      float: left;
+      width: 400px;
+
+      .footer_navi_menu {
+        width: 100px;
+        margin: 70px 0 0 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .footer_navi_items {
+        float: left;
+        width: 200px;
+
+        img {
+          display: block;
+          height: 15px;
+          width: auto;
+          margin: 2.2rem 0 0 0;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .footer_facebook {
+      float: left;
+      width: 260px;
+      background-color: #fff;
+      height: 260px;
+      margin: 5% 0 0 40px;
+    }
+  }
+
+  .footer_sentence {
+    clear: both;
+    width: 100%;
+
+    .footer_sentence_first {
+      width: 100%;
+
+      p {
+        font-size: 1rem;
+        line-height: 2.5rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        color: $BaseWhite;
+      }
+    }
+  }
+}

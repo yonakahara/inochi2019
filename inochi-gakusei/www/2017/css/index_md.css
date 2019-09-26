@@ -1,0 +1,533 @@
+/* --------------------
+   definitions
+   -------------------- */
+/* --------------------
+   mixins
+   -------------------- */
+/* --------------------
+   index page
+   -------------------- */
+/* line 141, ../scss/index_md.scss */
+header {
+  overflow: hidden;
+  *zoom: 1;
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+}
+/* line 145, ../scss/index_md.scss */
+header .header_left {
+  float: left;
+  margin: 0 auto 0 30px;
+}
+/* line 149, ../scss/index_md.scss */
+header .header_left .header_left_icon {
+  height: auto;
+  width: 2.5rem;
+  margin: 0 1rem 0 0;
+}
+/* line 156, ../scss/index_md.scss */
+header .header_right {
+  overflow: hidden;
+  *zoom: 1;
+  float: right;
+  margin: 0 30px 0 auto;
+}
+/* line 161, ../scss/index_md.scss */
+header .header_right .header_right_entry {
+  border: solid 2px #fff;
+  float: left;
+  width: 10rem;
+  margin: 0 0 1rem 1rem;
+  padding: 0.5rem 0.3rem;
+}
+/* line 100, ../scss/index_md.scss */
+header .header_right .header_right_entry:hover {
+  background-color: #fff;
+}
+/* line 103, ../scss/index_md.scss */
+header .header_right .header_right_entry:hover div {
+  color: #bf1920;
+}
+/* line 169, ../scss/index_md.scss */
+header .header_right .header_right_entry .header_right_entry_first {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* line 174, ../scss/index_md.scss */
+header .header_right .header_right_entry .header_right_entry_second {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* line 182, ../scss/index_md.scss */
+.first_view {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+  margin-top: 120px;
+}
+/* line 186, ../scss/index_md.scss */
+.first_view .first_view_wrap {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 189, ../scss/index_md.scss */
+.first_view .first_view_wrap .first_view_image {
+  float: left;
+  width: 422px;
+}
+/* line 194, ../scss/index_md.scss */
+.first_view .first_view_wrap .left {
+  padding: 0 28px 0 50px;
+}
+/* line 198, ../scss/index_md.scss */
+.first_view .first_view_wrap .right {
+  padding: 0 50px 0 28px;
+}
+/* line 203, ../scss/index_md.scss */
+.first_view .first_view_title {
+  color: #bf1920;
+  text-shadow: #fff 1px 1px 0px, #fff -1px 1px 0px, #fff -1px -1px 0px, #fff 1px -1px 0px, #fff 1px 0px 0px, #fff 0px 1px 0px, #fff -1px 0px 0px, #fff 0px -1px 0px;
+  text-align: center;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  padding: 50px 0 0 0;
+}
+/* line 209, ../scss/index_md.scss */
+.first_view .first_view_desc {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1rem;
+}
+/* line 213, ../scss/index_md.scss */
+.first_view .first_view_subtitle {
+  color: #bf1920;
+  text-shadow: #fff 1px 1px 0px, #fff -1px 1px 0px, #fff -1px -1px 0px, #fff 1px -1px 0px, #fff 1px 0px 0px, #fff 0px 1px 0px, #fff -1px 0px 0px, #fff 0px -1px 0px;
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+  padding: 15px 0 0 0;
+}
+
+/* line 220, ../scss/index_md.scss */
+.about {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 223, ../scss/index_md.scss */
+.about .about_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 227, ../scss/index_md.scss */
+.about .about_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 50px 0 0 0;
+}
+
+/* line 233, ../scss/index_md.scss */
+.theme {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 236, ../scss/index_md.scss */
+.theme .theme_box {
+  border: solid 4px #fff;
+  width: 700px;
+  margin: 0 auto;
+}
+/* line 241, ../scss/index_md.scss */
+.theme .theme_box .theme_title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 50px 0 0 0;
+}
+/* line 246, ../scss/index_md.scss */
+.theme .theme_box .theme_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 20px 0 50px 0;
+}
+
+/* line 253, ../scss/index_md.scss */
+.background {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 256, ../scss/index_md.scss */
+.background .background_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 260, ../scss/index_md.scss */
+.background .background_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 50px 0 0 0;
+}
+/* line 265, ../scss/index_md.scss */
+.background .background_table {
+  margin: 50px auto 0 auto;
+  width: 600px;
+  font-size: 1.25rem;
+}
+/* line 270, ../scss/index_md.scss */
+.background .background_table td {
+  padding: 7.5px 15px;
+}
+/* line 274, ../scss/index_md.scss */
+.background .background_table td.left {
+  width: 40%;
+  text-align: right;
+}
+/* line 279, ../scss/index_md.scss */
+.background .background_table td.right {
+  width: 60%;
+  text-align: center;
+}
+/* line 284, ../scss/index_md.scss */
+.background .background_table td.border {
+  border: solid 2px #fff;
+}
+
+/* line 290, ../scss/index_md.scss */
+.goals {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 293, ../scss/index_md.scss */
+.goals .goals_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 297, ../scss/index_md.scss */
+.goals .goals_content {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 50px 0 0 0;
+}
+/* line 301, ../scss/index_md.scss */
+.goals .goals_content .goals_block {
+  float: left;
+  width: 33.33%;
+}
+/* line 305, ../scss/index_md.scss */
+.goals .goals_content .goals_block .goals_block_large {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+/* line 309, ../scss/index_md.scss */
+.goals .goals_content .goals_block .goals_block_small {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+/* line 317, ../scss/index_md.scss */
+.features {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 320, ../scss/index_md.scss */
+.features .features_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 324, ../scss/index_md.scss */
+.features .features_content {
+  overflow: hidden;
+  *zoom: 1;
+  width: 800px;
+  margin: 50px 100px 0 100px;
+}
+/* line 329, ../scss/index_md.scss */
+.features .features_content .features_block {
+  float: left;
+  width: 400px;
+}
+/* line 333, ../scss/index_md.scss */
+.features .features_content .features_block .features_block_image {
+  margin: 25px 30px;
+}
+/* line 336, ../scss/index_md.scss */
+.features .features_content .features_block .features_block_image img {
+  width: 100%;
+}
+/* line 341, ../scss/index_md.scss */
+.features .features_content .features_block .features_block_large {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+/* line 345, ../scss/index_md.scss */
+.features .features_content .features_block .features_block_small {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin: 20px auto 0 auto;
+}
+/* line 350, ../scss/index_md.scss */
+.features .features_content .features_block .left {
+  padding-right: 40px;
+}
+/* line 354, ../scss/index_md.scss */
+.features .features_content .features_block .right {
+  padding-left: 40px;
+}
+
+/* line 361, ../scss/index_md.scss */
+.schedule {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 364, ../scss/index_md.scss */
+.schedule .schedule_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 368, ../scss/index_md.scss */
+.schedule .schedule_list {
+  margin: 50px 0;
+}
+/* line 371, ../scss/index_md.scss */
+.schedule .schedule_list .schedule_list_title {
+  font-size: 2rem;
+  line-height: 4rem;
+  margin: 30px 0 10px 0;
+}
+/* line 376, ../scss/index_md.scss */
+.schedule .schedule_list .schedule_list_content {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 50px;
+}
+/* line 382, ../scss/index_md.scss */
+.schedule .schedule_block {
+  border: solid 2px #fff;
+  margin: 50px;
+  padding: 50px;
+}
+/* line 387, ../scss/index_md.scss */
+.schedule .schedule_block .schedule_block_title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+  margin: 10px 0 20px 0;
+}
+/* line 392, ../scss/index_md.scss */
+.schedule .schedule_block .schedule_block_content {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 50px;
+}
+/* line 397, ../scss/index_md.scss */
+.schedule .schedule_block .center {
+  text-align: center;
+}
+/* line 401, ../scss/index_md.scss */
+.schedule .schedule_block .schedule_block_subtitle {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  margin: 40px 0 10px 0;
+}
+/* line 406, ../scss/index_md.scss */
+.schedule .schedule_block .schedule_block_subcontent {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 50px;
+}
+
+/* line 413, ../scss/index_md.scss */
+.alumni {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 416, ../scss/index_md.scss */
+.alumni .alumni_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 420, ../scss/index_md.scss */
+.alumni .alumni_subtitle {
+  margin: 30px 0 0 0;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+/* line 425, ../scss/index_md.scss */
+.alumni .alumni_messages {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 40px 0 0 0;
+}
+/* line 429, ../scss/index_md.scss */
+.alumni .alumni_messages .alumni_message_image {
+  float: left;
+  width: 400px;
+}
+/* line 433, ../scss/index_md.scss */
+.alumni .alumni_messages .alumni_message_image img {
+  width: 100%;
+}
+/* line 438, ../scss/index_md.scss */
+.alumni .alumni_messages .alumni_message {
+  font-size: 1rem;
+  line-height: 2rem;
+  float: left;
+  width: 550px;
+  margin: 0 0 0 50px;
+}
+/* line 446, ../scss/index_md.scss */
+.alumni .alumni_schools {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 40px auto 0 auto;
+  width: 720px;
+}
+/* line 451, ../scss/index_md.scss */
+.alumni .alumni_schools .alumni_school {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  float: left;
+  width: 240px;
+}
+
+/* line 459, ../scss/index_md.scss */
+.message {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 462, ../scss/index_md.scss */
+.message .message_title {
+  font-size: 2.2rem;
+  line-height: 4.4rem;
+  margin: 0 0 0 280px;
+}
+/* line 467, ../scss/index_md.scss */
+.message .message_wrap {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 40px 0 0 0;
+}
+/* line 471, ../scss/index_md.scss */
+.message .message_wrap .message_image {
+  float: left;
+  width: 230px;
+}
+/* line 475, ../scss/index_md.scss */
+.message .message_wrap .message_image img {
+  width: 100%;
+}
+/* line 480, ../scss/index_md.scss */
+.message .message_wrap .message_content {
+  font-size: 1rem;
+  line-height: 2rem;
+  float: left;
+  width: 720px;
+  margin: 0 0 0 50px;
+}
+
+/* line 489, ../scss/index_md.scss */
+.faq {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 492, ../scss/index_md.scss */
+.faq .faq_title {
+  font-size: 2.2rem;
+  line-height: 4.4rem;
+}
+/* line 496, ../scss/index_md.scss */
+.faq .faq_sentence {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 50px 0 0 0;
+}
+
+/* line 502, ../scss/index_md.scss */
+.adviser {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 505, ../scss/index_md.scss */
+.adviser .adviser_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 509, ../scss/index_md.scss */
+.adviser .adviser_sentence {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 50px 0 0 0;
+}
+
+/* line 515, ../scss/index_md.scss */
+.recruit {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 518, ../scss/index_md.scss */
+.recruit .recruit_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 522, ../scss/index_md.scss */
+.recruit .recruit_subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin: 40px 0 0 0;
+}
+/* line 527, ../scss/index_md.scss */
+.recruit .recruit_sentence {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 20px 0 0 0;
+}
+
+/* line 533, ../scss/index_md.scss */
+.organizer {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+}
+/* line 536, ../scss/index_md.scss */
+.organizer .organizer_title {
+  text-align: center;
+  font-size: 2.2rem;
+}
+/* line 540, ../scss/index_md.scss */
+.organizer .organizer_sentence {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  width: 800px;
+  margin: 20px auto 0 auto;
+}
+/* line 545, ../scss/index_md.scss */
+.organizer .organizer_sentence img {
+  width: 125px;
+  height: auto;
+}
+
+/* line 551, ../scss/index_md.scss */
+footer {
+  max-width: 1000px;
+  margin: 160px auto 0 auto;
+  margin-bottom: 50px;
+}
+/* line 555, ../scss/index_md.scss */
+footer .copyright {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+}

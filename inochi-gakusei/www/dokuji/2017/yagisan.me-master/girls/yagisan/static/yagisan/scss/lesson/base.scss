@@ -1,0 +1,127 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+body {
+  background-color: $BaseWhite;
+}
+
+.lesson_frame {
+  width: 1000px;
+  height: 750px;
+  margin: 9px auto;
+}
+
+.lesson_header {
+  @include clearfix;
+  width: 1000px;
+  height: 90px;
+  padding: 0 0 10px 0;
+
+  .lesson_group_image {
+    float: left;
+    height: 90px;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .lesson_page {
+    position: relative;
+    float: right;
+    height: 90px;
+
+    img {
+      height: 100%;
+      width: auto;
+      z-index: 0;
+    }
+
+    .lesson_page_number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      text-align: center;
+      font-size: 50px;
+      line-height: 90px;
+    }
+  }
+} // 100px
+
+.lesson_window {
+  width: 1000px;
+  height: 570px;
+  overflow: scroll;
+  background-color: #fff;
+
+  .lesson_wrap {
+    padding: 30px;
+
+    h3 {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: $BasePink;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+
+} // 100px + 570px = 670px
+
+.lesson_navi {
+  @include clearfix;
+  position: absolute;
+  top: 690px;
+  width: 570px;
+  height: 60px;
+  margin: 0 0 0 430px;
+
+  .lesson_navi_button {
+    float: left;
+    width: 51px;
+    height: 57px;
+    margin: 3px 9.5px 0 9.5px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .lesson_navi_button_right {
+    float: right;
+    width: 90px;
+    height: 57px;
+    margin: 3px 0 0 19px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+} // 100px + 570px + 20px + 60px = 750px;

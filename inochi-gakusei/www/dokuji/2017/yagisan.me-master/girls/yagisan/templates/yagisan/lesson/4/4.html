@@ -1,0 +1,36 @@
+{% extends "yagisan/lesson/4/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <!-- <h3>八木さんと学ぶ会話講座</h3> -->
+  <div class='lesson_content'>
+    <div class="message">
+      <p>今日もお疲れ様です。
+        このレッスンでは、自分がストレスを感じやすい相手に対して、今後うまく付き合えるように自分の気持ちの伝え方を練習します。
+        前のページでおさらいしたポイントを参考にしながら自分の会話の返答を記入してみましょう。</p>
+    </div>
+    <div class="buttons">
+      <a href="/lesson/4/5">
+        <input type="image" src="{% static 'yagisan/img/lesson/4/4/woman_boss.png' %}" name="" value="">
+      </a>
+      <a href="/lesson/4/7">
+        <input type="image" src="{% static 'yagisan/img/lesson/4/4/woman_colleague.png' %}" name="" value="">
+      </a>
+      <a href="/lesson/4/9">
+        <input type="image" src="{% static 'yagisan/img/lesson/4/4/woman_member.png' %}" name="" value="">
+      </a>
+      <a href="/lesson/4/11">
+        <input type="image" src="{% static 'yagisan/img/lesson/4/4/man_boss.png' %}" name="" value="">
+      </a>
+      <a href="/lesson/4/13">
+        <input type="image" src="{% static 'yagisan/img/lesson/4/4/man_colleague.png' %}" name="" value="">
+      </a>
+      <a href="/lesson/4/15">
+        <input type="image" src="{% static 'yagisan/img/lesson/4/4/man_member.png' %}" name="" value="">
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

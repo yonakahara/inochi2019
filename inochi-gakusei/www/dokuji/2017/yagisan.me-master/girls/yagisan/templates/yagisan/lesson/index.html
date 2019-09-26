@@ -1,0 +1,57 @@
+{% extends "yagisan/lesson/base.html" %}
+{% load static %}
+
+{% block session %}
+<input type="hidden" name="user_id" value="{{ user_id }}">
+<input type="hidden" name="user_nickname" value="{{ user_nickname }}">
+<input type="hidden" name="lessons" value="{{ lessons }}">
+{% endblock %}
+
+{% block lesson_frame %}
+<div class="lesson_title">
+  <img src="{% static 'yagisan/img/lesson/index/title.png' %}">
+</div>
+<div class="lesson_buttons">
+  <a class="lesson_link" href="/lesson/1/1">
+    <div id="lesson_button_first" class="lesson_button first">
+      <img src="{% static 'yagisan/img/lesson/index/first.png' %}" class="default disable">
+      <img src="{% static 'yagisan/img/lesson/index/first_over.png' %}" class="over offscreen disable">
+    </div>
+  </a>
+  <a class="lesson_link" href="/lesson/2/1">
+    <div id="lesson_button_second" class="lesson_button second">
+      <img src="{% static 'yagisan/img/lesson/index/second.png' %}" class="default disable">
+      <img src="{% static 'yagisan/img/lesson/index/second_over.png' %}" class="over offscreen disable">
+    </div>
+  </a>
+  <a class="lesson_link" href="/lesson/3/1">
+    <div id="lesson_button_third" class="lesson_button third">
+      <img src="{% static 'yagisan/img/lesson/index/third.png' %}" class="default disable">
+      <img src="{% static 'yagisan/img/lesson/index/third_over.png' %}" class="over offscreen disable">
+    </div>
+  </a>
+</div>
+<div class="lesson_buttons">
+  <a class="lesson_link" href="/lesson/4/1">
+    <div id="lesson_button_fourth" class="lesson_button fourth">
+      <img src="{% static 'yagisan/img/lesson/index/fourth.png' %}" class="default disable">
+      <img src="{% static 'yagisan/img/lesson/index/fourth_over.png' %}" class="over offscreen disable">
+    </div>
+  </a>
+  <a class="lesson_link" href="/lesson/5/1">
+    <div id="lesson_button_fifth" class="lesson_button fifth">
+      <img src="{% static 'yagisan/img/lesson/index/fifth.png' %}" class="default disable">
+      <img src="{% static 'yagisan/img/lesson/index/fifth_over.png' %}" class="over offscreen disable">
+    </div>
+  </a>
+  <a class="lesson_link" href="/lesson/6/1">
+    <div id="lesson_button_sixth" class="lesson_button sixth">
+      <img src="{% static 'yagisan/img/lesson/index/sixth.png' %}" class="default disable">
+      <img src="{% static 'yagisan/img/lesson/index/sixth_over.png' %}" class="over offscreen disable">
+    </div>
+  </a>
+</div>
+<div id="lesson_close" class="lesson_close">
+  <img src="{% static 'yagisan/img/lesson/index/close.png' %}">
+</div>
+{% endblock %}

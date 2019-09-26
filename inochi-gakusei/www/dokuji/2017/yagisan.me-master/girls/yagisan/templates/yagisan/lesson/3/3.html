@@ -1,0 +1,94 @@
+{% extends "yagisan/lesson/3/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>対人関係</h3>
+  <div class='lesson_content'>
+    <p>ここで相手に対して自分の気持ちをうまく伝える方法について学びましょう！</p>
+    <div class="cycle">
+      <div class="D">
+        <img src="{% static 'yagisan/img/lesson/3/3/DESCcycle.png' %}" alt="" class="cycle_background">
+        <p class="cycle_title"><span class="cycle_title_first">D</span>:Describe（描写する）</p>
+        <p class="detail"><span class="pink">事実（客観）</span>を伝える</p>
+      </div>
+      <div class="arrow_right">
+        <img src="{% static 'yagisan/img/lesson/3/3/arrow_right.png' %}" alt="">
+      </div>
+
+      <div class="E">
+        <img src="{% static 'yagisan/img/lesson/3/3/DESCcycle.png' %}" alt="" class="cycle_background">
+        <p class="cycle_title"><span class="cycle_title_first">E</span>:Explain（説明する）</p>
+        <p class="detail"><span class="pink">自分の想い（主観）</span>を伝える</p>
+      </div>
+      <div class="arrow_down">
+        <img src="{% static 'yagisan/img/lesson/3/3/arrow_down.png' %}" alt="">
+      </div>
+
+      <div class="S">
+        <img src="{% static 'yagisan/img/lesson/3/3/DESCcycle.png' %}" alt="" class="cycle_background">
+        <p class="cycle_title"><span class="cycle_title_first">S</span>:Suggest（提案する）</p>
+        <p class="detail"><span class="pink">解決方法</span>を提案する</p>
+      </div>
+      <div class="arrow_left">
+        <img src="{% static 'yagisan/img/lesson/3/3/arrow_left.png' %}" alt="">
+      </div>
+
+      <div class="C">
+        <img src="{% static 'yagisan/img/lesson/3/3/DESCcycle.png' %}" alt="" class="cycle_background">
+        <p class="cycle_title"><span class="cycle_title_first">C</span>:Choose（選択する）</p>
+        <p class="detail">受け入れてもらった場合と <br> もらえなかった場合で判断する</p>
+      </div>
+    </div>
+
+    <div class="yagisan">
+      <img src="{% static 'yagisan/img/lesson/3/3/yagisan.png' %}" alt="">
+    </div>
+
+    <div class="points">
+      <div class="describe">
+        <p class="midashi">Describe（描写する）</p>
+        <p>解決しようとする問題の現在の状況や、相手の行動について「客観的」に描写する</p>
+        <div class="point">
+          <p class="point_midashi">ステップ「D」のポイント</p>
+          <div class="point_detail">
+            <ul>
+              <li>・データなどを用いて客観的に描写する</li>
+              <li>・事実のみを端的に描写する</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="express">
+        <p class="midashi">Express, Explain（表現する、説明する）</p>
+        <p>「E」には「Empathize（共感する）」や「見せる（Expose）」を充てる場合もある。 <br> 描写したことに対しての「主観的」な気持ちを表現したり、相手の気持ちに共感する。</p>
+        <div class="point">
+          <p class="point_midashi">ステップ「E」のポイント</p>
+          <div class="point_detail">
+            <ul>
+              <li>・感情的、攻撃的にならない</li>
+              <li>・自分の弱い部分、困っている気持ち、改善できる事を伝える</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="suggest">
+        <p class="midashi">Suggest、Specify（提案する、具体的に挙げる）</p>
+        <p>状況を変えるための「具体的」で「現実的」な解決方法や代替案、妥協案を提案する。</p>
+        <div class="point">
+          <p class="point_midashi">ステップ「S」のポイント</p>
+          <div class="point_detail">
+            <ul>
+              <li>・「命令」ではなく、強制力のない「提案」をする</li>
+              <li>・絶対に相手を責めない</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

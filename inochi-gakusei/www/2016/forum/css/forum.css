@@ -1,0 +1,276 @@
+html{height:100%;}
+body{height:100%;}
+
+/*header*/
+header{
+	background-image:url(../../img/forum_back.jpg);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+	background-size:cover;
+	min-height:100%;
+	text-align:left;
+}
+p{
+	font-size:1.3rem;
+}
+p.header{
+	color:#000;
+	background-color: rgba(255,255,255,0);
+}
+#head-text{
+	position:relative;
+	background-color: rgba(255,255,255,0.9);
+	display:inline-block;
+	left:280px;
+	top:300px;
+}
+#social{
+	width:20%;
+	right:20px;
+}
+.top-title{
+	padding-top:200px;
+}
+#message{
+	margin:30px 0 30px 0;
+	line-height: 40px;
+	letter-spacing: 7px;
+	padding:20px;
+}
+.message {
+	background-image: url(../../img/back.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+@media screen and (min-width: 768px){
+header{
+	background-attachment:fixed;
+}
+}
+@media screen and (max-width : 768px){
+header{
+	background-image:url(../../img/forum_back_sp.jpg);
+	min-height:120%;
+}
+#head-text{
+	left:5px;
+}
+#social{
+	width:80%;
+	left:0;
+	right:0;
+}
+.message{
+	background-repeat:repeat;
+	background-size:200% auto;
+}
+}
+
+
+
+/*centering*/
+div.center{
+	text-align: center;
+}
+div.center img{
+	margin:30px auto 30px auto;
+}
+div.voting h3, div.center h3{
+	letter-spacing: 5px;
+	margin:0 0 15px 0;
+}
+div.voting h3{
+	background-color: #10253f;
+	color:#fff;
+}
+
+/*about*/
+#glid{
+	height:300px;
+}
+.lecpic{
+  	background-repeat: no-repeat;	
+	background-size:cover;
+	background-position:center;
+	height:100%;
+	padding:0;
+}
+#situation{
+	background-image: url(../../img/situation.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:100%;
+  	background-position: center;	
+}
+#lecpic_contain, #lecpic_contain2 {
+	height:100%;
+}
+#lecpic1{
+	background-image:url(../../img/lecpic1.jpg);
+	height:50%;
+}
+#lecpic2{
+	background-image:url(../../img/lecpic2.jpg);
+	height:50%;
+}
+#lecpic3{
+	background-image:url(../../img/lecpic3.jpg);
+}
+#lecpic4{
+	background-image:url(../../img/lecpic4.jpg);
+}
+#lecpic5{
+	background-image:url(../../img/lecpic5.jpg);
+	height:50%;
+}
+#lecpic6{
+	background-image:url(../../img/lecpic6.jpg);
+	height:50%;
+}
+@media screen and (max-width : 768px){
+  #glid {
+  	height:500px;
+  }
+  #situation {
+  	height:50%;
+  }
+  #lecpic2, #lecpic4 {
+  	background-image:none;
+  	height:0;
+  }
+  #lecpic1 {
+  	height:100%;
+  }
+  #lecpic5, #lecpic6 {
+  	height:50%;
+  }
+  #lecpic3 {
+  	height:25%;
+  	margin: 0 15px 0 15px;
+  }
+  #explanation {
+  	height:50% !important;
+  }
+  #lecpic_contain {
+  	height:25%;
+  }
+  #lecpic_contain2 {
+  	height:50%;
+  }  
+}
+#explanation{
+	background-image: url(../../img/explanation.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:100%;
+  	background-position: center;	
+}
+
+/*contents*/
+.bu_contents{
+	color:#fff;
+	padding:50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height:100%;
+  	background-position: center;
+  	letter-spacing: 2px;
+}
+#mini{
+	font-size:2.4rem;
+}
+@media screen and (max-width:768px){
+#mini_sp{
+	font-size:2.4rem;
+}
+}
+#ichibu{
+	background-image:url(../../img/ichibu.png);	
+}
+#nibu{
+	background-image:url(../../img/nibu.png);	
+}
+#sanbu{
+	background-image:url(../../img/sanbu.png);	
+}
+#faq_area div {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#faq_area label{
+	transition: all 300ms 0s ease;
+	padding:10px 0;
+}
+#faq_area label:hover {
+	opacity:0.6;
+}
+input[type="checkbox"].on-off:checked + div{
+    height: 780px;
+}
+input[type="checkbox"].on-off#Panel2:checked + div{
+    height: 1300px;
+}
+input[type="checkbox"].on-off#Panel3:checked + div{
+    height: 2000px;
+}
+@media screen and (max-width:768px){
+input[type="checkbox"].on-off:checked + div{
+    height: 1200px;
+}
+input[type="checkbox"].on-off#Panel2:checked + div{
+    height: 2400px;
+}
+input[type="checkbox"].on-off#Panel3:checked + div{
+    height: 3100px;
+}
+}
+#speaker{
+	display: inline-block;
+    margin-left: 20px;
+    width: calc(100% - 250px);
+    vertical-align: top;
+    line-height:24px;
+    padding-left:20px !important;
+}
+#speaker_br{
+	padding-left:50px;text-align:left;padding-bottom:30px !important;border-bottom:thin solid #10253f;
+}
+#speaker_br h4{
+	font-size:2.8rem;
+}
+div#simulation{
+	margin:25px !important;
+}
+
+#teigen{
+	width:600px;
+}
+#teigen:hover{
+	opacity:0.8;
+	cursor:pointer;
+}
+@media screen and (max-width: 768px){
+img#teigen {width:300px;}
+}
+
+
+/*blind control*/
+.blc_sp {display:none;}
+
+@media screen and (max-width: 768px){
+.blc_pc {display:none !important;}
+.blc_sp {display:block;}
+}
+
+
+
+
+

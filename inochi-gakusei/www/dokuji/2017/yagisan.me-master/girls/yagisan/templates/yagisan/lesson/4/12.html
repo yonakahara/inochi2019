@@ -1,0 +1,40 @@
+{% extends "yagisan/lesson/4/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <!-- <h3>上手な会話の返し方</h3> -->
+  <div class='lesson_content'>
+    <div class="points">
+      <div class="first">
+        <p><span class="point_title">POINT1</span> <br>
+          自分の気持ちや要求を表現した結果、自分が望んでいない反応を相手が返す場合もあり得ます。
+          でも、相手がどう受け取りどう反応するかは、相手の領域。その反応によって、表現をした自分を責めたり不愉快になったりしないことは大切なことです。</p>
+      </div>
+    </div>
+    <div id="others_answer" class="others_answer">
+      <p class="title">他の受講者はこのような会話の返し方をしています</p>
+      <input type="hidden" name="dialogue_sex" value="1">
+      <input type="hidden" name="dialogue_to" value="1">
+      <div id="dialogues" class="dialogues">
+        <div id="dialogue_wrap" class="dialogue_wrap offscreen">
+          <div id="dialogue_first" class="dialogue">
+            <div id="dialogue_type_1">D:&nbsp<span></span></div>
+            <div id="dialogue_type_2">E:&nbsp<span></span></div>
+            <div id="dialogue_type_3">S:&nbsp<span></span></div>
+          </div>
+          <div id="dialogue_second" class="dialogue">
+            <div id="dialogue_type_1">D:&nbsp<span></span></div>
+            <div id="dialogue_type_2">E:&nbsp<span></span></div>
+            <div id="dialogue_type_3">S:&nbsp<span></span></div>
+          </div>
+        </div>
+      </div> 
+      <a href="/lesson/4/4">
+        <div id="return_to_dialogue_button" class="return_to_dialogue_button">他の会話を選ぶ</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

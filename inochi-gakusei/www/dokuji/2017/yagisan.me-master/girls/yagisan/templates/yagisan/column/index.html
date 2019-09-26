@@ -1,0 +1,73 @@
+{% extends "yagisan/base.html" %}
+{% load static %}
+{% block body %}
+
+<div id="column" class="column">
+  <div class="column_background">
+    <img src="{% static 'yagisan/img/column_background.png' %}">
+  </div>
+  <div class="column_title">
+    <img src="{% static 'yagisan/img/column/index/title.png' %}">
+  </div>
+  <div class="column_contents">
+    <div class="column_content">
+      <div class="column_content_box">
+        <img src="{% static 'yagisan/img/column/index/box_frame.png' %}" class="column_content_box_frame">
+        <img src="{% static 'yagisan/img/column/index/box_img_yagi.png' %}" class="column_content_box_img">
+      </div>
+      <a href="/column/1">
+        <div class="column_content_sentence_first">
+          『ほぐれて、八木さん』開設（2017-05-25-THU）
+        </div>
+      </a>
+      <div class="column_content_sentence_second">
+        『ほぐれて、八木さん』は、働く女性が自分のストレス状況や考え方のくせを知り、自分のストレス原因に対する考え方、対処の仕方を見つめ直しながら、より柔軟にストレスに対処できるよう、応援する教材です。
+      </div>
+      <a href="/column/1">
+        <div class="column_content_sentence_third">
+          もっと見る
+        </div>
+      </a>
+    </div>
+    <div class="column_content">
+      <div class="column_content_box">
+        <img src="{% static 'yagisan/img/column/index/box_frame.png' %}" class="column_content_box_frame">
+        <img src="{% static 'yagisan/img/column/index/column.jpg' %}" class="column_content_box_img">
+      </div>
+      <a href="/column/2">
+        <div class="column_content_sentence_first">
+          認知行動療法−１
+        </div>
+      </a>
+      <div class="column_content_sentence_second">
+        「落ち込み」「不安」「イライラ」など，自分をつらくさせる感情を毎日誰でも経験します。
+      </div>
+      <a href="/column/2">
+        <div class="column_content_sentence_third">
+          もっと見る
+        </div>
+      </a>
+    </div>
+    <div class="column_content">
+      <div class="column_content_box">
+        <img src="{% static 'yagisan/img/column/index/box_frame.png' %}" class="column_content_box_frame">
+        <img src="{% static 'yagisan/img/column/index/column.jpg' %}" class="column_content_box_img">
+      </div>
+      <a href="/column/3">
+        <div class="column_content_sentence_first">
+          認知行動療法−2
+        </div>
+      </a>
+      <div class="column_content_sentence_second">
+        “考え方のクセ”は誰にでもあるものです。一生懸命だったり，真面目だったり，何かを真剣に取り組む人が持ちやすい良い面だともいえます。
+      </div>
+      <a href="/column/3">
+        <div class="column_content_sentence_third">
+          もっと見る
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

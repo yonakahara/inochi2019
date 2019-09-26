@@ -1,0 +1,573 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (max-width: 1024px){
+	
+	.container{
+	margin:0 auto;
+	padding:0 3%;
+	width: 94%;
+	}
+	
+	
+		/**/
+	.header-logo{
+	display: none;
+	}
+	.header-logo-font{
+		height: 26px;
+		margin: 12px 0;
+	}
+	
+	
+	.header-right{
+	width: 60%;
+	}
+	.menu-font{
+	font-size: 12px;
+	}
+	.link-zone p{
+	font-size: 12px;
+	}
+	/**/
+	
+	
+	
+	
+	
+	.top-wrapper{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	background-image:url(../image/backgroundred.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+	
+	h1{
+	margin-bottom: 70px;
+	overflow: hidden;
+		width: 100%;
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+	
+	.logo{
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		height: auto;
+		margin-top: 70px;
+		float:clear;
+
+	}
+	.kozuka-title{
+	float: clear;
+	width: 70%;
+	height: auto;
+	margin: 0 15%;
+	text-align: center;
+	display: block;
+	padding-top: 0px;
+	}
+	
+	.about-box{
+	width: 80%;
+	margin: 70px auto;
+	background-color: rgba(204,47,31,1.00);
+	overflow: hidden;
+	padding: 30px 0;
+	}
+	.about-title{
+		width: 90%;
+		font-size: 30px;
+		margin: 10px auto;
+		color: #D90003;
+		text-align: center;
+		padding: 5px;
+		border-radius: 10px;
+		background-color: rgba(255,255,255,1.00);
+		display: block;
+	}
+	.about-text{
+		width: 80%;
+		display: block;
+		margin: 0 auto 60px auto;
+		color: #fff;
+	}
+	.year{
+	width: 40%;
+	color: #CC2F1F;
+	margin: 20px auto 10px auto;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	background-color: rgba(255,255,255,0.70);
+	font-size: 20px;
+	border-radius: 20px;
+	padding: 5px;
+	}
+	.years-title{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 30px;
+	color: #fff;
+	}
+	.about-span{
+		text-align: center;
+		font-size: 27px;
+		display: block;
+		margin-top: 70px;
+	}
+	
+	/*フォーラムのコピーするところ始め*/
+	.forum-wrapper{
+	display: block;
+}
+	.pc-forum-wrapper{
+		display: none;
+	}
+	h2{
+	border-bottom: solid 3px #CC2F1F;
+	padding: 10px 0;
+	}
+	h2 img{
+		text-align: center;
+		width: 80%;
+		height: auto;
+	}
+	.archive-img{
+	width: 50%;
+	height: auto;
+	}
+
+	.gakusei-project-zone{
+		width: 80%;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+	.project-box{
+		width: 46%;
+		height: 330px;
+		padding: 1%;
+		margin: 1%;
+		overflow: hidden;
+		background-color: #fff;
+		border-radius: 10px;
+		float: left;
+	}
+	.project-box img{
+		width: 85%;
+		height: auto;
+		float: left;
+		padding: 1%;
+	}
+	.text-box{
+		width: 98%;
+		overflow: hidden;
+		float: clear;
+		padding: 1%;
+		margin: 10% 0;
+		height: 80%;
+	}
+	.team-name{
+		font-size: 21px;
+		text-align: center;
+		margin: 5px auto;
+	}
+	.team-contents-btn{
+		font-size: 15px;
+		padding: 5px;
+		background-color: #CC2F1F;
+		border-radius: 5px;
+		width: 50%;
+		text-align: center;
+		margin: 5px auto;
+		display: block;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	.btn-hover:hover{
+		padding: 4px 5px;
+		color: #CC2F1F;
+		border: solid 1px #CC2F1F;
+		background-color: #ffffff;
+	}
+	
+	
+	
+	.modal-box-img{
+	width: auto;
+	height: 90%;
+	background-color: rgba(225,225,225,0.3);
+	margin:5% auto;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	}
+	/*フォーラムのコピーするところ終わり*/
+	
+	.school-box p{
+	width: 25%;
+	float: left;
+	}
+	
+	
+	
+	.information{
+	width: 70%;
+	float: clear;
+		display: inline-block;
+		margin:30px 15%;
+	}
+	.information-title{
+	border-bottom: solid 3px rgba(255,0,4,0.70);
+	width: 90%;
+	}
+
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width:640px){
+	
+	.top-wrapper::before{
+	/*background-image: url(../image/respmeisouBack1.png);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;*/
+		background:url(../image/backgroundred.png) no-repeat left top;
+  background-size: 100% auto;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 108px;
+  content: "";
+  z-index: -1;
+	}
+	
+	
+	/**/
+	.toggle{
+	display: block;
+	position: fixed;
+	z-index: 30;
+	line-height: 50px;
+		top: 5px;
+		left: 3%;
+		font-size: 40px;
+		color: #fff;
+	}
+	.fa-times{
+	display: none;
+	color: #000;
+	}
+	.fa-bars{
+		display: block;
+		text-shadow: 2px 2px  #000000;
+	}
+	.toggle-menus{
+		display: none;
+	}
+	
+	
+	
+	header{
+		display: none;
+	}
+	.header-right{
+		display: none;
+	}
+	
+	.zone-title{
+		margin-top: 10px;
+		padding: 10px;
+		background-color: #CC2F1F;
+		color: #fff;
+	}
+	
+	/**/
+	
+	
+	
+	
+	h1{
+	margin-bottom: 70px;
+	overflow: hidden;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	
+
+	h1 img{
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		height: auto;
+		margin-top: 40px;
+		float:clear;
+
+	}
+	
+	
+	
+	
+	.about-box{
+	width: 100%;
+	margin: 70px auto;
+	background-color: rgba(204,47,31,1.00);
+	overflow: hidden;
+	padding: 30px 0;
+	}
+	.about-title{
+		width: 88%;
+		font-size: 21px;
+		margin: 10px auto;
+		color: #D90003;
+		text-align: center;
+		padding: 5px;
+		border-radius: 20px;
+		background-color: rgba(255,255,255,1.00);
+		display: block;
+	}
+	.about-text{
+		width: 90%;
+		font-size: 12px;
+		display: block;
+		margin: 0 auto;
+		color: #fff;
+		text-align: center;
+	}
+	.about-span{
+	text-align: center;
+	font-size: 20px;
+	display: block;
+	}
+	
+	.year{
+	width: 65%;
+	color: #CC2F1F;
+	margin: 30px auto 5px auto;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	background-color: rgba(255,255,255,0.70);
+	font-size: 13px;
+	border-radius: 20px;
+	padding: 5px;
+}
+.year-hover:hover{
+	background-color: rgba(255,255,255,1.00);
+}
+.years-title{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: #fff;
+}
+.about-span{
+	text-align: center;
+	font-size: 20px;
+	display: block;
+	margin-top: 50px;
+}
+
+
+	
+	
+	
+	
+/*フォーラムのコピーするところ始め*/
+	.forum-wrapper::before{
+	/*background-image: url(../image/respmeisouBack1.png);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;*/
+		background:url(../image/forum1.jpg) no-repeat left top;
+  background-size: 100% auto;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 108px;
+  content: "";
+  z-index: -1;
+	}
+	
+	
+	
+	
+	h2{
+	border-bottom: solid 3px #CC2F1F;
+	padding: 10px 0;
+	}
+	h2 img{
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
+	.archive-img{
+	width: 70%;
+	height: auto;
+	}
+
+	.gakusei-project-zone{
+		width: 80%;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+	.project-box{
+		width: 98%;
+		height: auto;
+		padding: 1%;
+		margin: 12px auto;
+		overflow: hidden;
+		background-color: #fff;
+		border-radius: 10px;
+		float: left;
+	}
+	.project-box img{
+		width: 98%;
+		height: auto;
+		float: left;
+		padding: 1%;
+	}
+	.text-box{
+		width: 98%;
+		overflow: hidden;
+		float: clear;
+		padding: 1%;
+		margin: 1% auto;
+		height: 70%;
+	}
+	.team-name{
+		font-size: 17px;
+		text-align: center;
+		margin: 5px auto;
+	}
+	.team-text{
+		font-size: 12px;
+		width: 100%;
+	}
+	.team-contents-btn{
+		font-size: 12px;
+		padding: 5px;
+		background-color: #CC2F1F;
+		border-radius: 5px;
+		width: 50%;
+		text-align: center;
+		margin: 5px auto;
+		display: block;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	.btn-hover:hover{
+		padding: 4px 5px;
+		color: #CC2F1F;
+		border: solid 1px #CC2F1F;
+		background-color: #ffffff;
+	}
+	
+	
+	.modal-box-img{
+	width: auto;
+	height: 85%;
+	background-color: rgba(225,225,225,0.3);
+	margin:2% auto;
+	text-align: center;
+	display: block;
+	}
+	.mentor{
+	width: 100%;
+	margin: 0px auto;
+	}
+	.mentor-title{
+		font-size: 20px;
+		color: #CC2F1F;
+		text-align: center;
+		background-color: #f4f4f4;
+		padding: 5px;
+		margin: 15px auto;
+		width: 30%;
+		border-radius: 10px;
+	}
+	.mentor-menbers-zone{
+		overflow: hidden;
+	}
+	.mentor-name{
+		font-size: 14px;
+		color: #fff;
+		width: 50%;
+		text-align: center;
+		float: left;
+	}
+	/*フォーラムのコピーするところ終わり*/
+	
+	
+	
+	.join-school-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	padding: 50px 0;
+	background-color: #f4f4f4;
+	}
+	h3{
+		text-align: center;
+		margin: 20px auto;
+		font-size: 20px;
+		color: #CC2F1F;
+	}
+	.school-box{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.school-box p{
+	width: 50%;
+	float: left;
+		font-size: 12px;
+	}
+	
+	.information{
+	width: 80%;
+	float: clear;
+		display: inline-block;
+		margin:30px 10%;
+	}
+	.information a{
+		
+		font-size: 12px;
+	}
+	.information p{
+		
+		font-size: 12px;
+	}
+	.information-title{
+	border-bottom: solid 3px rgba(255,0,4,0.70);
+	width: 90%;
+	}
+
+}

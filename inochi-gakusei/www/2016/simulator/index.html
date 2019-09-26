@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="【社会課題解決を、スマートに。】 inochi学生フォーラム特別コンテンツ「inochiシミュレータ」で、「心臓突然死減少」の糸口を見つけましょう。inochi学生フォーラム2016は「日本の心臓突然死を減らす」というテーマの問題解決型実施プログラム。関西圏の中高生&amp;全国の大学生・大学院生&amp;世界の大学生・大学院生がヘルスケア課題解決に挑みます。">
+<meta name="keywords" content="inochi学生フォーラム,シミュレータ,inochi,学生,フォーラム,プロジェクト,2016,医療,ヘルスケア,若者,関西,心臓突然死">
+<meta property="og:image" content="http://inochi-gakusei.com/2016/img/share.png">
+<meta property="og:description" content="【社会課題解決を、スマートに。】 inochi学生フォーラム特別コンテンツ「inochiシミュレータ」で、「心臓突然死減少」の糸口を見つけましょう。inochi学生フォーラム2016は「日本の心臓突然死を減らす」というテーマの問題解決型実施プログラム。関西圏の中高生&amp;全国の大学生・大学院生&amp;世界の大学生・大学院生がヘルスケア課題解決に挑みます。">
+
+<title>inochiシミュレータ | inochi学生フォーラム2016</title>
+<link rel="shortcut icon" href="http://inochi-gakusei.com/2016/img/favicon.ico" />
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="css/lib/rangeslider.css">
+<link rel="stylesheet" href="css/simulator.css">
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/lib/rangeslider.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/simulator.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/modalConfirm.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bxslider').bxSlider();
+    });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-78321708-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<!--main contents-->
+<div class="container-fluid">
+    <!--entry-->
+    <div class="row row_w row_w_sim">
+        <div class="col-sm-2 col-md-2"></div>
+        <div class="col-sm-8 col-md-8" id="top_sim">
+            <h1 class="top-title"><img src="../img/title1.png" alt="title"/></h1>
+                <img src="../img/calculator.png" width="150px"/><h4 style="color:#fff;">inochiシミュレータ</h4><h3>心臓突然死を止めるために何ができるか―。データが教えてくれること。</h3>
+                <p class="remove_cookie" id="ex_sim"><a href="#">説明を読む</a></p>
+                <div class="social" id="social_sim">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="【inochiシミュレータ】心臓突然死を止めるために何ができるか―。データが教えてくれること。―inochi学生フォーラム" data-hashtags="inochi_gakusei">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <div class="fb-like" id="facebook" data-href="http://inochi-gakusei.com/2016/simulator/index.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="content_box">
+        <ul class="bxslider">
+            <li class="box">
+            <img src="../img/calculator_r.png" width="100px"/><h4>inochi<br class="br_sp">シミュレータ</h4><h3 style="margin-bottom:40px;">心臓突然死を止めるために<br class="br_sp">何ができるか―。<br/>データが教えてくれること。</h3>
+            <p>inochiシミュレータは、「心臓突然死を減らす」という課題の解決を支える<br class="br_pc"/>実際のデータをベースとした解決策試作・評価ツールです。<br/><br/>課題解決の核は、課題を認識し、<br class="br_sp">適切な切り口を発見すること。<br/>
+            <br/>inochiシミュレータの中では、<br class="br_sp"/>心原性心肺機能停止者数・<br class="br_sp"/>市民による目撃率・<br/>市民による心肺蘇生実施率・<br class="br_sp"/>そのうち除細動実施率(=AED使用率)・<br/>心肺機能停止後の<br class="br_pc"/>心肺蘇生実施までの時間、<br class="br_sp"/>といった指標を<br class="br_pc"/>どれだけ変えたら、<br class="br_sp"/>どれだけのinochiを救うことができ、
+            <br/>またどれだけの人が社会復帰できるかを<br class="br_sp"/>予測することができます。<br/>(命が救われても、<br class="br_sp"/>寝たきりになるケースも多いのです。)<br/>シミュレータを通して、<br class="br_sp"/>何をどれだけ変えるべきなのか、<br/>どの切り口に挑戦していきたいのかを<br class="br_sp"/>考えてみませんか。</p>
+            <h3 style="margin-top:30px;color:#10253f;">THINK WITH DATA.</h3>
+            <p>社会課題解決を、スマートに。</p>
+            </li>
+            <li class="box">
+                <h4>各指標の<br class="br_sp">見方・現状</h4>
+                <table>
+                    <tr>
+                        <td id="heavy">心原性心肺機能<br class="br_sp">停止数(年間)</td>
+                        <td>救急搬送された心臓を<br class="br_sp">原因とする心肺機能停止<br class="br_sp">傷病者数<br/><br/><span id="box_red"><span id="box_number">76,141件</span><br class="br_sp">(平成26年)<br/>ACTION&gt;&gt;予防医療によってそもそもの心停止数を減らす</span></td>
+                    </tr>
+                    <tr>
+                        <td id="heavy">一般市民による<br class="br_sp">目撃率</td>
+                        <td>心原性心肺機能停止傷病者のうち、心肺機能停止時点で市民によって発見された事例<br/><br/><span id="box_red"><span id="box_number">33.2%</span><br class="br_sp">(平成26年)<br/>ACTION&gt;&gt;発生時に市民がすぐ発見できるようにする</span></td>
+                    </tr>
+                    <tr>
+                        <td id="heavy">目撃した一般市民による心肺蘇生実施率</td>
+                        <td>上記の目撃事例のうち、<br class="br_sp">一般市民によって心肺蘇生措置が行われたケース<br/><br/><span id="box_red"><span id="box_number">54.2%</span><br class="br_sp">(平成26年)<br/>ACTION&gt;&gt;いざというときに心肺蘇生ができる人を増やす</span></td>
+                    </tr>
+                    <tr>
+                        <td id="heavy">心肺蘇生のうち、<br class="br_sp">除細動(AED)実施率</td>
+                        <td>上記の心肺蘇生ケースのうち、AEDを利用した除細動が行われたケース<br/><br/><span id="box_red"><span id="box_number">7.5%</span><br class="br_sp">(平成26年)<br/>ACTION&gt;&gt;いざというときにAEDが使える人を増やす</span></td>
+                    </tr>
+                    <tr>
+                        <td id="heavy">心肺停止から救急隊員による心肺蘇生までの時間(10分以内到着率)</td>
+                        <td>心肺機能停止発生時から10分以内に救急隊員による心肺蘇生が実施されたケース<br/><br/><span id="box_red"><span id="box_number">46.7%</span><br class="br_sp">(平成26年)<br/>ACTION&gt;&gt;市民から救急隊員への救命の連鎖を迅速に行う仕組みの構築</span></td>
+                    </tr>
+                </table>
+                <p id="box_pink"><img src="img/out_heart.svg" width="50px">救われたinochi<br class="br_sp">=<strong>生存者数</strong><br class="br_sp">(現状+何人のinochiが救われたか)</p>
+                <p id="box_blue"><img src="img/out_human.svg" width="50px">社会復帰したinochi<br class="br_sp">=<strong>社会復帰者数</strong><br class="br_sp">(現状+何人が社会復帰できたか)</p>
+                <div id="box_ex">
+                    <p>※社会復帰：OPC/CPC共に1又は2</p>
+                    <p>※計算方法：心肺蘇生のみ実施時&amp;AED実施時の生存率・社会復帰率の数値を使って生存者数・社会復帰者数を算出。</p>
+                    <p><a href="http://www.fdma.go.jp/neuter/topics/fieldList9_3.html" target="_blank">データ元：<br class="br_sp">総務省消防庁<br class="br_sp">『平成27年版 救急救助の現況(救急編)』</a></p>
+                </div>
+            </li>
+        </ul>
+        <p class="close_modal"><a href="javascript:;">シミュレーション START</a></p>
+    </div>
+</div>
+
+
+
+<div class="simulator-content">
+    <section class="part1-sec">
+        <div class="headline1-box animation_in">
+            <h1>PART1 - SINGLE FACTOR</h1>
+            <div class="sub">各指標が与える影響を予測する</div>
+        </div>
+        <div class="single-factor-container">
+            <div class="headline2-box">
+                <h2>STEP1</h2>
+                <div class="sub">- 変えたい/変えるべき指標を選ぶ</div>
+            </div>
+            <dl class="factor1">
+                <dt>心原性心肺機能停止数(年間)</dt>
+                <dd>
+                    <div class="headline3-box">
+                        <h2>STEP2</h2>
+                        <div class="sub">- 値を変えて影響を推定する</div>
+                    </div>
+                    <div class="edit-box">
+                        <div class="title">心原性心肺機能停止数(年間)</div>
+                        <div class="value"><span class="num"></span>件</div>
+                        <div class="input"><input type="range" class="js-slider" /></div>
+                        <ul class="measure">
+                            <li class="origin"><span class="num"></span>件</li>
+                            <li class="max"><span class="num"></span>件<br><span class="memo">[現状]</span></li>
+                        </ul>
+                    </div>
+                    <div class="rescue-box">
+                        <div class="title">救われたinochi</div>
+                        <div class="result">3,082人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-heart"></ul>
+                    </div>
+                    <div class="recovery-box">
+                        <div class="title">社会復帰したinochi</div>
+                        <div class="result">1,972人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-human"></ul>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="factor2">
+                <dt>一般市民による目撃率</dt>
+                <dd>
+                    <div class="headline3-box">
+                        <h2>STEP2</h2>
+                        <div class="sub">- 値を変えて影響を推定する</div>
+                    </div>
+                    <div class="edit-box">
+                        <div class="title">一般市民による目撃率</div>
+                        <div class="value"><span class="num"></span>%</div>
+                        <div class="input"><input type="range" class="js-slider" /></div>
+                        <ul class="measure">
+                            <li class="origin"><span class="num"></span>%<br><span class="memo">[現状]</span></li>
+                            <li class="max"><span class="num"></span>%</li>
+                        </ul>
+                    </div>
+                    <div class="rescue-box">
+                        <div class="title">救われたinochi</div>
+                        <div class="result">3,082人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-heart"></ul>
+                    </div>
+                    <div class="recovery-box">
+                        <div class="title">社会復帰したinochi</div>
+                        <div class="result">1,972人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-human"></ul>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="factor3">
+                <dt>目撃した一般市民による心肺蘇生実施率</dt>
+                <dd>
+                    <div class="headline3-box">
+                        <h2>STEP2</h2>
+                        <div class="sub">- 値を変えて影響を推定する</div>
+                    </div>
+                    <div class="edit-box">
+                        <div class="title">目撃した一般市民による心肺蘇生実施率</div>
+                        <div class="value"><span class="num"></span>%</div>
+                        <div class="input"><input type="range" class="js-slider" /></div>
+                        <ul class="measure">
+                            <li class="origin"><span class="num"></span>%<br><span class="memo">[現状]</span></li>
+                            <li class="max"><span class="num"></span>%</li>
+                        </ul>
+                    </div>
+                    <div class="rescue-box">
+                        <div class="title">救われたinochi</div>
+                        <div class="result">3,082人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-heart"></ul>
+                    </div>
+                    <div class="recovery-box">
+                        <div class="title">社会復帰したinochi</div>
+                        <div class="result">1,972人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-human"></ul>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="factor4">
+                <dt>心肺蘇生のうち、除細動(AED)実施率</dt>
+                <dd>
+                    <div class="headline3-box">
+                        <h2>STEP2</h2>
+                        <div class="sub">- 値を変えて影響を推定する</div>
+                    </div>
+                    <div class="edit-box">
+                        <div class="title">心肺蘇生のうち、除細動(AED)実施率</div>
+                        <div class="value"><span class="num"></span>%</div>
+                        <div class="input"><input type="range" class="js-slider" /></div>
+                        <ul class="measure">
+                            <li class="origin"><span class="num"></span>%<br><span class="memo">[現状]</span></li>
+                            <li class="max"><span class="num"></span>%</li>
+                        </ul>
+                    </div>
+                    <div class="rescue-box">
+                        <div class="title">救われたinochi</div>
+                        <div class="result">3,082人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-heart"></ul>
+                    </div>
+                    <div class="recovery-box">
+                        <div class="title">社会復帰したinochi</div>
+                        <div class="result">1,972人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-human"></ul>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="factor5">
+                <dt>心肺停止から救急隊員による心肺蘇生までの時間(10分以内到着率)</dt>
+                <dd>
+                    <div class="headline3-box">
+                        <h2>STEP2</h2>
+                        <div class="sub">- 値を変えて影響を推定する</div>
+                    </div>
+                    <div class="edit-box">
+                        <div class="title">心肺停止から救急隊員による心肺蘇生までの時間(10分以内到着率)</div>
+                        <div class="value"><span class="num"></span>%</div>
+                        <div class="input"><input type="range" class="js-slider" /></div>
+                        <ul class="measure">
+                            <li class="origin"><span class="num"></span>%<br><span class="memo">[現状]</span></li>
+                            <li class="max"><span class="num"></span>%</li>
+                        </ul>
+                    </div>
+                    <div class="rescue-box">
+                        <div class="title">救われたinochi</div>
+                        <div class="result">3,082人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-heart"></ul>
+                    </div>
+                    <div class="recovery-box">
+                        <div class="title">社会復帰したinochi</div>
+                        <div class="result">1,972人 <span class="add"></span>人</div>
+                        <ul class="icon-list is-human"></ul>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </section>
+
+    <section class="part2-sec">
+        <div class="headline1-box animation_in">
+            <h1>PART2 - MULTIPLE FACTORS</h1>
+            <div class="sub">複数指標の組み合わせで予測する</div>
+        </div>
+        <div class="variable-factor-container">
+            <ul class="factor-list">
+                <li class="factor1">
+                    <div class="title">心原性心肺機能停止数(年間)</div>
+                    <div class="value"><span class="num"></span>件</div>
+                    <div class="input"><input type="range" class="js-slider" /></div>
+                    <ul class="measure">
+                        <li class="origin"><span class="num"></span>件</li>
+                        <li class="max"><span class="num"></span>件<br><span class="memo">[現状]</span></li>
+                    </ul>
+                </li>
+                <li class="factor2">
+                    <div class="title">一般市民による目撃率</div>
+                    <div class="value"><span class="num"></span>%</div>
+                    <div class="input"><input type="range" class="js-slider" /></div>
+                    <ul class="measure">
+                        <li class="origin"><span class="num"></span>%<br><span class="memo">[現状]</span></li>
+                        <li class="max"><span class="num"></span>%</li>
+                    </ul>
+                </li>
+                <li class="factor3">
+                    <div class="title">目撃した一般市民による心肺蘇生実施率</div>
+                    <div class="value"><span class="num"></span>%</div>
+                    <div class="input"><input type="range" class="js-slider" /></div>
+                    <ul class="measure">
+                        <li class="origin"><span class="num"></span>%<br><span class="memo">[現状]</span></li>
+                        <li class="max"><span class="num"></span>%</li>
+                    </ul>
+                </li>
+                <li class="factor4">
+                    <div class="title">心肺蘇生のうち、除細動(AED)実施率</div>
+                    <div class="value"><span class="num"></span>%</div>
+                    <div class="input"><input type="range" class="js-slider" /></div>
+                    <ul class="measure">
+                        <li class="origin"><span class="num"></span>%<br><span class="memo">[現状]</span></li>
+                        <li class="max"><span class="num"></span>%</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="monitor-container">
+            <div class="arrow"></div>
+            <div class="rescue-box">
+                <div class="title">救われたinochi</div>
+                <div class="result">3,082人 <span class="add"></span>人</div>
+                <ul class="icon-list is-heart is-large"></ul>
+            </div>
+            <div class="recovery-box">
+                <div class="title">社会復帰したinochi</div>
+                <div class="result">1,972人 <span class="add"></span>人</div>
+                <ul class="icon-list is-human is-large"></ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container-fluid">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="link_sim">
+        <a href="http://inochi-gakusei.com/2016"><div id="simulation"><h3 id="simulation"><strong>TOPへ戻る</strong></h3></div></a>
+        <a href="../entry.html" target="_blank"><div id="entry_link"><h3 id="entry_link"><strong>ENTRY</strong></h3></div></a><h3 id="entry_ex"><strong>応募締切：<br>中高生チーム【応募終了】<br>大学生チーム7/20(水)GMT23:59</strong></h3>
+        <div class="social" id="social_sim">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="「心臓突然死減少へ」若者がデザイン思考とテクノロジーを使って挑む教育&プラン実現プログラム【inochi学生フォーラム】" data-hashtags="inochi-gakusei">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <div class="fb-like" id="facebook" data-href="http://inochi-gakusei.com/2016/simulator/index.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer class="container-fluid">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="footer">
+        <div id="footer2">
+            <p id="footer">
+            <p style="display:inline-block; vertical-align:top;">
+            <img src="../img/inochiGlogo.png" width="150px">
+            <img src="../img/inochiMlogo.png" width="100px">
+            </p>
+            <p style="display:inline-block;vertical-align:middle; text-align:left;">
+            <a href="http://inochi-gakusei.com/2016/#about">inochi学生フォーラムについて</a><br><a href="http://inochi-gakusei.com/2016/#supporters">inochi学生フォーラムサポーター</a><br><a href="http://inochi-gakusei.com/2016/#sponsors">協賛企業一覧</a><br><a href="http://inochi-gakusei.com/2016/#schedule">inochi学生フォーラムスケジュール</a><br><a href="http://inochi-gakusei.com/2016/#entry">応募要項</a><br><a href="http://inochi-gakusei.com/2016/#faq">よくあるご質問</a></p>
+            <p style="display:inline-block;vertical-align:top; text-align:left;margin-left:40px;">
+            <strong>【後援】<br><br>関西広域連合<br><br>近畿経済産業局</strong></p></p>
+        </div>
+        <p id="footer2">&copy;Copyrights 2016 inochi学生プロジェクト</p>
+    </div>
+    <div class="col-sm-2"></div>
+</footer>
+
+
+
+</body>
+</html>

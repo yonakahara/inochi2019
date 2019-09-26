@@ -1,0 +1,45 @@
+{% extends "yagisan/lesson/3/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>アサーティブな自己表現をするためには</h3>
+  <div class='lesson_content'>
+    <div class="good offscreen">
+      <div class="how_many_yes">
+        <img src="{% static 'yagisan/img/lesson/3/5/good_background.png' %}" alt="">
+        <p>Yesが10個以上のあなた</p>
+      </div>
+      <div class="yagisan">
+        <img src="{% static 'yagisan/img/lesson/3/5/yagisan_assertion.png' %}" alt="">
+      </div>
+      <div class="hukidashi">
+        <img src="{% static 'yagisan/img/lesson/3/5/hukidashi.png' %}" alt="">
+        <p>正しい自己表現ができていることが多いです。
+          ただし、そんなあなたでも、相手に対して否定的な気持ちを持っているときは、相手への配慮を欠いた発言をしてしまうかもしれないので
+          気をつけましょう。</p>
+      </div>
+    </div>
+
+    <div class="bad offscreen">
+      <div class="how_many_yes">
+        <img src="{% static 'yagisan/img/lesson/3/5/bad_background.png' %}" alt="">
+        <p>Yesが10個未満のあなた</p>
+      </div>
+      <div class="yagisan_offensive">
+        <img src="{% static 'yagisan/img/lesson/3/5/yagisan_offensive.png' %}" alt="">
+      </div>
+      <div class="yagisan_non_assertion">
+        <img src="{% static 'yagisan/img/lesson/3/5/yagisan_non_assertion.png' %}" alt="">
+      </div>
+      <div class="hukidashi">
+        <img src="{% static 'yagisan/img/lesson/3/5/hukidashi.png' %}" alt="">
+        <p>うまく自己表現ができていないことが多いかもしれません。
+          前ページでYesを選ばなかった領域が、苦手な自己表現の領域です。
+          自分が苦手な自己表現をもう一度確認してみましょう。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

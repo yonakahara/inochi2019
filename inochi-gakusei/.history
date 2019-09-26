@@ -1,0 +1,200 @@
+#+1554892249
+cd ..
+#+1554892249
+cd .
+#+1554892250
+ls
+#+1554892252
+pwd
+#+1554892254
+cd ..
+#+1554892268
+find * | grep setting.py
+#+1554892277
+find * | grep settings.py
+#+1554892287
+cd yagisan/girls/girls/
+#+1554892287
+ls
+#+1554892296
+pwd
+#+1554892447
+cd /home/inochi-gakusei/www/inochi-gakusei.sakura.ne.jp/yagisan/girls/yagisan
+#+1554892449
+pwd
+#+1554892453
+ls
+#+1554892459
+cd static/
+#+1554892461
+pwd
+#+1554892511
+cd /home/inochi-gakusei/www/inochi-gakusei.sakura.ne.jp/yagisan/
+#+1554892511
+ls
+#+1554892541
+cd cd ~/www/inochi-gakusei.sakura.ne.jp/yagisan/girls
+#+1554892545
+cd ~/www/inochi-gakusei.sakura.ne.jp/yagisan/girls
+#+1554892554
+python manage.py migrate --settings=girls.settings
+#+1554892567
+python manage.py migrate --settings=girls.settings
+#+1554892582
+python manage.py collectstatic --settings=girls.settings
+#+1554892785
+pwd
+#+1554893043
+cd ../..
+#+1554893044
+ls
+#+1554893046
+cd ht
+#+1554893048
+cd htdocs/
+#+1554893049
+ls
+#+1554893055
+ls -a
+#+1554893060
+less .htaccess
+#+1554908612
+pip -h
+#+1554908684
+pwd
+#+1554908690
+cd www
+#+1554908691
+ls
+#+1554908714
+mkdir dj
+#+1554908715
+cd dj
+#+1554908717
+pwd
+#+1554908723
+mkdir test
+#+1554908725
+cd test/
+#+1554908727
+pwd
+#+1554908797
+touch .htaccess
+#+1554908813
+ls
+#+1554908820
+ls -a
+#+1554908847
+vim .htaccess
+#+1554908901
+ls
+#+1554908904
+ls -a
+#+1554909004
+touch django.cgi
+#+1554909091
+chmod +x django.cgi
+#+1554909315
+cd /home/inochi-gakusei/.local/bin/python
+#+1554909335
+cd home/inochi-gakusei/.local/bin/python
+#+1554909340
+which python
+#+1554909348
+cd
+#+1554909350
+cd /home/inochi-gakusei/.local/bin/python
+#+1554909354
+cd $HOME
+#+1554909356
+pwd
+#+1554909376
+cd $HOME/.local/bin/python
+#+1554909381
+cd $HOME/.local/bin
+#+1554909383
+pwd
+#+1554909384
+ls
+#+1554909396
+cd python
+#+1554909407
+cd /home/inochi-gakusei/.local/bin/
+#+1554909436
+cd /home
+#+1554909436
+ls
+#+1554909439
+cd bty
+#+1554909555
+pwd
+#+1554909558
+cd inochi-gakusei/
+#+1554909558
+ls
+#+1554909561
+cd dj
+#+1554909568
+cd www/dj
+#+1554909569
+ls
+#+1554909571
+cd test/
+#+1554909572
+pwd
+#+1554909722
+cd $HOME
+#+1554909724
+pwd
+#+1554909733
+mkdir django
+#+1554909734
+ls
+#+1554909737
+cd django/
+#+1554909738
+ls
+#+1554909747
+django-admin.py startproject testprj
+#+1554909751
+ls
+#+1554909806
+cd ..
+#+1554909812
+ks
+#+1554909813
+ls
+#+1554909819
+pwd
+#+1554909822
+cd www
+#+1554909824
+ls
+#+1554909830
+cd inochi-gakusei.sakura.ne.jp/
+#+1554909830
+ls
+#+1554909834
+cd ..
+#+1554909879
+pwd
+#+1554909881
+ls
+#+1554909918
+ls
+#+1554909926
+cd dj
+#+1554909930
+cd test
+#+1554909931
+ls
+#+1554909932
+pwd
+#+1554909953
+ls -a
+#+1554910044
+chmod +x django.cgi
+#+1554981325
+cd /var/log/
+#+1554981329
+bash

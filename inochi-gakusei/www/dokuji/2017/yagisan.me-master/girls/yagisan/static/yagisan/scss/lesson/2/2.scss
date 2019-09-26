@@ -1,0 +1,59 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+.lesson_wrap {
+  .lesson_content {
+    height: 400px;
+
+    .first {
+      border: #e2dfef solid 2px;
+
+      padding-left: 10px;
+      width: 720px;
+    }
+
+    .second {
+      border: #e2dfef solid 2px;
+
+      padding-left: 10px;
+      margin-top: 30px;
+      width: 720px;
+    }
+
+    .first_detail, .second_detail {
+      padding: 30px 0px 0px 20px;
+    }
+
+    .yagisan {
+      position: relative;
+      left: 800px;
+      bottom: 200px;
+      width: 150px;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .hukidashi {
+      position: relative;
+      left: 700px;
+      bottom: 420px;
+      width: 170px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

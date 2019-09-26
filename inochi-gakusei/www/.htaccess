@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} inochi-gakusei.sakura.ne.jp [NC]
+RewriteCond %{REQUEST_URI} !(^/inochi-gakusei.sakura.ne.jp) [NC]
+RewriteRule .* /inochi-gakusei.sakura.ne.jp/html%{REQUEST_URI} [L]

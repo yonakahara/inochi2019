@@ -1,0 +1,234 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+body {
+  background-color: $BasePink;
+}
+
+.lesson_header {
+  height: 90px;
+}
+
+.lesson_window {
+  margin: 0;
+}
+
+.question {
+
+  .question_desc {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .question_sentence {
+    position: absolute;
+    top: 250px;
+    width: 923px;
+    font-size: 3rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+
+  .question_buttons {
+    @include clearfix;
+    position: absolute;
+    top: 420px;
+    width: 800px;
+    margin: 50px 0 0 61.5px;
+
+    .question_button {
+      float: left;
+      width: 160px;
+      padding: 10px 0;
+      line-height: 30px;
+      font-size: 30px;
+      margin: 20px;
+      background-color: $BasePink;
+      text-align: center;
+      border-radius: 5px;
+      color: $BaseWhite;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .progressbar {
+    position: absolute;
+    top: 596px;
+    width: 923px;
+  }
+}
+
+.first_question {
+  .question_desc {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .question_sentence {
+    position: absolute;
+    top: 240px;
+    width: 923px;
+    font-size: 3rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+
+  .question_buttons {
+    @include clearfix;
+    position: absolute;
+    top: 440px;
+    width: 400px;
+    margin: 50px 0 0 261.5px;
+
+    .question_button {
+      float: left;
+      width: 160px;
+      padding: 10px 0;
+      line-height: 30px;
+      font-size: 30px;
+      margin: 20px;
+      background-color: $BasePink;
+      text-align: center;
+      border-radius: 5px;
+      color: $BaseWhite;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.pre_question {
+  .question_desc {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .pre_questions_sentence {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0 0 0;
+    font-size: 1.8rem;
+    color: $BasePink;
+    line-height: 50px;
+  }
+
+  .pre_questions {
+    width: 100%;
+
+    .pre_question {
+      @include clearfix;
+      width: 90%;
+      height: 100px;
+      margin: 0 5%;
+
+      .pre_question_sentence {
+        float: left;
+        line-height: 100px;
+        font-size: 1.4rem;
+      }
+
+      .pre_question_choices {
+        float: right;
+        line-height: 100px;
+
+        select {
+          padding: 5px 0 10px 10px;
+          font-size: 1.3rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          option {
+            line-height: 30px;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .pre_questions_buttons {
+    width:  100%;
+
+    .pre_questions_button {
+      width: 160px;
+      padding: 10px 0;
+      line-height: 30px;
+      font-size: 30px;
+      margin: 20px auto;
+      background-color: $BasePink;
+      text-align: center;
+      border-radius: 5px;
+      color: $BaseWhite;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.graphs {
+  @include clearfix;
+  width: 920px;
+
+  .graph_desc {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .graph_title {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .graph_center {
+    margin: 3% 19% 0 19%;
+    width: 62%;
+  }
+
+  .graph_left {
+    float: left;
+    margin: 0 0 0 2%;
+    width: 41.5%;
+  }
+
+  .graph_right {
+    float: left;
+    width: 56.5%;
+  }
+
+  .graph_button {
+    float: right;
+    width: 200px;
+    padding: 10px 0;
+    line-height: 30px;
+    font-size: 30px;
+    margin: 20px;
+    background-color: $BasePink;
+    text-align: center;
+    border-radius: 5px;
+    color: $BaseWhite;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

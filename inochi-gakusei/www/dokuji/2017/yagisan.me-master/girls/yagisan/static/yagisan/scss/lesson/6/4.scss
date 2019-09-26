@@ -1,0 +1,419 @@
+.lesson_content {
+  .clearfix:after { /*floatの解除、ここがポイント*/
+    display:block;
+    clear:both;
+    height:0px;
+    visibility:hidden;
+    content:".";
+  }
+  .clearfix {
+    min-height: 1px; /*IE6、7対策*/
+  }
+
+  .two, .three, .four, .five, .six {
+    margin-top: 100px;
+  }
+
+  .expressions_examples {
+    margin-bottom: 30px;
+
+    .expression_first_text, .expression_second_text, .expression_third_text {
+      width: 200px;
+      height: 40px;
+      border: 1px solid #5b468f;
+      padding: 10px 0px 10px 20px;
+    }
+
+    input.expression_first_text, input.expression_second_text, input.expression_third_text {
+      font-size: 1.4rem;
+    }
+  }
+
+
+  .yagi_note {
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid 1px #f18b9c;
+    border-radius: 20px;
+  }
+
+  .yagisan_kanban {
+    width: 40%;
+    float: left;
+
+    img {
+      width: 100%;
+    }
+
+    .kanban_message {
+      position: relative;
+      top: -300px;
+      left: 100px;
+
+      .kanban_title {
+        font-size: 1rem;
+        margin-bottom: 0px;
+      }
+      .kanban_detail {
+        font-size: 1rem;
+        margin-top: -10px;
+      }
+    }
+  }
+
+  .letter {
+    width: 60%;
+    float: left;
+    padding-top: 100px;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      width: 80%;
+      position: relative;
+      top: -170px;
+      left: 50px;
+    }
+  }
+
+  .one {
+    .letter {
+      position: relative;
+
+      textarea {
+        position: absolute;
+        top: 140px;
+        left: 40px;
+        width: 470px;
+        height: 150px;
+        border: none;
+      }
+    }
+  }
+
+  .two {
+    .yagisan_kanban {
+      .kanban_message {
+        position: relative;
+        top: -300px;
+        left: 60px;
+
+        .kanban_title {
+          font-size: 1rem;
+          margin-bottom: -10px;
+        }
+        .kanban_detail {
+          font-size: 1rem;
+          margin-top: -10px;
+        }
+      }
+    }
+
+    .expressions {
+      float: left;
+      width: 50%;
+      position: relative;
+      top: -100px;
+
+      .hukidashi {
+        width: 250px;
+        position: relative;
+        left: 200px;
+
+        img {
+          width: 100%;
+        }
+
+        p {
+          width: 200px;
+          position: relative;
+          top: -110px;
+          left: 30px;
+        }
+      }
+
+      .item {
+        float: left;
+        width: 100px;
+        border: 1px solid #5b468f;
+        margin-top: 20px;
+        margin-left: 30px;
+        padding: 10px 0px 10px 10px;
+      }
+    }
+
+    .yagi_note {
+      position: relative;
+      top: -80px;
+    }
+  }
+
+  .status_bar {
+    width: 400px;
+    margin: 30px 10px;
+
+    .gray {
+      width: 100%;
+      height: 80px;
+      background-color: silver;
+      border: 1px solid gray;
+
+      .purple {
+        width: 50%;
+        height: 80px;
+        background-color: purple;
+        text-align: center;
+
+        p {
+          padding-top: 20px;
+          height: 40px;
+          padding-bottom: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .three {
+    .yagi_note {
+      float: right;
+    }
+
+    .yagisan_kanban {
+      .kanban_message {
+        position: relative;
+        top: -300px;
+        left: 35px;
+      }
+    }
+
+    .letter {
+      position: relative;
+
+      textarea {
+        position: absolute;
+        top: 140px;
+        left: 40px;
+        width: 470px;
+        height: 150px;
+        border: none;
+      }
+    }
+
+    .yagi_note_second {
+      float: left;
+    }
+
+    .yagisan_kanban_second {
+      width: 100%;
+
+      img {
+        width: 40%;
+        float: left;
+      }
+
+      .kanban_message {
+        top: 75px;
+        left: -330px;
+
+        .kanban_title + p {
+          font-size: 1.05rem;
+        }
+      }
+
+      .status_bar {
+        float: left;
+        margin-top: 100px;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .four {
+    .left, .right{
+      height: 900px;
+      width: 47%;
+      float: left;
+
+      .kanban_hukidashi {
+        height: 550px;
+      }
+
+      .yagisan_kanban {
+        width: 90%;
+        margin-left: 0px;
+
+        .kanban_message {
+          position: relative;
+          left: 50px;
+          top: -310px;
+        }
+      }
+    }
+
+    .hukidashi {
+      position: relative;
+      top: 0px;
+      left: 0px;
+
+
+      p {
+        width: 150px;
+        font-size: 1rem;
+        position: relative;
+        top: -115px;
+        left: 40px;
+      }
+    }
+
+    .letter {
+      width: 100%;
+      position: relative;
+      top: 0px;
+
+      p {
+        font-size: 1rem;
+        top: -155px;
+      }
+
+      textarea {
+        position: absolute;
+        top: 135px;
+        left: 30px;
+        width: 370px;
+        height: 115px;
+        border: none;
+      }
+    }
+
+    .right {
+      margin-left: 50px;
+    }
+
+    .yagisan_kanban_second {
+      float: none;
+
+      .kanban_message {
+        position: relative;
+        left: 40px;
+        top: -295px;
+      }
+    }
+
+    .buts {
+      width: 100%;
+      height: 250px;
+
+      .left_but {
+        height: 200px;
+        width: 47%;
+        float: left;
+
+        .letter {
+          padding-top: 0px;
+
+          p {
+            line-height: 1.0;
+          }
+        }
+      }
+
+      .right_but {
+        height: 200px;
+        width: 47%;
+        float: left;
+        margin-left: 50px;
+
+        .letter {
+          padding-top: 0px;
+
+          p {
+            line-height: 1.0;
+          }
+        }
+      }
+
+      .but {
+        height: 50px;
+        width: 100%;
+        position: relative;
+        top: -130px;
+        text-align: center;
+
+        p {
+          height: 50px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .five {
+    .yagisan_kanban {
+      float: left;
+      width: 30%;
+      position: relative;
+      top: 100px;
+
+      .kanban_message {
+        left: 25px;
+        top: -225px;
+
+        .kanban_title, p {
+          font-size: 0.8rem;
+        }
+
+        .kanban_title + p {
+          margin-top: -10px;
+        }
+      }
+    }
+
+    .letter {
+      float: left;
+      width: 70%;
+      padding-top: 50px;
+      height: 650px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 600px;
+      }
+
+      p {
+        font-size: 1rem;
+        position: relative;
+        top: -490px;
+      }
+
+      textarea {
+        position: absolute;
+        top: 160px;
+        left: 40px;
+        width: 560px;
+        height: 380px;
+        border: none;
+      }
+    }
+  }
+
+  .six {
+    .yagisan_kanban {
+      float: left;
+
+      .kanban_message {
+        top: -280px;
+      }
+    }
+
+    .expressions_examples {
+      float: left;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  }
+}

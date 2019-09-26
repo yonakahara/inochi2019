@@ -1,0 +1,61 @@
+{% extends "yagisan/lesson/4/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <!-- <h3>八木さんと学ぶ会話講座</h3> -->
+  <div class='lesson_content'>
+    <p>では、職場におけるストレスを感じやすいシチュエーションを提示します。 <br> これから紹介するポイントを意識しながら考えましょう。</p>
+
+    <div class="example">
+      <div class="DES">
+        <div class="title">
+          <p>（例１）会議中のあなた。すでに３時間たって周りの社員も疲れて生産性が落ちてきました。</p>
+        </div>
+        <div class="illust">
+          <img src="{% static 'yagisan/img/lesson/4/3/illust.png' %}" alt="">
+        </div>
+        <div class="D">
+          <p class="message">「そろそろ会議を始めてから３時間が経ちましたね」</p>
+          <p>自分が取り上げようとしている状況や問題を描写します。</p>
+          <div class="icon">
+            <img src="{% static 'yagisan/img/lesson/4/3/green.png' %}" alt="">
+            <p>D:具体的な事実</p>
+          </div>
+          <!-- <div class="hukidashi">
+            <img src="{% static 'yagisan/img/lesson/4/3/hukidashi.png' %}" alt="">
+            <p>客観的に状況だけを入れ、事実のみを伝える</p>
+          </div> -->
+        </div>
+        <div class="E">
+          <p class="message">「もうアイデアが出なくなってきました」</p>
+          <p>自分の気持ち・考え・意見などをアサーティブに表現します。
+            その際は、Ｉ（アイ）メッセージで、「私はこう感じています。」と自分の気持ちをわかりやすく伝えます。
+            そうすることで自分の気持ちや考えを 相手に伝えるとき、自分の発言に責任を 持つことになります。</p>
+          <div class="icon">
+            <img src="{% static 'yagisan/img/lesson/4/3/pink.png' %}" alt="">
+            <p>E:自分の感情</p>
+          </div>
+          <!-- <div class="hukidashi">
+            <img src="{% static 'yagisan/img/lesson/4/3/hukidashi.png' %}" alt="">
+            <p>攻撃的・感情的にならない</p>
+          </div> -->
+        </div>
+        <div class="S">
+          <p class="message">「今日はいったん終わりにして明日各自考えてきたアイデアを共有しませんか？」</p>
+          <p>相手に、取って欲しい行動、お願いしたい事などを具体的に提案します。</p>
+          <div class="icon">
+            <img src="{% static 'yagisan/img/lesson/4/3/blue.png' %}" alt="">
+            <p>S:提案</p>
+          </div>
+          <!-- <div class="hukidashi">
+            <img src="{% static 'yagisan/img/lesson/4/3/hukidashi.png' %}" alt="">
+            <p>「～しなさい」といった命令ではなく、あくまで「～はどうか」といった提案をすること</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

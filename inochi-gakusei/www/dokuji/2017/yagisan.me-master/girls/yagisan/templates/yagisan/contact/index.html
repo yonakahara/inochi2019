@@ -1,0 +1,39 @@
+{% extends "yagisan/base.html" %}
+{% load static %}
+{% block body %}
+
+<div id="contact" class="contact">
+  <div class="contact_content">
+    <div class="contact_title">
+      <img src="{% static 'yagisan/img/contact/contact_title.png' %}">
+    </div>
+    <div class="contact_form">
+      <form>
+        <div class="contact_form_part">
+          <div class="contact_form_title">
+            お名前（必須）
+          </div>
+          <input class="contact_form_input_text" type="text" name="name" placeholder="八木みるく">
+        </div>
+        <div class="contact_form_part">
+          <div class="contact_form_title">
+            メールアドレス（必須）
+          </div>
+          <input class="contact_form_input_text" type="text" name="email" placeholder="milk@yagisan.me">
+        </div>
+        <div class="contact_form_part">
+          <div class="contact_form_title">
+            お問い合わせ内容
+          </div>
+          <textarea class="contact_form_input_textarea" name="content" placeholder="..." rows="6"></textarea>
+        </div>
+        <div id="contact_form_submit" class="contact_form_submit">
+          <img src="{% static 'yagisan/img/contact/contact_form_submit.png' %}" class="default">
+          <img src="{% static 'yagisan/img/contact/contact_form_submit_over.png' %}" class="over offscreen">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

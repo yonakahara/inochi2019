@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+
+// ■ Mixin  [update:2016/04/04]
+
+
+//=============================================================
+//  基本要素
+//=============================================================
+
+// Size
+//-------------------------------------------------------
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+// Border
+//-------------------------------------------------------
+.border(@color:#ff0000, @size:1px){
+    border:@size solid @color;
+}
+
+// Background
+//-------------------------------------------------------
+.bgc(@color:#ff0000){
+    background-color:@color;
+}
+
+// Font
+//-------------------------------------------------------
+.font(@font-size:14px, @color:inherit, @font-weight:inherit){
+    font-size:@font-size;
+    font-weight:@font-weight;
+    color:@color;
+}
+
+// Opacity
+//-------------------------------------------------------
+.opacity(@opacity) {
+    opacity: @opacity / 100;
+    filter: ~"alpha(opacity=@{opacity})";
+}
+
+// calc (第2引数はStringで)
+// https://w3g.jp/blog/css3_calc_function
+// http://qiita.com/feo52/items/b1f502f5329e591ba165
+// http://stackoverflow.com/questions/17904088/disable-less-css-overwriting-calc
+//-------------------------------------------
+.calc(@prop, @val) {
+    @{prop}: calc(~'@{val}');
+    @{prop}: -webkit-calc(~'@{val}');
+}
+
+
+//=============================================================
+//  位置指定
+//=============================================================
+
+// position:absolute
+//-------------------------------------------------------
+.position-absolute(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "TL"){
+    position: absolute;    left: @x;    top: @y;    z-index: @z-index;
+}
+.position-absolute(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "TR"){
+    position: absolute;    right: @x;   top: @y;   z-index: @z-index;
+}
+.position-absolute(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "BL"){
+    position: absolute;    left: @x;    bottom: @y;    z-index: @z-index;
+}
+.position-absolute(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "BR"){
+    position: absolute;    right: @x;   bottom: @y;    z-index: @z-index;
+}
+
+// position:fixed
+//-------------------------------------------------------
+.position-fixed(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "TL"){
+    position: fixed;    left: @x;    top: @y;    z-index: @z-index;
+}
+.position-fixed(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "TR"){
+    position: fixed;    right: @x;   top: @y;    z-index: @z-index;
+}
+.position-fixed(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "BL"){
+    position: fixed;    left: @x;    bottom: @y;    z-index: @z-index;
+}
+.position-fixed(@x:0px, @y:0px, @z-index:auto, @align:"TL") when(@align = "BR"){
+    position: fixed;    right: @x;   bottom: @y;    z-index: @z-index;
+}
+
+// 天地左右中央寄せ
+// (※親要素にposition:relative）
+// http://yoshiko-pg.github.io/slides/20151215-scripty/#18
+//-------------------------------------------------------
+.position-middle(){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+// 天地左右中央寄せ（微調整可）
+// (※親要素にposition:relative)
+//-------------------------------------------------------
+.position-middle-ex(@width:auto, @height:auto, @left:0px, @top:0px){
+    position: absolute;
+    top: @top;
+    left: @left;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: @width;
+    height: @height;
+}
+
+
+
+//  imgの縦横比を保ったまま div 内に上下左右中央寄せで収める。ただし拡大はしない。
+//  http://bashalog.c-brains.jp/15/08/17-100000.php
+//-------------------------------------------------------
+.bounding-box(@width, @height){
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: @width;
+    height: @height;
+    img {
+        width:auto;
+        height:auto;
+        max-width:@width;
+        max-height:@height;
+    }
+}
+
+
+//=============================================================
+//  FlexBox
+//  http://liginc.co.jp/web/html-css/css/21024
+//  ※ IE10+
+//  ul > li に対する ul に使ってください。
+//=============================================================
+
+// float + Clearfix と同義
+//-------------------------------------------------------
+.flexbox(@align:left){
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-box; // old
+    display:-webkit-flex; // new
+    display:flex;
+    -webkit-justify-content:@align;
+    justify-content:@align;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+
+//=============================================================
+//  角丸・縁取り文字・ドロップシャドウ・テキストシャドウ
+//=============================================================
+
+// Border-Radius
+// ---------------------------------------------
+.border-radius(@radius: 8px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+// Box-Shadows
+// ---------------------------------------------
+.box-shadow(@x:0px, @y:0px, @blur:8px, @opacity:0.8){
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @opacity);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @opacity);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @opacity);
+}
+
+// 縁取り文字
+// http://liginc.co.jp/web/html-css/css/70065
+//-----------------------------------------
+.text-edge(@color:#000, @size:1px){
+    // 外側
+    text-shadow:@color @size @size 0px,
+        @color -@size @size 0px,
+    @color @size -@size 0px,
+        @color -@size -@size 0px;
+}
+
+// Text-Shadows
+// ---------------------------------------------
+.text-shadow(@x:0px, @y:0px, @blur:8px, @r:255,@g:255,@b:255,@opacity:0.8){
+    -webkit-text-shadow: @x @y @blur rgba(@r, @g, @b, @opacity);
+    -moz-text-shadow: @x @y @blur rgba(@r, @g, @b, @opacity);
+    text-shadow: @x @y @blur rgba(@r, @g, @b, @opacity);
+}
+
+
+//=============================================================
+//  エフェクト (keyframes や transition を使う)
+//=============================================================
+
+// [用途] div.zoom > img
+// マウスオーバー時に img を拡縮する
+// 注：width, height を併記すること
+// http://webya-tm.com/archives/1703
+//-------------------------------------------------------
+.zoomEffect(@second:0.3s, @scale:1.1){
+    overflow: hidden;
+    img{
+        -webkit-transition:@second ease-in-out;
+        -moz-transition:@second ease-in-out;
+        -ms-transition:@second ease-in-out;
+        -o-transition:@second ease-in-out;
+        transition:@second ease-in-out;
+        &:hover{
+            -webkit-transform:scale(@scale,@scale);
+            -moz-transform:scale(@scale,@scale);
+            -ms-transform:scale(@scale,@scale);
+            -o-transform:scale(@scale,@scale);
+            transform:scale(@scale,@scale);
+        }
+    }
+}
+// .clip に対して反映（親要素に overflow:hidden）
+.zoomEffectForClip(@second:0.3s, @scale:1.1){
+    .transition(@second);
+    &:hover{   transform:scale(@scale, @scale);   }
+}
+
+// flash:keyframes 単位は[s]
+//-------------------------------------------------------
+.flashEffect(@second:1.0s){
+    -webkit-animation: flash @second;
+    -moz-animation: flash @second;
+    -ms-animation: flash @second;
+    animation: flash @second;
+}
+
+// spin:keyframes 単位は[s]
+//-------------------------------------------------------
+.spinEffect(@second:1.3s){
+    -webkit-animation: spin @second linear infinite;
+    -moz-animation: spin @second linear infinite;
+    -ms-animation: spin @second linear infinite;
+    -o-animation: spin @second linear infinite;
+    animation: spin @second linear infinite;
+}
+
+// transition 単位は[s]
+//-------------------------------------------------------
+.transition(@second:0.4s){
+    -webkit-transition: all @second ease-in;
+    -moz-transition: all @second ease-in;
+    transition: all @second ease-in;
+}
+.transition-cubic(@second:0.4s){
+    -webkit-transition: all @second cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all @second cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all @second cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+//=============================================================
+//  便利機能
+//=============================================================
+
+// Clearfix
+//-------------------------------------------------------
+.clearfix(){
+    &:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+}
+
+// User-Select:none
+//-------------------------------------------------------
+.no-selectable(){
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+
+	//フォーカスされたときのハイライトを無効化（透過）する
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// フォーム要素のスタイルをリセット
+// http://terkel.jp/archives/2010/08/reset-input-type-search-style/
+// http://webdev.jp.net/webkit-appearance-defaurt-reset/
+//-------------------------------------------------------
+.reset-form-ui(){
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+// 丸型にクリッピングする。
+// .clip-circle > img の条件で使う
+// 親要素に posirion:relative 指定すること。
+// clip-path と border-radius の組み合わせはバグる時がある
+//-------------------------------------------------------
+.clip-circle(@width, @height){
+    -webkit-clip-path: circle(50% at center);
+    clip-path: circle(50% at center);
+    width: @width;
+    height: @height;
+    img{
+        width: @width;
+        height: @height;
+    }
+}
+
+// 「続きを読む」の三点リーダーでテキストを省略する/解除する
+//-------------------------------------------------------
+.set-text-trimming(){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.clear-text-trimming(){
+    overflow: auto;
+    text-overflow: clip;
+    white-space: normal ;
+}
+// 複数行対応（webkitのみ）
+// http://m.designbits.jp/15012611/
+.setTextTrimmingMulti(@numLine:2){
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @numLine;
+}
+
+
+//  カード反転させるやつ
+//  http://nh-lab.com/flipping-animetion/
+//  http://kimizuka.hatenablog.com/entry/2014/07/11/000000
+//-------------------------------------------------------
+.transform__rotateY(@deg:0deg){
+    -webkit-transform: rotateY(@d);
+    -moz-transform: rotateY(@d);
+    -ms-transform: rotateY(@d);
+    transform: rotateY(@d);
+}
+.perspective(@value){
+    -webkit-perspective: @value;
+    -moz-perspective: @value;
+    -ms-perspective: @value;
+    perspective: @value;
+}
+.backface-visibility__hidden(){
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+//=============================================================
+//  ライブラリ用
+//=============================================================
+
+// Font Awesome
+// http://fontawesome.io/icons/
+//-------------------------------------------------------
+.font-awesome(@unicode:"\f087", @font-size:16px){
+    font-family: FontAwesome;
+    content: @unicode;
+    font-size: @font-size;
+}
+
+

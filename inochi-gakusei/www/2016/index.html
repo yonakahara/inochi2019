@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta name="description" content="向き合おう、inochiと―。inochi学生フォーラム2016は「日本の心臓突然死を減らす」というテーマの問題解決型実施プログラム。関西圏の中高生&amp;全国の大学生・大学院生&amp;世界の大学生・大学院生がヘルスケア課題解決に挑みます。">
+ 	<meta name="keywords" content="inochi学生フォーラム,inochi,学生,フォーラム,プロジェクト,2016,阪大,京大,医療,ヘルスケア,若者,関西,心臓突然死">
+ 	<meta property="og:image" content="img/share.png">
+ 	<meta property="og:description" content="向き合おう、inochiと―。inochi学生フォーラム2016は「日本の心臓突然死を減らす」というテーマの問題解決型実施プログラム。関西圏の中高生&amp;全国の大学生・大学院生&amp;世界の大学生・大学院生がヘルスケア課題解決に挑みます。">
+    <title>inochi学生フォーラム2016</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- read Bootstrap　CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <!-- read jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- read Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	var sliderImg = $('.bxslider li.box').length;
+    	if(sliderImg > 1){
+	      $('.bxslider').bxSlider({
+	      	auto: 'true',
+	      	speed: 1000,
+	      	pause: 8000,
+	      	easing: 'liner'
+	      });
+  		}
+    });
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <!--Analytics-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-78321708-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+  </head>
+  <body id="body">
+    <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+  	<header>
+    	<audio src="img/bgm.mp3" control="true" autoplay loop id="aud"></audio>
+    	<video id="video" control="true" src="img/animated.mp4" loop autoplay></video>
+    	<img id="animation" src="img/animated.gif">
+    	<a onclick="mute();" id="bgm">BGM OFF X</a>
+		<h1 class="top-title" style="width:auto;"><img src="img/title1.png" alt="title" /></h1>
+		<div class="social">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="「心臓突然死減少へ」若者がデザイン思考とテクノロジーを使って挑む教育&amp;プラン実現プログラム【inochi学生フォーラム】" data-hashtags="inochi_gakusei">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			<div class="fb-like" id="facebook" data-href="http://inochi-gakusei.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+		</div>
+		<!--
+		<div style="background:url(img/top_background.png);">
+	    	<img class="animation_in" id="top_num" src="img/number.png" alt="228">
+	    	<h3 class="header">心原性心肺機能停止で救急搬送される人数=年間で中学校228校分<br></h3>
+	    	<h4 class="header">向き合おう、inochiと。</h4>
+	    	<div id="top_info">
+		    	<p class="header">inochi Education Program</p>
+		    	<h3 class="header2">July-November</h3>
+		    	<p class="header">inochi学生フォーラム</p>
+		    	<h3 class="header2">Dec. 23 (金・祝)</h3>
+		    	<a href="/voting/"><h3 class="header" id="header_ex"><img src="img/title3.png"><strong>大学生提案プラン<br>Web投票実施中!!</strong></h3></a>
+	    	</div>
+    	</div>
+    	-->
+	</header>
+
+	<nav class="navbar" role="navigation">
+		<div class="container-fluid">
+
+			<!-- for SP -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu-4">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="nav-menu-4">
+				<ul class="nav nav-pills nav-justified">
+					<li><a href="#top">TOP</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#supporters">SUPPORTER<span class="br_pc">S</span></a></li>
+					<li><a href="#sponsors">SPONSORS</a></li>
+					<li><a href="#schedule">SCHEDULE</a></li>
+					<li><a href="#entry">ENTRY</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#organize">ORGANIZER</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--floating contents-->
+	<span class="anchor animation_in ani_exception">
+		<a class="hover_tr" href="simulator/index.html" target="_blank">
+			<img src="img/side_simulator.png" class="side_contents" id="simulator">
+		</a>
+	</span>
+	<span class="anchor2">
+		<a href="en/index.html">
+			<img src="img/translation_toen.png" onmouseover="this.src='img/translation_toen2.png'" onmouseout="this.src='img/translation_toen.png'">
+		</a>
+	</span>
+
+
+	<!--main contents-->
+  	<div class="container-fluid">
+
+  	<a href="http://inochi-gakusei.com/2016/forum/" target="_blank">
+  	<div id="for_forum">
+  		<div class="fadeInDown" id="link_forum">
+  				<p id="head-text" style="top:200px;color:#10253f;font-size:2.8rem;"><span style="font-size:4.2rem;"><img src="img/title2.png" style="width:100%;"></span><br>イベント特設ページ<br><span style="font-size:1.2rem;">※本イベントは終了いたしました。</span></p> 
+	    </div>
+	</div>
+	</a>
+
+  		<!--leadcopy-->
+    	<div class="row row_w animation_in" id="leadcopy">
+    		<h3 class="leadcopy">
+    		inochiを救う、なんて大それた考え？<br>医者にだけ許された考え？<br>誰がそんなこと決めたんだ。<br><br>目の前に、ボクらが救えるかもしれないinochiがある。<br>ボクらがほんの少し考えと行動を変えさえすれば、<br class="br_pc">今でも輝き続けていたかもしれないinochiがある。<br>理由なんか、それだけで十分。<br><br>世界の死因のトップ、心疾患。<br>日本での心原性心肺機能停止による救急搬送、年間76,141件。<br>そのうち市民に目撃されて生存した割合、<br class="br_sp">たった4%。<br><br>救えるはずのinochiを、救おう。
+    		</h3>
+    		<h4 class="leadcopy">向き合おう、inochiと。</h4>
+    		<h3 class="leadcopy"><strong>心臓突然死(心原性心肺機能停止による急死)を減らすために<br class="br_pc">私たちの一歩で、一体何人の人を救えるのか、シミュレーションしてみましょう。</strong></h3>
+    		<a href="simulator/index.html" target="_blank"><div id="simulation"><img src="img/calculator.png" width="40px" style="vertical-align:middle;"><h3 id="simulation"><strong>inochiシミュレータ</strong></h3></div></a>
+    	</div>
+
+  		<!--about-->
+    	<div class="row row_n" id="about">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8" id="about_area">
+	    		<h1>ABOUT</h1>
+	    		<h3>inochi学生フォーラムとは</h3>
+	    		<h4 class="animation_in ani_exception" id="theme">THEME:<br class="br_sp"> <strong><span style="color:#cc2f1f;">心</span>臓突然死を<span class="br_pc">、</span>減らせ<span class="br_pc">。</span></strong></h4>
+	    		<div class="col-sm-4" id="explanation">
+	    			<h4>OUTLINE</h4>
+	    			<p>「日本の心臓突然死を減らす」というテーマの問題解決型実施プログラムを実施します。<br/>KANSAI中高生TEAM（関西圏の中高生チーム）とGLOCAL大学生TEAM（<span class="br_pc">全国・</span>全世界の大学生チーム）が、研修期間にリーダーシップ・デザイン・医療についての約500分の研修を受講し、各TEAMで案を練ります。フォーラム当日は選ばれた中高生2チーム、大学生3チームが心臓突然死を減らすプランを発表します。また同日、有識者によるパネルディスカッションや講演も実施予定です。</p>
+		    		<div style="text-align:center;"><a href="http://www.inochi-youth.com/" target="_blank"><div id="last_link"><h3 id="last_link"><strong>昨年度の様子</strong></h3></div></a></div>
+	    		</div>
+	    		<div class="col-sm-8" id="values">
+	    			<div id="value1">
+		    			<h4>IDEA CREATION</h4>
+	    				<p>「心臓突然死を減らす」という課題に対してチームで解決プランを考えていきます。「デザイン思考」という課題解決のフレームワークを学びながら、若者ならではの視点でプランを考案しぜひ社会にインパクトのあるアイデアを世に発信してください。</p>
+	    			</div>
+	    			<div id="value2">
+		    			<h4>SOLVE IT GLOCALLY</h4>
+	    				<p>参加対象は関西圏の中高生・国内の大学生のみならず、全世界の大学生です。なかでも、オックスフォード大学など、一流大学からの参加者が名乗りをあげています。日本の課題を、世界の選りすぐりの頭脳とともにグローバルレベルで解く。そして、世界から、そして日本全国から集まった参加者が自らのローカル圏で学びを還元する、inochi Gakusei Forumはそんな「GLOCAL」モデルです。</p>
+	    			</div>
+	    			<div id="value3">
+		    			<h4>EXCLUSIVE EDUCATION</h4>
+	    				<p>incohi Gakusei Forumは、ただアイデアを発表するだけのイベントではありません。その真価はイベント当日までのぎっしりつまった教育コンテンツ「inochi Education Program」にあります。医療界のトップランナーや、経営・ICT・アイデア発想の第一人者による講義・ワークショップを経て、医療イノベータ―としての素養を学んでいきます。関西圏の中高生は直接講義・その他の参加者はオンライン授業としてこれらの教育プログラムを受講します。</p>
+	    			</div>
+	    		</div>
+    		</div>
+    		<div class="col-sm-2"></div>
+    	</div>
+    	<div class="row row_w" id="about">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8" id="about_area">
+	    		<h4>MESSAGE</h4>
+	    		<div style="padding-left:50px;text-align:left;padding-bottom:30px;">
+		    		<div style="display:inline-block;">
+		    			<img src="img/pic1.jpg" style="float:left;display:inline-block;vertical-align:middle;width:200px">
+		    		</div>
+		    		<div id="message">
+		    			<p>inochi未来プロジェクト理事長　<br class="br_sp">大阪大学医学系研究科長・<br class="br_sp">医学部長</p>
+		    			<h4>澤 芳樹</h4>
+		    			<p >関西を、医療の国際拠点に。<br/>私は大阪で生まれ、育ち、学んだ心臓外科医です。<br/>再生医療を中心とした心臓病の患者さんへの治療を行っています。<br/>国家戦略特区に選ばれた関西は、充実した医療技術・研究・施設が揃い、この街こそが「未来医療 健康都市」にふさわしいと確信しています。<br/>そして考えられることは、十年後もこの街、関西で持続的に医療を発展させていくには若者の力が不可欠だということです。<br/>若者でありながら医療界にイノベーションを起こすことができる今回のようなプロジェクト、これは真の医療者を目指す皆さんにとって、自らの志を見つめなおし世界を変える力をつける最良の機会であると確信しています。<br/>このinochi学生フォーラムを通し、皆さんが未来の関西の医療を背負うリーダーとなることを心から応援しております。</p>
+		    		</div>
+	    		</div>
+	    		<h4>FEATURES</h4>
+	    		<div id="feature_container">
+	    			<div id="feature_col">
+	    				<img src="img/feature1.png">
+	    				<h3><strong>阪大・京大医学部生との<br class="br_sp">二人三脚サポート体制!!</strong></h3>
+	    				<p>研修期間には有識者からの講義を受けていただく他、京都大学・大阪大学の医学部を中心とする学生から綿密な指導が受けられます。各TEAMで用意したプレゼンテーションの進捗確認・プランの作成及び実施の支援を行いますので、安心して参加していただくことが可能です。</p>
+	    			</div>
+	    			<div id="feature_col">
+	    				<img src="img/feature2.png">
+	    				<h3><strong>最先端医療施設・研究施設への<br class="br_sp">無料見学チャンス!!</strong></h3>
+	    				<p>最先端研究機関を見学し、実際に最先端の研究をされている第一人者の方のお話が伺える貴重なチャンスです。今年度は理化学研究所の<a href="http://www.cdb.riken.jp/">多細胞システム形成研究センター（CDB）</a>・<a href="http://www.clst.riken.jp/ja/">ライフサイエンス技術基盤研究センター（CLST）</a>を訪問します。</p>
+	    			</div>
+	    			<div id="feature_col">
+	    				<img src="img/feature3.png">
+	    				<h3><strong>考案したプランはイベント後に<br class="br_sp">実現化を徹底支援</strong></h3>
+	    				<p>考案されたプランの中から優秀なアイデアについては、応援していただける協賛企業により実現化を支援させていただきます。また、inochi学生プロジェクトとしてもイベント後のプランの実現をノウハウ・コネクションを活かして支援いたします。</p>
+	    			</div>
+	    		</div>
+	    		<div class="animation_in" style="text-align:center;"><h3 class="entry_ex" id="prize"><strong>優勝チームには賞金15万円!!</strong></h3><h3 class="entry_ex"><strong>今年度の参加応募は終了致しました。<br>たくさんのご応募ありがとうございました。</strong></h3></div>
+	    	</div>
+	    	<div class="col-sm-2"></div>
+	    </div>
+
+  		<!--supporters-->
+    	<div class="row row_w" id="supporters">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8" id="supporters_area">
+	    		<h1>SUPPORTER<span class="br_pc">S</span></h1>
+	    		<h4>inochi Mirai Project Board Members</h4>
+	    		<h3>サポーター/inochi未来プロジェクト理事会メンバー</h3>
+				<div id="member">
+					<div class="inner">
+						<ul>
+							<li>
+								<img src="img/member01.jpg" width="168" height="216" alt="" class="img">
+								<div class="data">
+									<p class="name">澤 芳樹（理事長）</p>
+									<p class="txt">
+									大阪大学大学院<br />
+									医学系研究科長・<br class="br_sp">医学部長<br />
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="img/member02.jpg" width="168" height="216" alt="" class="img">
+								<div class="data">
+									<p class="name">上本 伸二</p>
+									<p class="txt">
+									京都大学<br />
+									肝胆膵・移植外科教授
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="img/member03.jpg" width="168" height="216" alt="" class="img">
+								<div class="data">
+									<p class="name">高橋 政代</p>
+									<p class="txt">
+									理化学研究所網膜再生医療研究開発プロジェクト<br />
+									プロジェクトリーダー
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="img/member04.jpg" width="168" height="216" alt="" class="img">
+								<div class="data">
+									<p class="name">鈴木 寛</p>
+									<p class="txt">
+									大阪大学大学院<br />
+									医学系研究科招聘教授
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="img/member05.jpg" width="168" height="216" alt="" class="img">
+								<div class="data">
+									<p class="name">原 丈人</p>
+									<p class="txt">
+									内閣府本府参与<br />
+									アライアンス・フォーラム財団代表理事
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="img/member06.jpg" width="168" height="216" alt="" class="img">
+								<div class="data">
+									<p class="name">村上 雅義</p>
+									<p class="txt">
+									先端医療振興財団<br />
+									専務理事
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div><!-- /inner -->
+				</div><!-- /member -->
+	    		<h4>Special Supporters</h4>
+	    		<h3>サポーター/企画特別サポーター</h3>
+
+			    <div class="spe_sup">
+			        <ul class="bxslider">
+			            <li class="box">
+			            	<div id="member">
+			            	<ul>
+			            		<li>
+			            			<img src="img/sup01.jpg" width="168" height="216" alt="">
+			            			<p class="name">千田　いずみ</p>
+			            			<p>京都橘大学<br/>　健康科学部救急救命学科 助教</p>
+			            		</li>
+			            		<li>
+			            			<img src="img/sup02.jpg" width="168" height="216" alt="">
+			            			<p class="name">西山　知佳</p>
+			            			<p>京都大学大学院医学研究科<br>　人間健康科学系専攻<br/> 臨床看護学講座<br>　クリティカルケア看護学分野 講師</p>
+			            		</li>
+			            	</ul>
+			            	</div>
+			            </li>
+       			        <li class="box">
+			            	<div id="member">
+			            	<ul>
+ 			            		<li>
+			            			<img src="img/sup03.jpg" width="168" height="216" alt="">
+			            			<p class="name">松本 政明</p>
+			            			<p>堺市西消防署</p>
+			            		</li>
+			            	</ul>
+			            	</div>
+			            </li>
+			        </ul>
+			    </div>
+
+	    		<h1>ADVISERS</h1>
+	    		<h3>企画アドバイザー</h3>
+	    		<div id="adviser_container">
+	    			<div id="adviser_col">
+	    				<img src="img/adv1.jpg"class="profile">
+	    				<p>減らせ突然死プロジェクト事務局長<br/>PUSHプロジェクト　代表<br/>京都大学　環境安全保健機構　教授</p>
+	    				<img src="img/adv_logo1.png" class="logo">
+	    				<h4>石見 拓</h4>
+	    				<p id="adv_text">inochi学生フォーラム2016に<br class="br_sp">参加されるみなさんへ<br/><br/>医学・医療の発展は目覚ましいものがありますが、健康や病気への関心を広げ、行動を起こす人の輪を広げることで、まだまだ救える命はたくさんあります。心臓突然死はその代表的な例です。突然死に関心を持ち、予防したり、いざというときに行動を起こすことができる人が増えることで助けられる命があります。若い皆さんだからこそできること、広がりが必ずあるはずです。 <br/><br/>皆さんの新しい発想、エネルギー、ネットワークを活かして『救いうる命を救う』取り組みが数多く生まれることを期待しています！</p>
+	    			</div>
+	    			<div id="adviser_col">
+	    				<img src="img/adv2.png" class="profile">
+	    				<p>ジャパンバイオデザイン　<br class="br_sp">プログラムディレクター<br/>大阪大学国際医工情報センター <br class="br_sp">特任准教授</p>
+	    				<img src="img/adv_logo2.jpg" class="logo">
+	    				<h4>八木 雅和</h4>
+	    				<p id="adv_text">若きアントレプレナー様<br/><br/>世界を変えたいと思いませんか？<br/>昨日より今日，今日よりももっと素晴らしい明日に向かって，より良い1分後のために，今，行動しましょう．難しいことではありません．<br/>困ってる人，苦しんでいる人に寄り添って，何が本当の問題なのかを明らかにする．そして，問題をひとつひとつ解決していく．そうすることで，みなさんの目に映る世界は大きく変わる可能性があります．<br/><br/>素晴らしい仲間とともに，ぜひ，<br class="br_sp">より良い世界を実現してください．<br/>皆さんのプロジェクトに関われること，とても光栄に感じています．<br/><br/>お会いできるのを楽しみにしています．</p>
+	    			</div>
+	    		</div>
+    		</div>
+    		<div class="col-sm-2"></div>
+    	</div>
+
+  		<!--sponsors-->
+    	<div class="row row_w" id="sponsors">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8" id="sponsors_area">
+	    		<h1>SPONSORS</h1>
+	    		<h3>inochi学生フォーラム協賛企業</h3>
+	    		<h4>GOLD SPONSORS</h4>
+	    		<div class="row">
+		    		<div class="col-sm-1"></div>
+		    		<div class="col-sm-4 mid" id="gol"><img src="img/spo_gol.png"></div>
+		    		<div class="col-sm-2"></div>
+		    		<div class="col-sm-4 mid" id="gol"><img src="img/spo_gol2.png" id="gol_2"></div>		    				    		
+		    		<div class="col-sm-1"></div>
+	    		</div>
+	    		<h4>SILVER SPONSORS</h4>
+	    		<div class="row">
+	    			<div class="col-sm-1"></div>
+		    		<div class="col-sm-3 mid" id="sil"><img src="img/spo_sil1.png"></div>
+		    		<div class="col-sm-1"></div>
+		    		<div class="col-sm-3 mid" id="sil"><img src="img/spo_sil2.png"></div>
+		    		<div class="col-sm-1"></div>
+		    		<div class="col-sm-3 mid" id="sil"><img src="img/spo_sil3.png" id="sil_3"></div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-sm-1"></div>
+	    			<div class="col-sm-3 mid mid2" id="sil"><img src="img/spo_sil4.png"></div>
+	    			<div class="col-sm-1"></div>
+	    			<div class="col-sm-3 mid mid2" id="sil"><img src="img/spo_sil5.jpg"></div>
+	    		</div>
+	    		<h4>SPONSOR MESSAGE</h4>
+	    		<div style="margin-top:40px;padding-left:50px;text-align:left;padding-bottom:30px;border-bottom:1.5px solid #10253f;">
+		    		<div style="display:inline-block;">
+		    			<img src="img/kawai.jpg" style="float:left;display:inline-block;vertical-align:middle;width:200px">
+		    		</div>
+		    		<div id="message">
+		    			<p>学校法人河合塾 理事長</p>
+		    			<h4>河合 弘登 <span style="font-size:2.4rem;">様</span></h4>
+		    			<p style="margin-top:20px;">inochiと向き合い、救えるはずのinochiを救う。<br/>このようなすばらしいプロジェクトを、若い皆さんが動かしていることを大変うれしく思います。目の前のinochiを救うには、何よりも私たち一人ひとりが考え、行動を起こすことが大切です。このプロジェクトがそのきっかけになることを願うとともに、心より応援申し上げます。</p>
+		    		</div>
+	    		</div>
+    			<div style="text-align:center;margin-top:30px;margin-bottom:40px;">
+    			<img src="img/senpai.png" id="senpai">
+    			<h3 class="entry_ex" id="prize"><strong>「ゲンバのセンパイ」<br>協力者募集中!!</strong></h3>
+    			<h3 class="entry_ex"><strong><font color="#cc2f1f">若者の可能性に、<br class="br_sp">賭けてほしい。</font><br>inochi学生プロジェクトでは、フォーラム参加生徒・学生のために<br class="br_pc">現場へのインタビューやアドバイス提供にご協力いただける<br class="br_pc">医療関係従事者様・企業様を探しております。<br>ご協力いただける方は氏名・ご所属をご記載の上、以下のアドレスにご連絡ください。<br>ご協賛をお考えの場合も、以下アドレスよりご連絡ください。</strong></h3>
+    			<img src="img/info.png" width="300px"></div>
+    		</div>
+    		<div class="col-sm-2"></div>
+    	</div>
+
+  		<!--schedule-->
+    	<div class="row row_n" id="schedule">
+    		<div class="col-sm-2"></div>
+    		<div class="col-sm-8">
+	    		<h1>SCHEDULE</h1>
+	    		<h3>当日までの流れ</h3>
+	    		<p>※各研修の日程/内容は変更になる場合がございます。*各研修をタップすると詳しい研修内容をご覧いただけます。</p>
+    			<ul class="schedule">
+    				<li>
+    					<p class="schedule-date">6月24日(金) <br class="br_pc">/ 7月20日(水)</p>
+    					<div class="schedule-content red-content">
+    						<section class="schedule-box">
+    							<label for="check1" class="schedule-label">参加応募(ENTRY)締切</label>
+								<input id="check1" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+				      				<a href="#entry" style="color:#fff;">コチラ</a>より募集要項をご確認の上、フォームに必要事項を記入し、お申し込みください。中高生チームは6月24日、大学生チームは7月20日が応募締切です。
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">7月5日(火) <br class="br_pc">/ 7月23日(土)</p>
+    					<div class="schedule-content red-content">
+    						<section class="schedule-box">
+    							<label for="check2" class="schedule-label">参加者確定(参加可否についてはメールで通知)</label>
+								<input id="check2" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+				      				応募多数の場合、エントリーフォームへの記入内容および中高生チームに関しては必要に応じて面接によって選考いたします。大学生チームに関しては、7月23日をめどにメールにて結果をお知らせいたします。
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">7月10日(日)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check3" class="schedule-label">キックオフイベント</label>
+								<input id="check3" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+									<span style="color:#ff7043;font-weight:bold;">[WHY]</span>　　澤 芳樹 先生(大阪大学大学院医学系研究科長・医学部長)　「医療におけるイノベーション」<br/>
+							      	<span style="color:#ff7043;font-weight:bold;">[WHY]</span>　　寺本 将行(大阪大学医学部5年・inochi学生プロジェクト代表)　「医療を変える若者たちへ」<br/>
+							      	<span style="color:#82b1ff;font-weight:bold;">[MEDICINE]</span>　　心肺蘇生講習 &amp; 心臓突然死についてのテキスト配布
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+
+    				<li>
+    					<p class="schedule-date">7月18日(月・祝)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check4" class="schedule-label">FEEL 阪大シリーズ</label>
+								<input id="check4" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+							      	<span style="color:#82b1ff;font-weight:bold;">[MEDICINE]</span>　　大阪大学高度救命救急センターの方　「救急救命の今」<br/>
+							      	<span style="color:#ff7043;font-weight:bold;">[WHY]</span>　　心臓突然死から救われた方のご家族(前重さん・上野さん)の対談<br/>
+							      	<span style="color:#c0ca33;font-weight:bold;">[HOW TO THINK]</span>　　木川田 一榮 先生(大阪大学大学院国際公共政策研究科客員教授)　「デザイン思考とリーダーシップ」
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">7月25日(月)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check5" class="schedule-label">FEEL 京大シリーズ</label>
+								<input id="check5" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+							      	<span style="color:#82b1ff;font-weight:bold;">[MEDICINE]</span>　　上本 伸二 先生(京都大学肝胆膵・移植外科　教授)　ご挨拶<br/>
+							      	<span style="color:#82b1ff;font-weight:bold;">[MEDICINE]</span>　　石見 拓 先生(京都大学　環境安全保健機構　教授)　「心臓突然死の現状」<br/>
+							      	<span style="color:#db5350;font-weight:bold;">[CONNECTION]</span>　　学生セッション　「阪大・京大ってどんな大学?～医学部生が語る大学生活～」
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+
+    				<li>
+    					<p class="schedule-date">7月30日(土)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check6" class="schedule-label">IMAGINE DAY1 -クロスイノベーションDAY-</label>
+								<input id="check6" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+							      	<span style="color:#26c7db;font-weight:bold;">[HOW TO EXPAND]</span>　　久下 尋厚 氏(株式会社電通関西支社 シニア・コミュニケーションデザイン・プランナー)「アイデア発想 &amp; コミュニケーションプランニング」<br/>
+							      	<span style="color:#c0ca33;font-weight:bold;">[HOW TO THINK]</span>　　鈴木 寛 先生(大阪大学大学院医学系研究科招聘教授)「社会におけるリーダーシップとは何か」
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+
+    				<li>
+    					<p class="schedule-date">8月3日(水)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check7" class="schedule-label">IMAGINE DAY2</label>
+								<input id="check7" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+							      	<span style="color:#26c7db;font-weight:bold;">[HOW TO EXPAND]</span>　　並河 哲次 氏(グローバルシェイパーズ大阪ハブ　新宮市議会議員) / 大前 はるよ 氏(グローバルシェイパーズ大阪ハブ　兵庫県議会議員) / 下山 紗代子 氏(一般社団法人リンクデータ)　「行政/オープンデータから社会を変えるには」<br/>
+							      	<span style="color:#26c7db;font-weight:bold;">[HOW TO EXPAND]</span>　　「行政×オープンデータ×医療」パネルディスカッション
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">8月29日(月)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check8" class="schedule-label">最先端医療研究施設ツアー</label>
+								<input id="check8" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+				      				<span style="color:#82b1ff;font-weight:bold;">[MEDICINE]</span>　　関西圏の最先端医療研究設を見学するツアー　| 理化学研究所　多細胞システム形成研究センター（CDB） / 理化学研究所　ライフサイエンス技術基盤研究センター（CLST）
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">9月4日(日)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check9" class="schedule-label">IMAGINE DAY3</label>
+								<input id="check9" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+							      	<span style="color:#c0ca33;font-weight:bold;">[HOW TO THINK]</span>　　川上 浩司 先生(京都大学デザイン学ユニット教授)　「不便益デザイン×医療」<br/>
+							      	<span style="color:#c0ca33;font-weight:bold;">[HOW TO THINK]</span>　　協賛企業プレゼン<br/>							     
+							      	<span style="color:#c0ca33;font-weight:bold;">[HOW TO THINK]</span>　　課題設定 Preハッカソン
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">9月19日(月・祝)</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check10" class="schedule-label">inochi医療ハッカソン</label>
+								<input id="check10" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+				      				<span style="color:#c0ca33;font-weight:bold;">[HOW TO THINK]</span>　　デザイン思考実践編～ハッカソンイベント～
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">9月～10月</p>
+    					<div class="schedule-content blue-content">
+    						<section class="schedule-box">
+    							<label for="check11" class="schedule-label">メンタリングDays</label>
+								<input id="check11" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+				        			阪大・京大を中心としたメンターが参加者のプラン立案に対して、ノウハウ・コネクションを提供。チームメンバーのみなさんと二人三脚でプランの完成・その実行に向かっていきます。
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">10月10日(月・祝)</p>
+    					<div class="schedule-content red-content">
+    						<section class="schedule-box">
+    							<label for="check12" class="schedule-label">中間発表</label>
+								<input id="check12" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+				      				チームの進捗を共有するための中間発表会。有識者からのフィードバックも。
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">11月6日(日)</p>
+    					<div class="schedule-content red-content">
+    						<section class="schedule-box">
+    							<label for="check13" class="schedule-label">最終選考会[中高生チーム×2,大学生チーム×3選出]</label>
+								<input id="check13" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+							        KANSAI中高生TEAM：　審査員を招聘したうえで、全チームが考えあげたプランを発表。そのうち、審査員の評価の高かった2チームを当日発表チームとして選出。<br/>
+							        GLOCAL大学生TEAM：　プレゼン動画とスライドをweb上にアップロード。web上での一般ユーザーからの投票及び運営団体による審査を経て、3チームを当日発表チームとして選出。
+				      			</p>
+							</section>
+						</div>
+    				</li>
+
+    				<li>
+    					<p class="schedule-date">12月23日(金)</p>
+    					<div class="schedule-content red-content">
+    						<section class="schedule-box">
+    							<label for="check14" class="schedule-label">inochi学生フォーラム</label>
+								<input id="check14" type="checkbox" class="schedule-input" name="radio">
+    							<p class="schedule-description">
+				      				選考を勝ち抜いた5チームがプランを発表。最優秀プラン提案チームには、賞金(15万円)とプラン実現への支援体制提供。
+				      			</p>
+							</section>
+						</div>
+    				</li>
+    			</ul>
+    		</div>
+    		<div class="col-sm-2"></div>
+
+			<script type="text/javascript">
+			$(function(){
+			   		$("input").click(function(){
+					$("input:checked").parent().css({"border":"1px solid #fff","padding":"20px 10px"});
+					$("input:not(':checked')").parent().css({"border":"none","padding":"0"});
+				})
+			});
+			</script> 	
+    	</div>
+
+
+  		<!--entry-->
+  		<!--
+    	<div class="row row_r" id="entry">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8" id="entry_area">
+	    		<h1>ENTRY</h1>
+	    		<h3>inochi学生フォーラムに参加しよう!!</h3>
+	    		<h4>応募要項</h4>
+	    		<p>inochi学生フォーラムは、関西圏の中高生を対象とした「KANSAI中高生TEAM」と、全国および全世界の大学生・大学院生を対象とした「GLOCAL大学生TEAM」という大きく2つの参加者枠で構成されます。</p>
+	    		<div class="row row_r">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5 entry_cent">
+					<img src="img/high_st.png" width="350px">
+						<h3><span style="color:#f5ff5b;">■</span> KANSAI中高生TEAM <span style="color:#f5ff5b;">■</span></h3>
+						<table id="entry_table">
+							<tr>
+								<td id="data_title_h">応募条件</td>
+								<td>関西圏(大阪、京都、兵庫、滋賀、奈良、和歌山)の中学・高校に通う生徒<br/>※個人またはチーム(4名以内)での参加(個人参加の場合は他の個人参加者とチームになります。)</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">プログラム内容</td>
+								<td>・inochi Education Program<br/>→講義を直接受講いただけます。また、最先端医療施設の見学も可能です。<br/>・メンタリング<br/>→阪大・京大医学部の学生によるメンター制度(プラン立案についての相談役)がございます。</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">フォーラム出場チーム選考方法</td>
+								<td>KANSAI中高生TEAMについては、当日出場権を賭けた最終選考を11月上旬に実施し、当日審査員による審査の上、2つの出場チームを決定いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">募集人数</td>
+								<td>およそ20チーム　50名程度<br/>※応募者多数の場合は、エントリーフォームへの記入内容および面接によって選考いたします。※同じ学校でチームを作り参加することを推奨いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">参加費用</td>
+								<td><strong>無料</strong></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm-5 entry_cent">
+					<img src="img/univ_st.png" width="350px">
+						<h3><span style="color:#40c4ff;">■</span> GLOCAL大学生TEAM <span style="color:#40c4ff;">■</span></h3>
+						<table id="entry_table">
+							<tr>
+								<td id="data_title_u">応募条件</td>
+								<td>日本全国及び全世界の医療・ビジネス・科学技術に関心のある大学生・大学院生<br/>※チーム(2名以上4名以内)での参加(学部・学科・学年は問いません)</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">プログラム内容</td>
+								<td>・inochi Education Program<br/>→Web上(当サイトから参加者専用サイトにログイン)にて受講。講義形式の教育コンテンツは原則すべて受講いただけます。<br/>・メンタリング<br/>→プラン考案の進捗管理・問い合わせ先として担当者がつきますが、独創性を助長するためにも、基本的には皆さんの独力でプラン考案を行っていただきます。</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">フォーラム出場チーム選考方法</td>
+								<td>GLOCAL大学生TEAMについては、当日出場権を賭けた最終選考をWeb上で実施。動画をアップロードしていただき、Web投票により、計3つのフォーラム出場チームを決定いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">募集人数</td>
+								<td>およそ20チーム　50名程度(国内・海外合わせて)<br/>※応募者多数の場合は、エントリーフォームへの記入内容によって選考いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">参加費用</td>
+								<td><strong>無料</strong><br/>(最終プレゼンチームについてはフォーラム参加のための関西までの交通費は自己負担となります。但し、遠隔地より参加の場合は、交通費補助がございます。)</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+	    		<div class="animation_in" style="text-align:center;"><h3 class="entry_ex" id="prize_w"><strong>優勝チームには賞金15万円!!</strong></h3><h3 class="entry_ex"><strong>今年度の参加応募は終了致しました。<br>たくさんのご応募ありがとうございました。</strong></h3></div>
+    		</div>
+    		<div class="col-sm-2"></div>
+    	</div>
+    	-->
+
+  		<!--faq-->
+    	<div class="row row_n" id="faq">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8" id="faq_area">
+	    		<h1>FAQ</h1>
+	    		<h3>よくあるご質問</h3>
+	    		<h4><span style="color:#40c4ff;">&gt;&gt;</span>応募・参加に関して</h4>
+		    		<label for="Panel1">Q. 参加するために費用はかかりますか？</label>
+			    		<input type="checkbox" id="Panel1" class="on-off" />
+			    		<p>KANSAI高校生TEAM・GLOCAL大学生TEAMとございますが、チームによりご自身で負担していただく費用は異なります。詳しくはHPのENTRY応募要項をご覧ください。</p>
+		    		<label for="Panel2">Q. 心臓突然死の知識がないと参加できないのですか？</label>
+			    		<input type="checkbox" id="Panel2" class="on-off" />
+			    		<p>いいえ、専門知識は一切必要ありません。学びたいという意欲があり、真剣に取り組んで頂ける方であればどなたでもご参加頂けます。なお、初回の研修で心臓突然死についてまとめたテキスト資料をお配りする予定です。</p>
+		    		<label for="Panel3">Q. 例年どんな人たちが参加しているのですか？</label>
+			    		<input type="checkbox" id="Panel3" class="on-off" />
+			    		<p>昨年を例にとりますと、関西圏の2府3県合わせて	14校の中学校・高等学校より、約50名の生徒に参加して頂きました。大学生の参加は今年度が初めてですが、医学部のみならず多様なバックグラウンドを持つ学生の皆様からの応募を期待しております。</p>
+		    		<label for="Panel4">Q. 全講義に参加できなければ応募できませんか？</label>
+			    		<input type="checkbox" id="Panel4" class="on-off" />
+			    		<p>原則全講義に参加していただくのが望ましいと考えられます。ただ、冠婚葬祭・学校の都合などやむを得ない事情で参加できない日も勿論あると思いますので欠席は認めますが、講義への欠席はチームメンバーに迷惑をかけることにもなりますので、ご考慮の上応募をお願いいたします。</p>
+	    		<h4><span style="color:#40c4ff;">&gt;&gt;</span>企画内容に関して</h4>
+		    		<label for="Panel5">Q．イベントはどれくらいの期間ですか？</label>
+			    		<input type="checkbox" id="Panel5" class="on-off" />
+			    		<p>今年度7月初旬にキックオフイベント、12月23日にinochi学生フォーラムございますので、約半年ご参加いただくことになります。</p>
+		    		<label for="Panel6">Q. 研修プログラムはどのような構成になっているのでしょうか？</label>
+			    		<input type="checkbox" id="Panel6" class="on-off" />
+			    		<p>昨年度を例にとりますと、「講義」「グループワーク」「プレゼンテーション」で構成されておりました。 参加者の方々にはグループに分かれて頂き、開催期間中はグループ単位で受講・議論して頂きました。 最終的にはグループ毎にレポート提出とプレゼンテーションをして頂きました。今年度の予定については、<a href="#schedule">SCHEDULE</a>をご覧ください。</p>
+		    		<label for="Panel7">Q. 研修以外の時間で拘束されることはありますか？</label>
+			    		<input type="checkbox" id="Panel7" class="on-off" />
+			    		<p>義務ではありませんが、毎年プレゼンテーション前にはほとんどのチームが自主的に集まって作業を行ったり練習をしています。また、直接集まらずにスカイプなどを利用してオンラインミーティングでワークを行うチームもあります。</p>
+		    		<label for="Panel8">Q. 全ての講義資料を持ち帰り、ダウンロードできるようにしてもらいたいのですが</label>
+			    		<input type="checkbox" id="Panel8" class="on-off" />
+			    		<p>講師派遣企業様の守備義務の都合により全ての資料をお渡しすることは出来ない場合がございます。予めご了承ください。</p>
+			    <div style="text-align:center;margin-top:20px;">
+				    <p>その他お問い合わせは下記メールアドレスより</p>
+				    <img src="img/info_w.png" width="300px">
+			    </div>
+
+    		</div>
+    		<div class="col-sm-2"></div>
+    	</div>
+
+  		<!--organize-->
+    	<div class="row row_w" id="organize">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8" id="organize_area">
+	    		<h1>ORGANIZER</h1>
+	    		<h3>運営団体・共催団体について</h3>
+	    		<h4>主催団体inochi学生プロジェクトについて</h4>
+	    		<div class="row row_W">
+	    			<div class="col-sm-1"></div>
+	    			<div class="col-sm-3"><img src="img/inochiGlogo2.png" id="inochilogo"></div>
+	    			<div class="col-sm-7" style="vertical-align:middle;"><p class="mid">一般社団法人inochi未来プロジェクトと連携しながら、「若者の力でヘルスケアの問題を解決する」という目的の下活動する京都大学・大阪大学の学生が中心となって動いている自主プロジェクトです。<br/>活動の軸は‘若者の力でヘルスケア問題を解決すること’<br/>新しい技術のヘルスケアへの応用模索と地域のヘルスケア問題の解決に取り組みながら真に‘ innovative’なイノベーションを生み出すことのできる若手人材を生み出すことを目標としています。</p>
+    				</div>
+	    			<div class="col-sm-1"></div>
+	    		</div>
+				<div style="text-align:center;margin-top:10px;margin-bottom:40px;"><h3 class="entry_ex" id="prize"><strong>学生スタッフ募集中!!</strong></h3><p class="entry_ex"><strong><br>一緒に若者から医療を変えていきませんか？<br>当プロジェクトでは活動に協力してくださる学生スタッフ(地域・専攻問わず)を募集しております。<br>領域を超えて医療を変えるためには、あなたの熱意と専門の力が必要なのです。<br>ご興味をお持ちの方は、氏名・ご所属をご記載の上、以下のアドレスにご連絡ください。<br>追って詳細をご連絡いたします。</strong></p><img src="img/info.png" width="300px"></div>
+	    		<h4>共催団体inochi未来プロジェクトについて</h4>
+	    		<div class="row row_W">
+	    			<div class="col-sm-1"></div>
+	    			<div class="col-sm-3"><img src="img/inochiMlogo.png" id="inochilogo"></div>
+	    			<div class="col-sm-7" style="vertical-align:middle;"><p class="mid">「みんなでinochiの大切さと未来について考え、行動するプロジェクト」。<br/>医療者・企業・行政そして市民と患者も。関西・日本が、みんなでささえあいながら、健康で長生きできる街・国になることをめざします。<br/>2014年6月にinochi未来プロジェクト実行委員会を立ち上げ、今後、関西発の健康・医療イノベーションを加速させるべく2015年11月に一般社団法人inochi未来プロジェクトへと発展いたしました。<br/><br/><a href="http://inochi-expo.com/">inochi未来プロジェクトWebサイト</a></p></div>
+	    			<div class="col-sm-1"></div>
+	    		</div>
+				<div class="social" id="social_footer">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-text="「心臓突然死減少へ」若者がデザイン思考とテクノロジーを使って挑む教育&プラン実現プログラム【inochi学生フォーラム】" data-hashtags="inochi-gakusei">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					<div class="fb-like" id="facebook" data-href="http://inochi-gakusei.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+				</div>
+    		</div>
+    		<div class="col-sm-2"></div>
+    	</div>
+    </div>
+
+  	<!--footer-->
+    <footer class="container-fluid">
+    	<div class="col-sm-2"></div>
+    	<div class="col-sm-8" id="footer">
+    		<div id="footer2">
+    			<p id="footer">
+    			<p style="display:inline-block; vertical-align:top;">
+	    		<img src="img/inochiGlogo.png" width="150px">
+	    		<img src="img/inochiMlogo.png" width="100px">
+	    		</p>
+	    		<p style="display:inline-block;vertical-align:middle; text-align:left;margin-left:40px;">
+	    		<a href="#about">inochi学生フォーラムについて</a><br><a href="#supporters">inochi学生フォーラムサポーター</a><br><a href="#sponsors">協賛企業一覧</a><br><a href="#schedule">inochi学生フォーラムスケジュール</a><br><a href="#entry">応募要項</a><br><a href="#faq">よくあるご質問</a></p>
+	    		<p style="display:inline-block;vertical-align:top; text-align:left;margin-left:40px;">
+	    		<strong>【後援】<br><br>関西広域連合<br><br>近畿経済産業局</strong></p></p>
+    		</div>
+    		<p id="footer2">&copy;Copyrights 2016 inochi学生プロジェクト</p>
+    	</div>
+    	<div class="col-sm-2"></div>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
+

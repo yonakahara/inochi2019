@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>http://inochi-gakusei.com/2016</loc>
+  <priority>1.0</priority>
+  <lastmod>2016-05-27T09:07:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://inochi-gakusei.com/2016/simulator/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2016-05-27T02:21:36+09:00</lastmod>
+</url>
+<url>
+  <loc>http://inochi-gakusei.com/2016/entry.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2016-05-27T09:07:47+09:00</lastmod>
+</url>
+<url>
+  <loc>http://inochi-gakusei.com/2016/en/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2016-05-27T03:19:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://inochi-gakusei.com/2016/en/simulator/index.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2016-05-26T23:21:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://inochi-gakusei.com/2016/en/entry.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2016-05-26T23:35:10+09:00</lastmod>
+</url>
+<url>
+  <loc>http://inochi-gakusei.com/2016/index.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2016-05-27T09:07:50+09:00</lastmod>
+</url>
+<url>
+  <loc>http://inochi-gakusei.com/2016/en/</loc>
+  <priority>0.6</priority>
+  <lastmod>2016-05-27T03:19:50+09:00</lastmod>
+</url>
+
+</urlset>

@@ -1,0 +1,60 @@
+.kind {
+  width: 100px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.story {
+  position: relative;
+  top: -70px;
+  width: 80%;
+  margin-left: 15%;
+  margin-right: 5%;
+
+  .illust {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.answer {
+  text-align: center;
+}
+
+// 以下後半用
+.answer_content {
+  margin-top: 50px;
+}
+
+.title {
+  font-weight: bold;
+
+  .title_colored {
+    color: #a64d79;
+  }
+}
+
+input {
+  position: relative;
+  top: -35px;
+  left: 180px;
+  width: 500px;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+input + p {
+  position: relative;
+  top: -20px;
+}
+
+.pink {
+  color: #f18b9c;
+}

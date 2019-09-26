@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="inochi学生フォーラムの参加者専用ページです。">
+<meta name="keywords" content="inochi学生フォーラム,inochi,学生,フォーラム,プロジェクト,2016,医療,ヘルスケア,若者,関西,心臓突然死">
+<meta property="og:image" content="http://inochi-gakusei.com/2016/img/share.png">
+<meta property="og:description" content="inochi学生フォーラムの参加者専用ページです。">
+
+<title>参加者用動画ページ | inochi学生フォーラム2016</title>
+<link rel="shortcut icon" href="http://inochi-gakusei.com/2016/img/favicon.ico" />
+
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/main.css">
+<link rel="stylesheet" href="../css/participants.css">
+<link href="../css/jquery.flipcountdown.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.flipcountdown.js"></script>
+  <script src="main.js"></script>
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-78321708-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyB2a9DeojA5BlM8ndqKQWl797w-7XtTkyo",
+    authDomain: "inochi-participants.firebaseapp.com",
+    databaseURL: "https://inochi-participants.firebaseio.com",
+    storageBucket: "inochi-participants.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="../js/participants.js"></script>
+  <script>
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user){
+      // This code goes ABOVE the main HTML Comment Box code!
+      // replace the text in the single quotes below to customize labels.
+      hcb_user = {
+          // L10N
+          comments_header : 'Comments　コメント・質問・議論等',
+          name_label : user.displayName,
+          content_label: 'Enter your comment here',
+          submit : 'Comment',
+          logout_link : '<img title="log out" src="//www.htmlcommentbox.com/static/images/door_out.png" alt="[logout]" class="hcb-icon"/>',
+          admin_link : '<img src="//www.htmlcommentbox.com/static/images/door_in.png" alt="[login]" class="hcb-icon"/>',
+          no_comments_msg: 'No one has commented yet. Be the first!　-現在投稿数：0-',
+          add:'Add your comment',
+          again: 'Post another comment',
+          rss:'<img src="//www.htmlcommentbox.com/static/images/feed.png" class="hcb-icon" alt="rss"/> ',
+          said:'said:',
+          prev_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+          next_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+          showing:'Showing',
+          to:'to',
+          website_label:'website (optional)',
+          email_label:'email',
+          anonymous:'Anonymous 匿名',
+          mod_label:'',
+          subscribe:'email me replies',
+          are_you_sure:'Do you want to flag this comment as inappropriate?',
+          
+          reply:'<img src="//www.htmlcommentbox.com/static/images/reply.png"/> reply',
+          flag:'<img src="//www.htmlcommentbox.com/static/images/flag.png"/> flag',
+          like:'<img src="//www.htmlcommentbox.com/static/images/like.png"/> like',
+          
+          //dates
+          days_ago:'days ago',
+          hours_ago:'hours ago',
+          minutes_ago:'minutes ago',
+          within_the_last_minute:'within the last minute',
+
+          msg_thankyou:'Thank you for commenting!',
+          msg_approval:'(this comment is not published until approved)',
+          msg_approval_required:'Thank you for commenting! Your comment will appear once approved by a moderator.',
+          
+          err_bad_html:'Your comment contained bad html.',
+          err_bad_email:'Please enter a valid email address.',
+          err_too_frequent:'You must wait a few seconds between posting comments.',
+          err_comment_empty:'Your comment was not posted because it was empty!',
+          err_denied:'Your comment was not accepted.',
+
+          //SETTINGS
+          MAX_CHARS: 8192,
+          PAGE:'', // ID of the webpage to show comments for. defaults to the webpage the user is currently visiting.
+          RELATIVE_DATES:true // show dates in the form "X hours ago." etc.
+      };
+
+    };
+});
+  </script>
+
+
+
+</head>
+
+<body>
+
+<span class="anchor2">
+    <img id="trans" src="../../img/translation_toen.png">
+</span>
+
+<!--*************************************************
+Japanese Contents
+**************************************************-->
+<!--main contents-->
+<div class="JPcontents">
+  <div class="container-fluid">
+      <div class="row row_n" id="head_login">
+        <div class="col-sm-2 col-md-2"></div>
+        <div class="col-sm-8 col-md-8">
+          <div style="text-align:left;float:left;">こんにちは,&nbsp;<span id="username">名無し</span>&nbsp;さん&nbsp;&nbsp;&nbsp;</div>
+          <div style="text-align:right;">
+            <button class="user_button" onclick="modal1();" name="verify-email">表示ユーザー名変更</button>&nbsp;&nbsp;&nbsp;
+            <button class="user_button" onclick="modal2();" name="verify-email">ログインパスワード変更</button>&nbsp;&nbsp;&nbsp;
+            <button disabled class="user_button" id="quickstart-sign-in" name="signin">Sign In</button>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <div class="row row_w" style="margin-top:170px;text-align:center;">
+            <h4 style="margin-top:-10px;color:#10253f;">[9/19]</h4>
+            <h1>inochi医療ハッカソン</h1>
+            <p style="margin-top:30px;margin-bottom:40px">大阪大学国際医工情報センター 特任准教　八木　雅和 先生</p>
+            <div class="title" id="title_0919">
+              <div class="col-sm-5 col-md-5"></div>
+              <div class="col-sm-4 col-md-4" style="position:relative;vertical-align:middle;color:#fff;text-align:left;height:inherit;">
+                <div style="position:absolute;margin-top:auto;margin-bottom:auto;top:0;bottom:0;height:min-content;">
+                <h3 class="leadcopy2">大阪大学国際医工情報センター<br>特任准教</h3>
+                <h4 style="color:#fff;">八木　雅和 先生</h4>
+                <blockquote>
+                  <h3 class="leadcopy2">一発でゼロから最後まではできないから、各ステージで、何がクリティカルな課題かを明確にして、<br>仮説を立てて、検証してやる。<br>このプロセスにプロトタイプを使ってやる。</h3>
+                </blockquote>
+                </div>
+              </div>
+            </div>       
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--*************************************************
+English Contents
+**************************************************-->
+<!--main contents-->
+<div class="ENcontents">
+  <div class="container-fluid">
+      <div class="row row_n" id="head_login">
+        <div class="col-sm-2 col-md-2"></div>
+        <div class="col-sm-8 col-md-8">
+          <div style="text-align:left;float:left;">Hello,&nbsp;<span id="username">No Name</span>&nbsp;&nbsp;&nbsp;</div>
+          <div style="text-align:right;">
+            <button class="user_button" onclick="modal1();" name="verify-email">Change Your Name</button>&nbsp;&nbsp;&nbsp;
+            <button class="user_button" onclick="modal2();" name="verify-email">Change Your Password</button>&nbsp;&nbsp;&nbsp;
+            <button disabled class="user_button" id="quickstart-sign-in" name="signin">Sign In</button>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <div class="row row_w" style="margin-top:170px;text-align:center;">
+            <h4 style="margin-top:-10px;color:#10253f;">[9/19]</h4>
+            <h1>inochi Medicine Hackathon</h1>
+            <p style="margin-top:30px;margin-bottom:40px">Global Center for Medical Engineering and Informatics, Osaka University, Associate Professor　　　Yagi Masakazu, M.D.</p>
+            <div class="title" id="title_0710">
+              <div class="col-sm-5 col-md-5"></div>
+              <div class="col-sm-4 col-md-4" style="position:relative;vertical-align:middle;color:#fff;text-align:left;height:inherit;">
+                <div style="position:absolute;margin-top:auto;margin-bottom:auto;top:0;bottom:0;height:min-content;">
+                <h3 class="leadcopy2">Global Center for Medical Engineering and Informatics, Osaka University, Associate Professor</h3>
+                <h4 style="color:#fff;">Yagi Masakazu M.D.</h4>
+                <blockquote>
+                  <h3 class="leadcopy2">We can't go through zero to the last at one time. So what we need to do is clearify what is critical on every stages, set up hypothesis and confirm it. You can levarage this by plottyping.</h3>
+                </blockquote>
+                </div>
+              </div>
+            </div>        
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--*************************************************
+Comment Section
+**************************************************-->
+<div class="row row_w">
+  <div class="col-sm-2 col-md-2"></div>
+  <div class="col-sm-8 col-md-8">
+    <iframe width="720" height="480" src="https://www.youtube.com/embed/fb3Bw6RRLk8" frameborder="0" allowfullscreen style="margin-top:30px;"></iframe>
+    <!-- begin wwww.htmlcommentbox.com -->
+     <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+     <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+     <script type="text/javascript" id="hcb"> /*<!--*/ function openHCB(){if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24uCpGQJ3Vv8FgrP.Y98d4d%2F"+"&opts=16670&num=10&ts=1470111755577");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); }; setTimeout("openHCB()", 1000);/*-->*/ </script>
+    <!-- end www.htmlcommentbox.com -->
+  </div>
+</div>
+
+<!--*************************************************
+Japanese Contents 2
+**************************************************-->
+<div class="JPcontents">
+  <div id="modal">
+  </div>
+  <div id="content_box1">
+      <input class="user_text"　maxlength='12' pattern="^[0-9A-Za-z]+$" style="display:inline;width:300px;" type="text" id="displayname" name="displayname" placeholder="新しいユーザー名(半角英数字のみ)"/>
+      <br/><br/>
+      <button class="user_button user_button_g" onclick="changeName();modal_back();" name="verify-email">表示ユーザー名を変更する</button>
+  </div>
+  <div id="content_box2">
+      <input class="user_text" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+      <br/><br/>
+      <button class="user_button user_button_g" id="quickstart-password-reset" onclick="modal_back();" name="verify-email">パスワード変更メールを送る</button>
+  </div>
+
+  <div class="container-fluid">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="link_sim">
+          <a href="http://inochi-gakusei.com/2016/participants/"><div id="simulation" style="margin-bottom:40px;"><h3 id="simulation"><strong>動画一覧へ戻る</strong></h3></div></a><br><br>
+          <a href="http://inochi-gakusei.com/2016"><div id="simulation"><h3 id="simulation"><strong>サイトTOPへ戻る</strong></h3></div></a>
+      </div>
+  </div>
+
+  <!--footer-->
+  <footer class="container-fluid">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="footer">
+          <div id="footer2">
+              <p id="footer">
+              <p style="display:inline-block; vertical-align:top;">
+              <img src="../../img/inochiGlogo.png" width="150px">
+              <img src="../../img/inochiMlogo.png" width="100px">
+              </p>
+              <p style="display:inline-block;vertical-align:middle; text-align:left;">
+              <a href="http://inochi-gakusei.com/2016/#about">inochi学生フォーラムについて</a><br><a href="http://inochi-gakusei.com/2016/#supporters">inochi学生フォーラムサポーター</a><br><a href="http://inochi-gakusei.com/2016/#sponsors">協賛企業一覧</a><br><a href="http://inochi-gakusei.com/2016/#schedule">inochi学生フォーラムスケジュール</a><br><a href="http://inochi-gakusei.com/2016/#entry">応募要項</a><br><a href="http://inochi-gakusei.com/2016/#faq">よくあるご質問</a></p>
+              <p style="display:inline-block;vertical-align:top; text-align:left;margin-left:40px;">
+              <strong>【後援】<br><br>関西広域連合<br><br>近畿経済産業局</strong></p></p>
+          </div>
+          <p id="footer2">&copy;Copyrights 2016 inochi学生プロジェクト</p>
+      </div>
+      <div class="col-sm-2"></div>
+  </footer>
+</div>
+
+<!--*************************************************
+English Contents 2
+**************************************************-->
+<div class="ENcontents">
+  <div id="modal">
+  </div>
+  <div id="content_box1">
+      <input class="user_text" style="display:inline;width:auto;" type="text" id="displayname" name="displayname" placeholder="New Display Name"/>
+      <br/><br/>
+      <button class="user_button user_button_g" onclick="changeName();modal_back();" name="verify-email">Change Your Name</button>
+  </div>
+  <div id="content_box2">
+      <input class="user_text" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+      <br/><br/>
+      <button class="user_button user_button_g" id="quickstart-password-reset" onclick="modal_back();" name="verify-email">Send E-mail to Reset Pass</button>
+  </div>
+
+  <div class="container-fluid">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="link_sim">
+          <a href="http://inochi-gakusei.com/2016/participants/"><div id="simulation" style="margin-bottom:40px;"><h3 id="simulation"><strong>Back to Video List</strong></h3></div></a><br><br>
+          <a href="http://inochi-gakusei.com/2016"><div id="simulation"><h3 id="simulation"><strong>Back to TOP</strong></h3></div></a>
+      </div>
+  </div>
+
+  <!--footer-->
+  <footer class="container-fluid">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="footer">
+          <div id="footer2">
+              <p id="footer">
+              <p style="display:inline-block; vertical-align:top;">
+              <img src="../../img/inochiGlogo.png" width="150px">
+              <img src="../../img/inochiMlogo.png" width="100px">
+              </p>
+              <p style="display:inline-block;vertical-align:middle; text-align:left;">
+              <a href="http://inochi-gakusei.com/2016/#about">About inochi Gakusei Forum</a><br><a href="http://inochi-gakusei.com/2016/#supporters">Supporters of inochi Gakusei Forum</a><br><a href="http://inochi-gakusei.com/2016/#sponsors">Supporting Companies</a><br><a href="http://inochi-gakusei.com/2016/#schedule">Schedule of inochi Gakusei Forum</a><br><a href="http://inochi-gakusei.com/2016/#entry">Application requirements</a><br><a href="http://inochi-gakusei.com/2016/#faq">FAQs</a></p>
+              <p style="display:inline-block;vertical-align:top; text-align:left;margin-left:40px;">
+              <strong>【Cooporations】<br><br>Union of Kansai Goverments<br><br>METI-KANSAI</strong></p></p>
+          </div>
+          <p id="footer2">&copy;Copyrights 2016 inochi Gakusei Project</p>
+      </div>
+      <div class="col-sm-2"></div>
+  </footer>
+</div>
+
+
+
+
+<script>
+  function changeHCB(){
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user){
+      $("input[name='name']").val(user.displayName);
+    };
+  });
+};
+setTimeout("changeHCB()", 2000);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+.points {
+
+  .midashi, .point_midashi {
+    font-weight: bold;
+  }
+
+  .point_detail {
+    margin-left: 30px;
+  }
+
+  .describe {
+    width: 800px;
+    border: solid 1px #a8cc98;
+    border-radius: 20px;
+    padding: 5px 0px 5px 20px;
+
+    .point {
+      width: 500px;
+      background-color: #d9ead3;
+      border-radius: 20px;
+      padding: 5px 0px 5px 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .express {
+    width: 800px;
+    border: solid 1px #f4cccc;
+    border-radius: 20px;
+    padding: 5px 0px 5px 20px;
+    margin-top: 30px;
+
+    .point {
+      width: 500px;
+      background-color: #f7dbdb;
+      border-radius: 20px;
+      padding: 5px 0px 5px 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .suggest {
+    width: 800px;
+    border: solid 1px #90b6f0;
+    border-radius: 20px;
+    padding: 5px 0px 5px 20px;
+    margin-top: 30px;
+
+    .point {
+      width: 500px;
+      background-color: #cfe2f3;
+      border-radius: 20px;
+      padding: 5px 0px 5px 10px;
+      margin-top: 10px;
+    }
+  }
+}

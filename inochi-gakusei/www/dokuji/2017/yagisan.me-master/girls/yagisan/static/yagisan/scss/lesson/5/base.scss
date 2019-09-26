@@ -1,0 +1,27 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+body {
+  background-color: #e6a277;
+}
+
+.lesson_group_desc {
+  float: left;
+  height: 70px;
+  margin: 15px 0 5px 20px;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}

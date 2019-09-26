@@ -1,0 +1,288 @@
+{% extends "yagisan/lesson/6/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>実際に書いてみましょう</h3>
+  <div class='lesson_content'>
+    <div id="one" class="one clearfix">
+      <div class="step_title">
+        <img src="{% static 'yagisan/img/lesson/6/2/1.png' %}" alt="">
+      </div>
+      <div class="yagi_note">
+        <p class="note_title">八木note✏️</p>
+        <p>「状況」には、気持ちが動揺したり、つらくなったりした出来事のこと。
+        「５W１H」を意識し、友達の悩みを聞く時と同じように、
+        ”どこで？”　”なにがあったの？”　”誰がなんと言ったの？”　と、
+        自分に問いかけながら、出来るだけ具体的に書きましょう。</p>
+      </div>
+      <div class="yagisan_kanban">
+        <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_situation.png' %}" alt="">
+      </div>
+      <div class="letter">
+        <img src="{% static 'yagisan/img/lesson/6/3/letter.png' %}" alt="">
+        <textarea name="name" rows="8" cols="80" placeholder="ここに状況を記入します。"></textarea>
+      </div>
+    </div>
+
+    <div id="two" class="two">
+      <div class="step_title">
+        <img src="{% static 'yagisan/img/lesson/6/2/2.png' %}" alt="">
+      </div>
+      <div class="clearfix">
+        <div class="yagisan_kanban">
+          <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_autothinking.png' %}" alt="">
+        </div>
+        <div class="expressions">
+          <div class="hukidashi">
+            <img src="{% static 'yagisan/img/lesson/6/3/hukidashi_reference.png' %}" alt="">
+          </div>
+          <div class="item">
+            <p>怒り</p>
+          </div>
+          <div class="item">
+            <p>悲しみ</p>
+          </div>
+          <div class="item">
+            <p>憂鬱</p>
+          </div>
+          <div class="item">
+            <p>不安</p>
+          </div>
+          <div class="item">
+            <p>罪悪感</p>
+          </div>
+          <div class="item">
+            <p>苛立ち</p>
+          </div>
+          <div class="item">
+            <p>恥</p>
+          </div>
+          <div class="item">
+            <p>おびえ</p>
+          </div>
+          <div class="item">
+            <p>興奮</p>
+          </div>
+          <div class="item">
+            <p>心配</p>
+          </div>
+          <div class="item">
+            <p>パニック</p>
+          </div>
+          <div class="item">
+            <p>うんざり</p>
+          </div>
+          <div class="item">
+            <p>がっかり</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="yagi_note">
+        <p class="note_title">八木note✏️</p>
+        <p>・感情は、上の単語も参考にしながら、一単語でシンプルに書きましょう。</p>
+        <p>・一～三単語記入することができます。</p>
+        <p>・書き出した気分の強さを１００段階で評価しよう。 <br>
+          　全くそうした気分が存在していない場合は0%、自分の中で一番強く感じる場合を100%とします。</p>
+      </div>
+
+      <div class="expressions_examples">
+        <div class="expression_first">
+          <input class="expression_first_text" type="text" name="" value="" placeholder="感情を記入します">
+          <div class="status_bar">
+            <div class="gray">
+              <div class="purple">
+                <p><span class="percentage">50</span>%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="expression_second">
+          <input class="expression_second_text" type="text" name="" value="" placeholder="感情を記入します">
+          <div class="status_bar">
+            <div class="gray">
+              <div class="purple">
+                <p><span class="percentage">50</span>%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="expression_third">
+          <input class="expression_third_text" type="text" name="" value="" placeholder="感情を記入します">
+          <div class="status_bar">
+            <div class="gray">
+              <div class="purple">
+                <p><span class="percentage">50</span>%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="three" class="three clearfix">
+      <div class="step_title">
+        <img src="{% static 'yagisan/img/lesson/6/2/3.png' %}" alt="">
+      </div>
+      <div class="yagi_note clearfix">
+        <p class="note_title">八木note✏️</p>
+        <p>自動思考とは、そのときのものの受け取り方や考え方のことです。 <br>
+          【考えと気分を区別しましょう】 <br>
+          ・簡単に言うと、「気分」は一単語で表現できるもの、 <br>
+          「考え」というのは文章になっているものです。 <br>
+          ・自動思考をたくさん書き出してしまう人は、
+          その中から「確信度の一番高いもの」または「気持ちに一番影響しているもの」を
+          １つか２つに絞ってみよう。
+        </p>
+
+      </div>
+      <div class="yagisan_kanban">
+        <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_autothinking_2.png' %}" alt="">
+      </div>
+      <div class="letter">
+        <img src="{% static 'yagisan/img/lesson/6/3/letter.png' %}" alt="">
+        <textarea name="name" rows="8" cols="80" placeholder="ここに瞬間的に浮かんだ考えを記入します。"></textarea>
+      </div>
+      <div class="yagi_note yagi_note_second clearfix">
+        <p class="note_title">八木note✏️</p>
+        <p>その自動思考の強さを100段階で書き込むようにします。 <br>
+          最も信じている時を100、全く信じていない時を０とします。</p>
+      </div>
+      <div class="yagisan_kanban yagisan_kanban_second">
+        <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_autothinking_3.png' %}" alt="">
+        <div class="status_bar">
+          <div class="gray">
+            <div class="purple">
+              <p><span class="percentage">50</span>%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="four" class="four clearfix">
+      <div class="step_title">
+        <img src="{% static 'yagisan/img/lesson/6/2/4.png' %}" alt="">
+      </div>
+      <div class="clearfix">
+        <div class="left">
+          <div class="kanban_hukidashi">
+            <div class="yagisan_kanban">
+              <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_reason.png' %}" alt="">
+            </div>
+            <div class="hukidashi">
+              <img src="{% static 'yagisan/img/lesson/6/3/hukidashi_balance.png' %}" alt="">
+            </div>
+          </div>
+          <div class="letter">
+            <img src="{% static 'yagisan/img/lesson/6/3/letter.png' %}" alt="">
+            <textarea class="reason" name="name" rows="8" cols="80" placeholder="ここに根拠を記入します。"></textarea>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="kanban_hukidashi">
+            <div class="yagisan_kanban">
+              <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_contradiction.png' %}" alt="">
+            </div>
+          </div>
+          <div class="letter">
+            <img src="{% static 'yagisan/img/lesson/6/3/letter.png' %}" alt="">
+            <textarea class="contradiction" name="name" rows="8" cols="80" placeholder="ここに反証を記入します。"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="yagisan_kanban yagisan_kanban_second">
+        <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_but.png' %}" alt="">
+      </div>
+
+      <div class="buts clearfix">
+        <div class="left_but">
+          <div class="letter">
+            <img src="{% static 'yagisan/img/lesson/6/3/letter.png' %}" alt="">
+            <p></p>
+          </div>
+        </div>
+        <div class="right_but">
+          <div class="letter">
+            <img src="{% static 'yagisan/img/lesson/6/3/letter.png' %}" alt="">
+            <p></p>
+          </div>
+        </div>
+        <div class="but">
+          <p>しかし</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="five" class="five">
+      <div class="step_title">
+        <img src="{% static 'yagisan/img/lesson/6/2/5.png' %}" alt="">
+      </div>
+      <div class="yagi_note">
+        <p class="note_title">八木note✏️</p>
+        <p>上で書いたこと（「しかし」でつないだ文）に続くように、はじめの自動思考に変わる、より柔軟な思考（適応的思考）を書いてみよう</p>
+      </div>
+      <div class="clearfix">
+        <div class="yagisan_kanban">
+          <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_adaptive_thinking.png' %}" alt="">
+        </div>
+        <div class="letter">
+          <img src="{% static 'yagisan/img/lesson/6/3/letter.png' %}" alt="">
+          <textarea name="name" rows="8" cols="80" placeholder="ここに適応的思考を記入します。"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div id="six" class="six">
+      <div class="step_title">
+        <img src="{% static 'yagisan/img/lesson/6/2/6.png' %}" alt="">
+      </div>
+      <div class="yagi_note">
+        <p class="note_title">八木note✏️</p>
+        <p>最初の気分と比べてみて、気持ちがどのように変化したかを書き込んでみましょう。</p>
+      </div>
+      <div class="clearfix">
+        <div class="yagisan_kanban">
+          <img src="{% static 'yagisan/img/lesson/6/3/yagisan_kanban_now.png' %}" alt="">
+        </div>
+        <div class="expressions_examples">
+          <div class="expression_first">
+            <p class='expression_first_text'></p>
+            <div class="status_bar">
+              <div class="gray">
+                <div class="purple">
+                  <p><span class="percentage">50</span>%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="expression_second">
+            <p class='expression_second_text'></p>
+            <div class="status_bar">
+              <div class="gray">
+                <div class="purple">
+                  <p><span class="percentage">50</span>%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="expression_third">
+            <p class='expression_third_text'></p>
+            <div class="status_bar">
+              <div class="gray">
+                <div class="purple">
+                  <p><span class="percentage">50</span>%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

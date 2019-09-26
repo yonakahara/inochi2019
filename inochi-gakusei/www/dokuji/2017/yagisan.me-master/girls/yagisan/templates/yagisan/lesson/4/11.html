@@ -1,0 +1,56 @@
+{% extends "yagisan/lesson/4/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <!-- <h3>上手な会話の返し方</h3> -->
+  <div class='lesson_content'>
+    <div id="kind" class="kind">
+      <img src="{% static 'yagisan/img/lesson/4/4/man_boss.png' %}" alt="">
+    </div>
+    <div class="story">
+      <p>気分によって、態度がころころと変わる上司。
+        今すぐ伝えなくてはいけない用事があって上司のところへ行くと、とても不機嫌そう。</p>
+
+      <div class="illust">
+        <img src="{% static 'yagisan/img/lesson/4/11/illust_1.png' %}" alt="">
+      </div>
+    </div>
+    <div class="answer">
+      <p>あなたはどのように答えますか？</p>
+    </div>
+
+    <div class="answer_content">
+      <div class="D">
+        <div class="title">
+          <p><span class="title_colored">D</span>（具体的な事実）</p>
+        </div>
+        <input class="dialogue_input" type="text" dialogue_sex="1" dialogue_to="1" dialogue_type="1" value="" placeholder="自分の回答を記入してください。">
+        <p>自分が取り上げようとしている状況や問題を描写します。 <br>
+          <span class="pink">客観的な状況だけ</span>を書きましょう。</p>
+      </div>
+
+      <div class="E">
+        <div class="title">
+          <p><span class="title_colored">E</span>（自分の感情）</p>
+        </div>
+        <input class="dialogue_input" type="text" dialogue_sex="1" dialogue_to="1" dialogue_type="2" value="" placeholder="自分の回答を記入してください。">
+        <p>「私はこう感じています。」と自分の気持ちをわかりやすく伝えます。 <br>
+          <span class="pink">攻撃的・感情的にならないように。</span></p>
+      </div>
+
+      <div class="S">
+        <div class="title">
+          <p><span class="title_colored">S</span>（提案）</p>
+        </div>
+        <input class="dialogue_input" type="text" dialogue_sex="1" dialogue_to="1" dialogue_type="3" value="" placeholder="自分の回答を記入してください。">
+        <p>相手に、取って欲しい行動、お願いしたい事などを具体的に提案します。 <br>
+          <span class="pink">命令にならないように。</span></p>
+      </div>
+
+      <div id="share_button" class="share_button">Share</div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

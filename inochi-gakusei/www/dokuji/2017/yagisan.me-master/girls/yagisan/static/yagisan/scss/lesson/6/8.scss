@@ -1,0 +1,40 @@
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseOrange: #FF9966;
+
+.lesson_content {
+  table {
+    border-collapse: separate;
+    border-spacing: 0px 20px;
+  }
+
+  .question_button {
+    float: left;
+    width: 150px;
+    padding: 10px 0;
+    line-height: 30px;
+    font-size: 1rem;
+    margin: 5px;
+    background-color: $BasePink;
+    text-align: center;
+    border-radius: 5px;
+    color: $BaseWhite;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .question_yagisan {
+    float: left;
+    width: 95px;
+    padding: 10px 0;
+    margin: 5px;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}

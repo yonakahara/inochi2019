@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta name="description" content="【大学生7/20応募締切!!】向き合おう、inochiと―。inochi学生フォーラム2016は「日本の心臓突然死を減らす」というテーマの問題解決型実施プログラム。関西圏の中高生&amp;全国の大学生・大学院生&amp;世界の大学生・大学院生がヘルスケア課題解決に挑みます。">
+ 	<meta name="keywords" content="inochi学生フォーラム,inochi,応募,学生,フォーラム,プロジェクト,2016,阪大,京大,医療,ヘルスケア,若者,関西,心臓突然死">
+    <title>練習 | inochi学生フォーラム2016</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- read Bootstrap　CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+		apiKey: "AIzaSyB2a9DeojA5BlM8ndqKQWl797w-7XtTkyo",
+		authDomain: "inochi-participants.firebaseapp.com",
+		databaseURL: "https://inochi-participants.firebaseio.com",
+		storageBucket: "inochi-participants.appspot.com",
+		};
+		firebase.initializeApp(config);
+	</script>
+    <!-- read jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+		function register(){
+		    email = $('#emailIn1').val();
+		    password = $('#passIn1').val();			
+			firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error, userData) {
+		  	if (error) {
+		    	        console.log("Error creating user:", error);
+		  	} else {
+		  		$('#stat1').text('ユーザ作成成功');
+		    	        console.log("Successfully created user account with uid:", userData.uid);
+		  	     }
+		});
+		};
+		function kakunin(){
+    	var email = $('#emailIn').val();
+    	var password = $('#passIn').val();		
+		console.log(email);
+		firebase.auth().signInWithEmailAndPassword(email,password).catch(function(error, authData) {
+		if (error) {
+		         $('#stat').text('ログイン不成功');
+		         console.log("Login Failed!", error);
+		} else {
+		         $('#stat').text('ログイン成功');
+
+		       }
+		});
+		}; 
+    </script>
+    <!-- read Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--<link rel="stylesheet" href="css/main.css">-->
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/entry.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-78321708-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+  </head>
+  <body>
+  
+  	<header id="header_form">
+	</header>
+
+	<!--main contents-->
+  	<div class="container-fluid">
+  		<!--entry-->
+    	<div class="row row_n">
+	    	<div class="col-sm-2 col-md-3"></div>
+	    	<div class="col-sm-8 col-md-6">
+				<h3>ユーザログイン（登録）</h3>
+					<p style="color:#000;">
+					メールアドレス  <input type='text' id='emailIn1' />
+					パスワード  <input type='password' id='passIn1' />
+					<input type='button' id='regi' value=' 登録 ' onClick="register()" />
+					</p>
+				ステータス： <span id='stat1'></span>
+
+				<h3>ユーザログイン（認証）</h3>
+					<p style="color:#000;">
+					メールアドレス  <input type='text' id='emailIn' />
+					パスワード  <input type='password' id='passIn' />
+					<input type='button' id='loginb' value=' ログイン ' onClick="kakunin()" />
+					</p>
+				ステータス： <nobr id='stat'></nobr>
+
+	    		<h1 style="width:100%;">ENTRY</h1>
+				
+	    		<h4>応募要項</h4>
+				<div>
+					<p>inochi学生フォーラムは、関西圏の中高生を対象とした「KANSAI中高生TEAM」と、全国および全世界の大学生・大学院生を対象とした「GLOCAL大学生TEAM」という大きく2つの参加者枠で構成されます。<br>応募者多数の場合は、記入いただいた内容によって(中高生については必要に応じて面接によって)選考いたします。</p>
+				</div>
+
+	    		<div class="row row_n">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5 entry_cent">
+					<img src="img/high_st.png" width="350px">
+						<h3><span style="color:#f5ff5b;">■</span> KANSAI中高生TEAM <span style="color:#f5ff5b;">■</span><br>*応募は終了いたしました。</h3>
+						<table id="entry_table">
+							<tr>
+								<td id="data_title_h">応募条件</td>
+								<td>関西圏(大阪、京都、兵庫、滋賀、奈良、和歌山)の中学・高校に通う生徒<br/>※個人またはチーム(4名以内)での参加(個人参加の場合は他の個人参加者とチームになります。)</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">プログラム内容</td>
+								<td>・inochi Education Program<br/>→講義を直接受講いただけます。また、最先端医療施設の見学も可能です。<br/>・メンタリング<br/>→阪大・京大医学部の学生によるメンター制度(プラン立案についての相談役)がございます。</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">フォーラム出場チーム選考方法</td>
+								<td>KANSAI中高生TEAMについては、当日出場権を賭けた最終選考を11月上旬に実施し、当日審査員による審査の上、2つの出場チームを決定いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">募集人数</td>
+								<td>およそ20チーム　50名程度<br/>※応募者多数の場合は、エントリーフォームへの記入内容および面接によって選考いたします。※同じ学校でチームを作り参加することを推奨いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_h">参加費用</td>
+								<td><strong>無料</strong></td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm-5 entry_cent">
+					<img src="img/univ_st.png" width="350px">
+						<h3><span style="color:#40c4ff;">■</span> GLOCAL大学生TEAM <span style="color:#40c4ff;">■</span></h3>
+						<table id="entry_table">
+							<tr>
+								<td id="data_title_u">応募条件</td>
+								<td>日本全国及び全世界の医療・ビジネス・科学技術に関心のある大学生・大学院生<br/>※チーム(2名以上4名以内)での参加(学部・学科・学年は問いません)</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">プログラム内容</td>
+								<td>・inochi Education Program<br/>→Web上(当サイトから参加者専用サイトにログイン)にて受講。講義形式の教育コンテンツは原則すべて受講いただけます。<br/>・メンタリング<br/>→プラン考案の進捗管理・問い合わせ先として担当者がつきますが、独創性を助長するためにも、基本的には皆さんの独力でプラン考案を行っていただきます。</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">フォーラム出場チーム選考方法</td>
+								<td>GLOCAL大学生TEAMについては、当日出場権を賭けた最終選考をWeb上で実施。動画をアップロードしていただき、Web投票により、計3つのフォーラム出場チームを決定いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">募集人数</td>
+								<td>およそ20チーム　50名程度(国内・海外合わせて)<br/>※応募者多数の場合は、エントリーフォームへの記入内容および面接によって選考いたします。</td>
+							</tr>
+							<tr>
+								<td id="data_title_u">参加費用</td>
+								<td><strong>無料</strong><br/>(最終プレゼンチームについてはフォーラム参加のための関西までの交通費は自己負担となります。但し、遠隔地より参加の場合は、交通費補助がございます。)</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+
+				<div id="entry_area" style="text-align:center;margin-top:-40px;margin-bottom:80px;">
+					<h3 class="entry_ex" id="prize_w"><strong>
+	    				優勝チームには賞金15万円!!
+	    			</strong></h3>
+    			</div>
+
+				<h4>応募フォーム</h4>
+				<p>*フォーム送信後の自動返信メールより参加志望動機・自己PRを後からご記入いただきます。</p>
+				<form id="entryform" action="mail.php" method="post">
+					<ul>
+						<li>
+							<label><span>学校区分</span><span style="font-weight:lighter;">(必須)：</span></label><br>
+							<!--<label><input type="radio" name="学校区分" value="中高生" onclick="hideSingleOrTeam(false);disableMemberTextboxes(false);" required>中高生</label>&nbsp;&nbsp;-->
+							<label><input type="radio" name="学校区分" value="大学生・大学院生" onclick="hideSingleOrTeam(true);disableMemberTextboxes(false);" required>大学生・大学院生</label>
+						</li>
+						<li>
+							<div id="toggleForm1" style="display:none;">
+								<label><span>参加形態</span><span style="font-weight:lighter;">(必須)：</span></label><br>
+								<!--<label><input type="radio" name="個人orチーム" value="個人参加(参加後にチーム結成)" onclick="disableMemberTextboxes(true);">個人参加(参加後にチーム結成)</label>&nbsp;&nbsp;-->
+								<label><input type="radio" name="個人orチーム" value="チーム参加" onclick="disableMemberTextboxes(false);">チーム</label>
+							</div>
+						</li>
+						<li>
+							<label><span>氏名</span><span style="font-weight:lighter;">(必須)：</span><br><input type="text" name="氏名"></label>
+						</li>
+						<li>
+							<label><span>[チームの場合のみ]<br>他のチームメンバーのフルネーム</span><span style="font-weight:lighter;"><br class="br_pc">(チームで応募の場合必須)：</span><br class="br_pc"><br>
+								<div id="memberNames">
+									<input type="text" name="チームメンバー1"><br>
+									<input type="text" name="チームメンバー2"><br>
+									<input type="text" name="チームメンバー3"><br>
+								</div>
+							</label>
+						</li>
+						<li>
+							<label><span>所属</span><span style="font-weight:lighter;">(必須(例)いのち高等学校2年)：</span><br><input type="text" name="所属" required></label>
+						</li>
+						<li>
+							<label><span>メールアドレス</span><span style="font-weight:lighter;">(必須※基本的に連絡は電子メールで行います。)：</span><br><input type="email" name="Email" required></label>
+						</li>
+						<li>
+							<label><span>電話番号:</span><br><input type="tel"></label>
+						</li>
+						<!--
+						<li>
+							<label><span>参加希望動機/意気込み</span><span style="font-weight:lighter;">(必須・400字以内※この設問については面接時に問いますので詳しくお書きください。)：</span></label><br>
+							<div class="row">
+								<div class="col-sm-10">
+									<textarea name="参加希望動機/意気込み" style="width:100%; height:6em" required maxlength='400'></textarea>
+								</div>
+							</div>
+						</li>
+						<li>
+							<label><span>自己PR</span><span style="font-weight:lighter;">(必須・400字以内※この設問については面接時に問いますので詳しくお書きください。)：</span></label><br>
+							<div class="row">
+								<div class="col-sm-10">
+									<textarea name="自己PR" style="width:100%; height:6em" required maxlength='400'></textarea>
+								</div>
+							</div>
+						</li>
+						-->
+						<li>
+							<label><span>紹介者</span><span style="font-weight:lighter;">(どなたかのご紹介を受けてご応募された方はご紹介者様の氏名をご記入ください。)：</span><br><input type="text" name="紹介者"></label>
+						</li>
+						<li>
+							<input type="submit" value="送信" style="width:80px; height:30px; color:#10253f; font-size:1.8rem;">
+						</li>
+					</ul>
+				</form>
+
+				<p><strong>inochi学生フォーラム参加規約</strong></p>
+				<form>
+					<textarea style="width:100%; height:8em; color:#10243f;" readonly>第1条（本規約の範囲および変更）
+
+1項	本規約は、inochi学生プロジェクト（以下「当団体」という）が主催するinochi学生フォーラム（以下「本フォーラム」という）における研修プログラム（以下「本研修」という）への参加に際して適用される条件を定めるものです。
+
+2項	下記第2条に基づく本研修の申込を行った全ての参加希望者（以下「参加希望者」という）は、本規約の内容を承諾したものとみなされます。
+
+3項	当団体は、参加希望者、本研修に参加しているすべての参加者（以下「参加者」という）に通知を行うことにより、本規約の変更又は細則の制定をすることができるものとします。但し、当該変更規定又は細則が通知された後に、参加希望者が本研修に参加を希望した場合には、参加希望者は当該内容に同意したものとみなされ、当該変更規定および細則は、本規約の一部を構成するものとして、参加希望者に適用されます。
+
+
+第2条（本研修参加の申込）
+
+1項	参加希望者は、本フォーラム特設Webサイト(http://inochi-gakusei.com/2016) (以下「当Webサイト」という)上に掲載する手続、または当団体の定めるその他の手続に従って、参加の申込（以下「参加申込」という）を行い、氏名・住所・電話番号・メールアドレスその他当団体の別途定める事項について、正確且つ最新の情報（以下「登録情報」という）をメールにて当団体に送信、もしくは当団体の定めるその他の方法にて当団体に提供するものとします。
+
+
+第3条（本研修参加の承諾）
+
+1項	当団体は、本規約に承諾し第2条の参加申込を行った参加希望者に対し、本研修参加の可否を電子メールにより通知するものとします。
+
+2項	応募多数の場合はエントリーフォームへの記入内容、および必要に応じて面接を行い、選考し、本研修参加の可否を電子メールにより通知するものとします。
+
+
+第4条（参加費等）
+
+1項	第3条の本研修参加の承諾通知を受けた者は、通知に記載の方法により当団体に対し参加費を支払うものとします。
+
+2項	当団体と参加者間の本研修の提供に係る契約（以下「本契約」という）は、参加費全額の入金を確認したときに有効に成立し、参加者は、本規約の定めに従い参加者たる資格を取得するものとします。
+
+
+第5条（研修プログラムの変更）
+
+1項	研修プログラムの内容変更または日程の変更は、イベントの前日から数えて11日前までとします。
+
+
+第6条（個人情報・登録情報の取り扱い）
+
+1項	当団体が取得した参加者の個人情報に関する取扱いについては、別途定める「個人情報の取り扱いについて」に則って管理するものとします。
+
+
+第7条（録音・録画・撮影記録の使用）
+
+1項	当団体が、本研修で行った録音・録画・撮影記録は、本研修の記録、本団体の活動紹介などの目的のために使用することができるものとします。
+
+
+第8条（講義内容に対する権利）
+
+1項	本研修に含まれる一切のノウハウ、アイディア、手法その他の情報、本研修において提供される教材、書籍およびビデオその他一切の著作物、ならびにその他本研修で使用される一切の名称および標章（以下併せて「講義内容」という）についてのノウハウ、著作権及び商標権その他一切の権利は全て当団体に帰属し、参加者は、これらの権利を侵害する行為を一切行ってはならないものとします。
+
+2項	参加者は、本研修の参加に際して、他の参加者から取得した一切の個人情報について、いかなる第三者にも開示または漏洩してはならないものとします。但し、当団体は、参加者による他の参加者の個人情報の取扱に関して一切の責任を負わないものとします。
+
+
+第9条（参加者のアイディア等に対する権利）
+
+1項	本研修を通じて参加者が作成したアイディア、プラン等の権利は作成した参加者自身に帰属するものとします。
+
+2項	本条第1項において本研修終了後30日以内に、参加者が作成したアイディア、プラン等を実行する意思を当団体に通知しない場合、本研修後31日目にそのアイディア、プラン等の権利の帰属は参加者自身から当団体に変更されるものとします。
+
+第10条（参加者資格の中断・取消）
+
+1項	参加者が以下の項目に該当する場合、当団体は、事前に通知することなく、直ちに本契約を解除し、当該参加者の参加者資格を停止または将来に向かって取り消すことができるものとします。
+
+1号	参加申込において、虚偽の申告を行ったことが判明した場合。
+2号	イベント内容を適切に理解できない可能性がある場合、もしくは当団体が本研修の参加者としての適格性に欠けると判断した場合。
+3号	当団体が別途禁止する行為を行った場合。
+4号	本規約に違反した場合。
+5号	その他参加者として不適切と当団体が判断した場合。
+
+2項	当団体は、本条1項に該当する場合の外、参加者が本研修の進行の妨げになると判断した場合、退席を命じることがあります。
+
+
+第11条（イベントの中止・中断および変更）
+
+1項	当団体は、本研修の運営上やむを得ない場合には、参加者に事前の通知なく、本研修の運営を中止・中断および変更できるものとします。
+
+2項	本条第1項の場合には、当団体は、本研修の中止または中断後30日以内に本研修についての参加費を返金します。但し、当団体の責任は、支払済の参加費の返金に限られるものとし、その他一切の責任を負いません。
+
+
+第12条（参加費の返金）
+
+1項	参加のキャンセルによる返金は、本研修の最初の研修日の1日前までに当団体に参加のキャンセルの旨を通知した場合に限ります。
+
+
+第13条（損害賠償）
+
+1項	参加者が、本研修に起因または関連して、当団体に対して損害を与えた場合、参加者は、一切の損害を補償するものとします。
+
+
+第14条（通知および同意の方法）
+
+1項	当団体から参加者への通知は、本規約に別に定めのある場合を除き、当団体からの電子メールもしくは当Webサイト上の一般掲示またはその他当団体が適当と認める方法により行なわれるものとします。
+
+2項	本条第1項の通知が電子メールで行なわれる場合には、登録情報として登録された電子メールアドレス宛への当団体からの発信をもって通知が完了したものとみなします。但し、登録情報が正確もしくは最新でなかった場合には、当団体からの通知が不到達となっても、本項に定める時点で到達したとみなされるものとします。
+
+3項	本条第1項の通知が当Webサイト上の一般掲示で行なわれる場合は、当該通知が本サイト上に掲示された時点（当Webサイトにアップロードされた時点）をもって参加者への通知が完了したものとみなします。
+
+4項	当団体は、上記いずれかの方法により参加者に通知を行なった場合、通知の完了後10日以内に参加者からの異議申し立てがないか、又は、通知完了後参加者が当団体のイベントに参加した場合には、その時点で参加者が同通知の内容に同意したものとみなします。
+
+
+附則
+
+    本規約は2016年5月1日より実施するものとします。
+</textarea>
+				</form>
+
+				<p><strong>個人情報の取り扱いについて</strong></p>
+				<form>
+					<textarea style="width:100%; height:8em; color:#10243f;" readonly>ご提供いただいた個人情報は当団体にて厳重に管理し、当団体の活動の範囲内でのみ利用させていただきます。&#13;ご提供いただいた個人情報は、ご本人の同意がない限り、当団体より第三者に提供することはございません。&#13;ご提供いただいた個人情報に基づき、当団体の活動に関するご案内のメールをお送りすることがございます。&#13;個人情報の削除をご希望の際は当団体までメールにてご連絡ください。</textarea>
+				</form>
+				<div style="text-align:center;margin-top:20px;">
+				    <p>お問い合わせは下記のメールアドレスより</p>
+				    <img src="img/info_w.png" width="300px">
+			    </div>
+    		</div>
+    	</div>
+    </div>
+
+	<div class="container-fluid">
+		<div class="row row_n">
+		    <div class="col-sm-2"></div>
+		    <div class="col-sm-8" style="text-align: center; margin:0 auto;margin-top:60px;margin-bottom:30px;">
+		        <a href="http://inochi-gakusei.com/2016"><div id="simulation"><h3 id="simulation"><strong>TOPへ戻る</strong></h3></div></a>
+		    </div>
+	    </div>
+	</div>
+
+  	<!--footer-->
+    <footer class="container-fluid" id="formfooter">
+    	<div class="col-sm-2"></div>
+    	<div class="col-sm-8" id="footer">
+    		<div id="footer2">
+    			<p id="footer">
+    			<p style="display:inline-block; vertical-align:top;">
+	    		<img src="img/inochiGlogo.png" width="150px">
+	    		<img src="img/inochiMlogo.png" width="100px">
+	    		</p>
+	    		<p style="display:inline-block;vertical-align:middle; text-align:left;">
+	    		<a href="http://inochi-gaksuei.com/2016/#about">inochi学生フォーラムについて</a><br><a href="http://inochi-gaksuei.com/2016/#supporters">inochi学生フォーラムサポーター</a><br><a href="http://inochi-gaksuei.com/2016/#sponsors">協賛企業一覧</a><br><a href="http://inochi-gaksuei.com/2016/#schedule">inochi学生フォーラムスケジュール</a><br><a href="http://inochi-gaksuei.com/2016/#entry">応募要項</a><br><a href="http://inochi-gaksuei.com/2016/#faq">よくあるご質問</a></p>
+	    		<p style="display:inline-block;vertical-align:top; text-align:left;margin-left:40px;">
+	    		<strong>【後援】<br><br>関西広域連合<br><br>近畿経済産業局</strong></p></p>	    		
+    		</div>
+    		<p id="footer2">&copy;Copyrights 2016 inochi学生プロジェクト</p>
+    	</div>
+    	<div class="col-sm-2"></div>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
+

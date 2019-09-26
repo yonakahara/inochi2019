@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="inochi学生フォーラムの参加者専用ページです。">
+    <meta name="keywords" content="inochi学生フォーラム,inochi,学生,フォーラム,プロジェクト,2016,医療,ヘルスケア,若者,関西,心臓突然死">
+    <meta property="og:image" content="http://inochi-gakusei.com/2017/img/share.png">
+    <meta property="og:description" content="inochi学生フォーラムの参加者専用ページです。">
+
+    <title>参加者用ページ | inochi学生フォーラム2017</title>
+    <link rel="shortcut icon" href="http://inochi-gakusei.com/2017/img/favicon.ico" />
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/jquery.flipcountdown.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/participants_main.css">
+    <link rel="stylesheet" href="./css/participants.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="./js/jquery.flipcountdown.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+     ga('create', 'UA-78321708-1', 'auto');
+     ga('send', 'pageview');
+    </script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script>
+     // Initialize Firebase
+     var config = {
+       apiKey: "AIzaSyCeUFCH49_UQEb1Gyu6dNtyzU20TbeUm5s",
+       authDomain: "inochi-education-2017.firebaseapp.com",
+       databaseURL: "https://inochi-education-2017.firebaseio.com",
+       projectId: "inochi-education-2017",
+       storageBucket: "inochi-education-2017.appspot.com",
+       messagingSenderId: "664952091251"
+     };
+     firebase.initializeApp(config);
+    </script>
+
+    <script src="./js/participants.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--*************************************************
+         Japanese Contents
+         **************************************************-->
+    <!--main contents-->
+    <div class="JPcontents">
+      <div class="container-fluid">
+
+        <div class="row row_n" id="head_login">
+          <div class="col-sm-2 col-md-2"></div>
+          <div class="col-sm-8 col-md-8">
+            <div style="text-align:left;float:left;">こんにちは,&nbsp;<span id="username">名無し</span>&nbsp;さん&nbsp;&nbsp;&nbsp;</div>
+            <div style="text-align:right;">
+              <button class="user_button" onclick="modal1();" name="verify-email">表示ユーザー名変更</button>&nbsp;&nbsp;&nbsp;
+              <button class="user_button" onclick="modal2();" name="verify-email">ログインパスワード変更</button>&nbsp;&nbsp;&nbsp;
+              <button disabled class="user_button" id="quickstart-sign-in" name="signin">Sign In</button>
+            </div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="row row_w row_w_sim">
+            <div class="col-sm-2 col-md-2"></div>
+            <div class="col-sm-8 col-md-8" id="top_sim">
+              <h1 class="top-title"><img src="../img/title1.png" alt="title"/></h1>
+              <img src="../img/user.png" width="150px"/><h4 style="color:#fff;">inochi 2017参加者用ページ</h4><!-- <<h3>inochi学生フォーラムまで</h3><div id="timer"></div><p>Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seconds</p>-->
+            </div>
+            <div class="col-sm-2 col-md-2"></div>
+          </div>
+          <div class="row row_w">
+            <div class="col-sm-2 col-md-2"></div>
+            <div class="col-sm-8 col-md-8" style="text-align:center;">
+              <h1 style="tezt-align:left;">Education Video</h1>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                  <h4>7/09<br>Kickoff Meeting</h4>
+                  <p>-基調講演-<br>inochi未来プロジェクト理事長<br>大阪大学医学系研究科 心臓血管外科 教授<br>澤 芳樹 先生<br><br>-オープニングスピーチ-<br>inochi学生フォーラム2017<br> プロジェクトマネージャー 山田 達也 <br><br>-認知症パネルディスカッション-<br>・伊坪 恵(地域医療機能推進機構大阪病院老人看護専門看護師)<br>
+                    ・鎌田 大啓先生(大阪府作業療法士会作業療法推進活動部門代表)<br>
+                    ・竹屋 泰先生(大阪大学大学院医学系研究科老年・総合内科学学部講師)<br>
+                    ・原田 かおる先生(高槻赤十字病院老人看護専門看護師)<br><br>-認知症VR講座-<br>株式会社シルバーウッド株式会社代表<br>下河原 忠道氏<br><br>-インプットセッション-<br>inochi学生プロジェクト<br>大学生チームマネージャー 秤谷 隼世<br></b></p>
+                  <a href="lectures/0709.html"><img src="img/thumbnail_0709.png" alt="7/09 Kick-off" class="thumbnail_"　id="aaaaa"/></a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                  <h4>7/17<br>MEDICINE DAY</h4>
+                  <p>-イントロダクション-<br>京都大学薬学部4年生 池内善宣<br><br>-認知症患者の自立-<br>木下 彩栄 先生(京都大学大学院医学研究科人間健康科学系専攻、京都大学医学部人間健康科学科・教授)<br><br>-デザイン思考のイロハ-<br>大阪大学大学院国際公共政策研究科客員教授<br>木川田 一榮先生<br><br>-介護者の負担軽減-<br>繁信 和恵 先生(公益財団法人 浅香山病院 精神科・認知症疾患医療センター長)</p>
+                    <link rel ='/Users/user/Projects/inochi-gakusei.com/participants/img/thumbnail_coming_on.png/' /></p>
+                    <a href="lectures/0717.html"><img src="img/thumbnail_0717.png" class="thumbnail_"　alt="7/18 FEEL Handai"></a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                  <h4>7/30<br>CROSS BOUNDARY DAY</h4>
+                  <p>-世界における認知症-<br><br>・岡島 英明先生（京都大学肝胆膵・移植外科准教授）<br>・茅野 龍馬先生（WHO健康開発総合研究センター・テクニカルオフィサー）<br><br>
+                    -アイデアの発想とその広め方-<br><br>
+                  ・日下 慶太先生<br>（株式会社電通 マーケティング・クリエーティブセンター)<br><br>
+                  -アルムナイプレゼンテーション-<br>・生澤 歩乃佳さん(神戸女学院高等学部 2年 ) <br>・西川 登偉さん(清風南海高校 ３年 )<br>・小池 佳菜子さん(京都大学医学部 人間健康科学科 看護学専攻4年 )<br></p>
+                  <br><br>
+                  <a href="lectures/0730.html"><img src="img/thumbnail_0725.png" class="thumbnail_"　alt="7/25 FEEL Kyodai"></a>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                <h4>8/11<br>COMMUNITY DAY</h4>
+                <p>-コミュニティづくり-<br><br>・鎌田 大啓 先生<br>（株式会社TRAPE 代表取締役/作業療法士/Community Healthcare Designer）<br>・渡辺 直樹 先生（株式会社studio-L）<br></p>
+                <br>
+                <a href="lectures/0811.html"><img src="img/thumbnail_0803.png" class="thumbnail_" alt="8/3 IMAGINE DAY2"></a>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                <h4>8/13<br>TECH DAY</h4>
+                <p>-テクノロジープレゼンテーション-<br><br>・都留 将人氏（大阪大学基礎工学部3年）<br>・高原 達也 先生（一般社団法人セーフティネットリンケージ 代表理事）<br><br></p>
+                <a href="lectures/0813.html"><img src="img/thumbnail_0904.png" class="thumbnail_" alt="9/4 IMAGINE DAY3"></a>
+              </div>
+
+             <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                <h4>PRESENTATION METHODS</h4>
+                <p>-inochi秘伝のプレゼンテーション-<br><br>1. Mindset for presentation ~情報伝達編~<br>2. 「これイイ！」は作れる！ ~資料編~ <br> 3. Elements of speech ~スピーチ編~<br><br></p>
+                <a href="lectures/presentation.html"><img src="img/thumbnail_0919.png" class="thumbnail_" alt="9/19 Hackathon"></a>
+              </div>
+            </div>
+
+            <!--<div class="row">
+                 <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                 <h4>9/19<br>医療ハッカソン</h4>
+                 <p>ジャパンバイオデザイン　プログラムディレクター<br>大阪大学国際医工情報センター特任准教授<br>八木 雅和 先生<br><br><br><br></p>
+                 <a href="lectures/0919.html"><img src="img/thumbnail_0919.png" alt="9/19 Hackathon" class="thumbnail_"/></a>
+                 </div>
+               </div>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal">
+    </div>
+    <div id="content_box1">
+      <input class="user_text" style="display:inline;width:auto;" type="text" id="displayname" name="displayname" placeholder="新しい表示ユーザー名"/>
+      <br/><br/>
+      <button class="user_button user_button_g" onclick="changeName();modal_back();" name="verify-email">表示ユーザー名を変更する</button>
+    </div>
+    <div id="content_box2">
+      <input class="user_text" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+      <br/><br/>
+      <button class="user_button user_button_g" id="quickstart-password-reset" onclick="modal_back();" name="verify-email">パスワード変更メールを送る</button>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="link_sim">
+        <a href="http://inochi-gakusei.com/2017"><div id="simulation"><h3 id="simulation"><strong>サイトTOPへ戻る</strong></h3></div></a>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="container-fluid">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" id="footer">
+        <div id="footer2">
+          <p id="footer">
+            <p style="display:inline-block; vertical-align:top;">
+              <img src="../img/inochiGlogo.png" width="150px">
+              <img src="../img/inochiMlogo.png" width="100px">
+            </p>
+            <p style="display:inline-block;vertical-align:middle; text-align:left;">
+              <a href="http://inochi-gakusei.com/2017">inochi学生フォーラム2017</a>
+              <!-- <br><a href="http://inochi-gakusei.com/2017/#supporters">inochi学生フォーラムサポーター</a><br><a href="http://inochi-gakusei.com/2017/#sponsors">協賛企業一覧</a><br><a href="http://inochi-gakusei.com/2017/#schedule">inochi学生フォーラムスケジュール</a><br><a href="http://inochi-gakusei.com/2017/#entry">応募要項</a><br><a href="http://inochi-gakusei.com/2017/#faq">よくあるご質問</a></p>
+                   <p style="display:inline-block;vertical-align:top; text-align:left;margin-left:40px;"> -->
+              <!-- <strong>【後援】<br><br>関西広域連合<br><br>近畿経済産業局</strong></p></p> -->
+        </div>
+        <p id="footer2">&copy;Copyrights 2017 inochi学生・未来プロジェクト All rights reserved </p>
+      </div>
+      <div class="col-sm-2"></div>
+    </footer>
+    </div>
+
+
+    <!--*************************************************
+         English Contents
+         **************************************************-->
+    <!--main contents-->
+    <div class="ENcontents">
+      <div class="container-fluid">
+
+        <div class="row row_n" id="head_login">
+          <div class="col-sm-2 col-md-2"></div>
+          <div class="col-sm-8 col-md-8">
+            <div style="text-align:left;float:left;">Hello,&nbsp;<span id="username">No Name</span>&nbsp;&nbsp;&nbsp;</div>
+            <div style="text-align:right;">
+              <button class="user_button" onclick="modal1();" name="verify-email">Change Your Name</button>&nbsp;&nbsp;&nbsp;
+              <button class="user_button" onclick="modal2();" name="verify-email">Change Your Password</button>&nbsp;&nbsp;&nbsp;
+              <button disabled class="user_button" id="quickstart-sign-in" name="signin">Sign In</button>
+            </div>
+          </div>
+        </div>
+        <div id="container">
+          <div class="row row_w row_w_sim">
+            <div class="col-sm-2 col-md-2"></div>
+            <div class="col-sm-8 col-md-8" id="top_sim">
+              <h1 class="top-title"><img src="../img/title1_en.png" alt="title"/></h1>
+              <img src="../img/user.png" width="150px"/><h4 style="color:#fff;">inochi 2016 Web Site for Participants</h4><h3>LEFT DAYS until inochi Gakusei Forum:</h3><div id="timer2"></div><p>Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seconds</p>
+            </div>
+            <div class="col-sm-2 col-md-2"></div>
+          </div>
+          <div class="row row_w">
+            <div class="col-sm-2 col-md-2"></div>
+            <div class="col-sm-8 col-md-8" style="text-align:center;">
+              <<<<<<< HEAD
+              <h1 style="tezt-align:left;">Education Video</h1>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                  <h4>7/10<br>Kick-off EVENT</h4>
+                  <p>President of inochi Mirai Project<br>Dean of Osaka University School of Medicine<br>Sawa Yoshiki, M.D.<br><br>President of inochi Gakusei Project<br>Teramoto Masayuki<br></p>
+                  <a href="lectures/0709.html"><img src="img/thumbnail_0709.png" alt="7/10 Kick-off" class="thumbnail_"　id="aaaaa"/></a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                  <h4>7/17<br>FEEL Osaka</h4>
+                  <p>Families of Patients<br>Mr. &amp; Mrs. Maeshige /<br>Mrs. Ueno<br>Osaka University, Departament of<br>International Public Policy, visiting Professor<br>Kikawada Kazue M.D.<br></p>
+                  <a href="lectures/0709.html"><img src="img/thumbnail_0709_1_title.png" class="thumbnail_"　alt="7/18 FEEL Handai"></a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                  <h4>7/25<br>FEEL Kyoto</h4>
+                  <p>inochi Mirai Project Board Member<br>Dean of Kyoto University School of Medicine<br>Uemoto Shinji M.D.<br>Kyoto university,<br>Environmental Safety and Health Organization Professor<br>Iwami Taku M.D.<br></p>
+                  <a href="lectures/0725.html"><img src="img/thumbnail_0725.png" class="thumbnail_"　alt="7/25 FEEL Kyodai"></a>
+                </div>
+                =======
+                <h1 style="tezt-align:left;">Education Video</h1>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                    <h4>7/10<br>Kick-off EVENT</h4>
+                    <p>President of inochi Mirai Project<br>Dean of Osaka University School of Medicine<br>Sawa Yoshiki, M.D.<br><br>President of inochi Gakusei Project<br>Teramoto Masayuki<br></p>
+                    <a href="lectures/0709.html"><img src="img/thumbnail_0709.png" alt="7/10 Kick-off" class="thumbnail_"　id="aaaaa"/></a>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                    <h4>7/17<br>FEEL Osaka</h4>
+                    <p>Families of Patients<br>Mr. &amp; Mrs. Maeshige /<br>Mrs. Ueno<br>Osaka University, Departament of<br>International Public Policy, visiting Professor<br>Kikawada Kazue M.D.<br></p>
+                    <a href="lectures/0718.html"><img src="img/thumbnail_0718.png" class="thumbnail_"　alt="7/18 FEEL Handai"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                    <h4>7/25<br>FEEL Kyoto</h4>
+                    <p>inochi Mirai Project Board Member<br>Dean of Kyoto University School of Medicine<br>Uemoto Shinji M.D.<br>Kyoto university,<br>Environmental Safety and Health Organization Professor<br>Iwami Taku M.D.<br></p>
+                    <a href="lectures/0725.html"><img src="img/thumbnail_0725.png" class="thumbnail_"　alt="7/25 FEEL Kyodai"></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                    <h4>7/30<br>IMAGINE DAY1</h4>
+                    <p>Dentsu Inc.<br>CREATIVE DIRECTOR<br>Tsuyoshi George Komuro<br>Osaka university Graduate School of Medicine,<br> Visiting Professor<br>Suzuki Kan, M.D.<br></p>
+                    <a href="lectures/0730.html"><img src="img/thumbnail_0730.png" alt="7/30 IMAGINE DAY1" class="thumbnail_"/></a>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                    <h4>8/3<br>IMAGINE DAY2</h4>
+                    <p>Linkdata.org<br>Shimoyama Sayoko<br>Shingu City Council Member<br>Namikawa Tetsuji<br>Hyogo Prefecture Council Member<br>Ohmae Haruyo</p>
+                    <a href="lectures/0803.html"><img src="img/thumbnail_0803.png" class="thumbnail_" alt="8/3 IMAGINE DAY2"></a>
+                    >>>>>>> acfe3611acb0e49af94f181ccca658a98fcd1848
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                    <h4>9/4<br>IMAGINE DAY3</h4>
+                    <p>Kyoto university, Unit of Design Professor<br>Kawakami Hiroshi<br><br><br><br><br></p>
+                    <a href="lectures/0904.html"><img src="img/thumbnail_0904.png" class="thumbnail_" alt="9/4 IMAGINE DAY3"></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-4 vid_sec">
+                    <h4>9/19<br>Inochi Medicine Hackathon</h4>
+                    <p>Program Director, Japan Biodesign<br>Global center for medical engineering and informatics,<br> Osaka university Associate Professor<br>Yagi Masakazu<br><br><br></p>
+                    <a href="lectures/0919.html"><img src="img/thumbnail_0919.png" alt="9/19 Hackathon" class="thumbnail_"/></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal">
+        </div>
+        <div id="content_box1">
+          <input class="user_text" style="display:inline;width:auto;" type="text" id="displayname" name="displayname" placeholder="New Display Name"/>
+          <br/><br/>
+          <button class="user_button user_button_g" onclick="changeName();modal_back();" name="verify-email">Change Your Name</button>
+        </div>
+        <div id="content_box2">
+          <input class="user_text" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+          <br/><br/>
+          <button class="user_button user_button_g" id="quickstart-password-reset" onclick="modal_back();" name="verify-email">Send E-mail to Reset Pass</button>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8" id="link_sim">
+            <a href="http://inochi-gakusei.com/2017"><div id="simulation"><h3 id="simulation"><strong>Back to TOP</strong></h3></div></a>
+          </div>
+        </div>
+
+        <!--footer-->
+        <footer class="container-fluid">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8" id="footer">
+            <div id="footer2">
+              <p id="footer">
+                <p style="display:inline-block; vertical-align:top;">
+                  <img src="../img/inochiGlogo.png" width="150px">
+                  <img src="../img/inochiMlogo.png" width="100px">
+                </p>
+                <p style="display:inline-block;vertical-align:middle; text-align:left;">
+                  <a href="http://inochi-gakusei.com/2017/#about">About inochi Gakusei Forum</a><br><a href="http://inochi-gakusei.com/2017/#supporters">Supporters of inochi Gakusei Forum</a><br><a href="http://inochi-gakusei.com/2017/#sponsors">Supporting Companies</a><br><a href="http://inochi-gakusei.com/2017/#schedule">Schedule of inochi Gakusei Forum</a><br><a href="http://inochi-gakusei.com/2017/#entry">Application requirements</a><br><a href="http://inochi-gakusei.com/2017/#faq">FAQs</a></p>
+                <p style="display:inline-block;vertical-align:top; text-align:left;margin-left:40px;">
+                  <strong>【Cooporations】<br><br>Union of Kansai Goverments<br><br>METI-KANSAI</strong></p></p>
+            </div>
+            <p id="footer2">&copy;Copyrights 2017 inochi Gakusei Project</p>
+          </div>
+          <div class="col-sm-2"></div>
+        </footer>
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,313 @@
+{% extends "yagisan/base.html" %}
+{% load static %}
+{% block body %}
+
+<div id="about" class="about">
+  <div class="about_content">
+    <div class="about_title">
+      <img src="{% static 'yagisan/img/about/about_title.png' %}">
+    </div>
+    <div class="about_wrap">
+      <div class="about_desc">
+        『ほぐれて八木さん』は、働く女性が、自分のストレス状況や考え方の<br>
+        くせを知り、自分のストレス原因に対する考え方、対処の仕方を見つめ<br>
+        直しながら、より柔軟にストレスに対処できるよう、応援する教材です。<br>
+        あなたの性格を変えたり、ポジティブな考え方を推奨することが<br>
+        目的ではありません。<br>
+        あなたがストレスに直面した時、柔軟でラクな考え方が<br>
+        できるようにサポートすることが目的です。<br>
+        気が付けば、自分の心のことは後回しにして、<br>
+        しんどい思いしていませんか？<br>
+        働く女性だって、ラクになって、いいんです。
+      </div>
+      <div class="about_image">
+        <img src="{% static 'yagisan/img/yagi_sleep.png' %}">
+      </div>
+    </div>
+  </div>
+  <div class="founder_content">
+    <div class="founder_title">
+      <img src="{% static 'yagisan/img/about/founder_title.png' %}">
+    </div>
+    <div class="founder_wrap">
+      <div class="founder_image">
+        <img src="{% static 'yagisan/img/footer_logo.png' %}">
+      </div>
+      <div class="founder_desc">
+        <div class="founder_desc_first">
+          inochi&nbspGirls'&nbspProject&nbsp「働く女性の、心を守る。」
+        </div>
+        <div class="founder_desc_second">
+          inochi Girls' Projectは、inochi学生プロジェクトの女子メンバーが運営するプロジェクトです。「女子ならではの視点」からヘルスケアの課題解決を目指しています。2017年度は、働く女性のメンタルヘルスケアプロジェクト「働く女性の、心を守る。」を通して、働く女性のメンタルヘルス事業に取り組んでいます。
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="member_content">
+    <div class="member_title">
+      <img src="{% static 'yagisan/img/about/member_title.png' %}">
+    </div>
+    <div class="member_images">
+      <div class="member_image_wrap">
+        <div class="member_image">
+          <img src="{% static 'yagisan/img/about/member_first.png' %}">
+        </div>
+      </div>
+      <div class="member_image_wrap">
+        <div class="member_image">
+          <img src="{% static 'yagisan/img/about/member_second.png' %}">
+        </div>
+      </div>
+      <div class="member_image_wrap">
+        <div class="member_image">
+          <img src="{% static 'yagisan/img/about/member_third.png' %}">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partners_content">
+    <div class="partners_title">
+      <img src="{% static 'yagisan/img/about/partners_title.png' %}">
+    </div>
+    <div class="partners_groups">
+      <div class="partners_group">
+        <div class="partners_group_image">
+          <img src="{% static 'yagisan/img/about/inochi-gakusei-logo.png' %}">
+        </div>
+        <div class="partners_group_desc">
+          <div class="partners_group_desc_first">
+            主催団体
+          </div>
+          <div class="partners_group_desc_second">
+            inochi学生プロジェクト
+          </div>
+          <div class="partners_group_desc_third">
+            一般社団法人inochi 未来プロジェクトと連携しながら、「若者の力でヘルスケアの問題を解決
+            する」という目的の下活動する京都大学・大阪大学の学生が中心となって動いている自主プロ
+            ジェクトです。活動の軸は‘若者の力でヘルスケア問題を解決すること’ 新しい技術のヘルス
+            ケアへの応用模索と地域のヘルスケア問題の解決に取り組みながら真に‘ innovative’ なイノ
+            ベーションを生み出すことのできる若手人材を生み出すことを目標としています。
+          </div>
+        </div>
+      </div>
+      <div class="partners_group">
+        <div class="partners_group_image">
+          <img src="{% static 'yagisan/img/about/inochi-mirai-logo.png' %}">
+        </div>
+        <div class="partners_group_desc">
+          <div class="partners_group_desc_first">
+            共催団体
+          </div>
+          <div class="partners_group_desc_second">
+            inochi未来プロジェクト
+          </div>
+          <div class="partners_group_desc_third">
+            「みんなでinochi の大切さと未来について考え、行動するプロジェクト」。医療者・企業・行
+            政そして市民と患者も。関西・日本が、みんなでささえあいながら、健康で長生きできる街・
+            国になることをめざします。2014 年6 月にinochi 未来プロジェクト実行委員会を立ち上げ、
+            今後、関西発の健康・医療イノベーションを加速させるべく2015 年11 月に一般社団法人
+            inochi 未来プロジェクトへと発展いたしました。
+          </div>
+          <a href="https://inochi-expo.com" target="blank">
+            <div class="partners_group_desc_fourth">
+              >> inochi未来プロジェクトHP : https://inochi-expo.com
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="partners_directors_title">
+        inochi未来プロジェクト理事メンバー
+      </div>
+      <div class="partners_directors">
+        <div class="partners_director_wrap">
+          <div class="partners_director_image">
+            <img src="{% static 'yagisan/img/about/director_first.jpg' %}">
+          </div>
+          <div class="partners_director_desc">
+            <div class="partners_director_desc_first">
+              理事長
+            </div>
+            <div class="partners_director_desc_second">
+              澤&nbsp芳樹
+            </div>
+            <div class="partners_director_desc_third">
+              大阪大学大学院<br>
+              医学系研究科長・<br>
+              医学部長
+            </div>
+          </div>
+        </div>
+        <div class="partners_director_wrap">
+          <div class="partners_director_image">
+            <img src="{% static 'yagisan/img/about/director_second.jpg' %}">
+          </div>
+          <div class="partners_director_desc">
+            <div class="partners_director_desc_first">
+              <br>
+            </div>
+            <div class="partners_director_desc_second">
+              上本&nbsp伸二
+            </div>
+            <div class="partners_director_desc_third">
+              京都大学<br>
+              肝胆膵・移植外科<br>
+              教授
+            </div>
+          </div>
+        </div>
+        <div class="partners_director_wrap">
+          <div class="partners_director_image">
+            <img src="{% static 'yagisan/img/about/director_third.jpg' %}">
+          </div>
+          <div class="partners_director_desc">
+            <div class="partners_director_desc_first">
+              <br>
+            </div>
+            <div class="partners_director_desc_second">
+              高橋&nbsp政代
+            </div>
+            <div class="partners_director_desc_third">
+              理化学研究所<br>
+              網膜再生医療研究<br>
+              開発プロジェクト<br>
+              プロジェクトリーダー
+            </div>
+          </div>
+        </div>
+        <div class="partners_director_wrap">
+          <div class="partners_director_image">
+            <img src="{% static 'yagisan/img/about/director_fourth.jpg' %}">
+          </div>
+          <div class="partners_director_desc">
+            <div class="partners_director_desc_first">
+              <br>
+            </div>
+            <div class="partners_director_desc_second">
+              鈴木&nbsp寛
+            </div>
+            <div class="partners_director_desc_third">
+              大阪大学大学院<br>
+              医学系研究科<br>
+              招聘教授
+            </div>
+          </div>
+        </div>
+        <div class="partners_director_wrap">
+          <div class="partners_director_image">
+            <img src="{% static 'yagisan/img/about/director_fifth.jpg' %}">
+          </div>
+          <div class="partners_director_desc">
+            <div class="partners_director_desc_first">
+              <br>
+            </div>
+            <div class="partners_director_desc_second">
+              原&nbsp丈人
+            </div>
+            <div class="partners_director_desc_third">
+              内閣府本府参与<br>
+              アライアンス・<br>
+              フォーラム財団<br>
+              代表理事
+            </div>
+          </div>
+        </div>
+        <div class="partners_director_wrap">
+          <div class="partners_director_image">
+            <img src="{% static 'yagisan/img/about/director_sixth.jpg' %}">
+          </div>
+          <div class="partners_director_desc">
+            <div class="partners_director_desc_first">
+              <br>
+            </div>
+            <div class="partners_director_desc_second">
+              村上&nbsp雅義
+            </div>
+            <div class="partners_director_desc_third">
+              先端医療振興財団<br>
+              専務理事
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="creative_content">
+    <div class="creative_title">
+      <img src="{% static 'yagisan/img/about/creative_title.png' %}">
+    </div>
+    <div class="creative_desc">
+      この教材は、医学や心理学を学ぶ女子大学生が、約半年間、真剣に働く女性のメンタルヘルスについて調査し、学び考え、作り上げました。<br>
+      さらに、医学生、心理学部生だけでなく、デジタルハリウッド大阪校の学生、京大理学部生のプログラマー、京都市立芸術大学出身のイラストレーターなど、多彩な「若者の力」がこの教材には注ぎ込まれています。
+    </div>
+    <div class="creative_wrap">
+      <div class="creative_members">
+        <div class="creative_members_title">
+          制作メンバー
+        </div>
+        <div class="creative_member">
+          <img src="{% static 'yagisan/img/about/creative_coding.png' %}">
+          <div class="creative_member_name">
+            杉山&nbsp一希
+          </div>
+          <div class="creative_member_desc">
+            京都大学<br>
+            理学部数学系
+          </div>
+        </div>
+        <div class="creative_member">
+          <img src="{% static 'yagisan/img/about/creative_illust.png' %}">
+          <div class="creative_member_name">
+            辻村&nbsp知夏
+          </div>
+          <div class="creative_member_desc">
+            イラストレーター
+          </div>
+        </div>
+        <div class="creative_member">
+          <img src="{% static 'yagisan/img/about/creative_design.png' %}">
+          <div class="creative_member_name">
+            小守&nbspいつみ
+          </div>
+          <div class="creative_member_desc">
+            デジタルハリウッド大阪校
+          </div>
+        </div>
+        <div class="creative_member">
+          <img src="{% static 'yagisan/img/about/creative_design.png' %}">
+          <div class="creative_member_name">
+            久富&nbsp美希
+          </div>
+          <div class="creative_member_desc">
+            デジタルハリウッド大阪校
+          </div>
+        </div>
+      </div>
+      <div class="creative_degi">
+        <div class="creative_degi_desc_first">
+          制作協力
+        </div>
+        <div class="creative_degi_desc_second">
+          デジタルハリウッド大阪校
+        </div>
+        <div class="creative_degi_desc_third">
+          http://school.dhw.co.jp/school/osaka/
+        </div>
+        <div class="creative_degi_image">
+          <img src="{% static 'yagisan/img/about/degi.png' %}">
+        </div>
+        <div class="creative_degi_desc_fourth">
+          inoch学生プロジェクトは、<br>
+          ロゴやwebの作成に関して、<br>
+          デジタルハリウッド大阪校に<br>
+          多大なるご協力を賜っています。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about_background_e" class="about_background_e">
+  <img src="{% static 'yagisan/img/about/background_e.png' %}">
+</div>
+
+{% endblock %}

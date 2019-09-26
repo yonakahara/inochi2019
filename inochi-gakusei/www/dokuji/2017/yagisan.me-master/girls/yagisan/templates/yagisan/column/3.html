@@ -1,0 +1,36 @@
+{% extends "yagisan/base.html" %}
+{% load static %}
+{% block body %}
+
+<div id="column" class="column">
+  <div class="column_content">
+    <div class="column_content_title">
+      <img src="{% static 'yagisan/img/column/title.png' %}">
+    </div>
+    <div class="column_content_background">
+      <img src="{% static 'yagisan/img/column_content.png' %}">
+    </div>
+  </div>
+  <div class="column_sentence">
+    <div id="{{ column_id }}" class="column_sentence_first">
+      認知行動療法−2
+    </div>
+    <div class="column_sentence_second">
+      <p>
+        “考え方のクセ”は誰にでもあるものです。<br>
+        <br>
+        一生懸命だったり，真面目だったり，何かを真剣に取り組む人が持ちやすい良い面だともいえます。ただ，この特徴が強すぎてしまうと十分なパフォーマンスを発揮することの邪魔をしてしまいます。<br>
+        <br>
+        周囲のこと、自分のことをグルグルと考えてしまう“グルグル思考”を整理するセルフモニタリング力を身につけると役に立ちます。
+      </p>
+    </div>
+    <a href="/column">
+      <div id="column_back" class="column_back">
+        <img src="{% static 'yagisan/img/column/back.png' %}" class="default">
+        <img src="{% static 'yagisan/img/column/back_over.png' %}" class="over offscreen">
+      </div>
+    </a>
+  </div>
+</div>
+
+{% endblock %}

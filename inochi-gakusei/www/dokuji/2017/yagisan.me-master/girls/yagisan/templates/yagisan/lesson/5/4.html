@@ -1,0 +1,85 @@
+{% extends "yagisan/lesson/5/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>自分の隠れた考え方のクセをチェックしてみましょう！</h3>
+  <div class='lesson_content'>
+    <div class="graph">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+      <canvas id="graph" width="400" height="200"></canvas>
+    </div>
+    <br>
+    <p class="first_message">あなたは特に、以下の考え方のクセが強いようです。</p>
+    <br>
+    <div class="habits">
+      <table>
+        <tr>
+          <td class="opinionated low_opacity">
+            <h4>【思いこんだり、決めつける】</h4>
+            <img class="illustration" src="{% static 'yagisan/img/lesson/5/2/opinionated.png' %}">
+            <div class="explain">仕事でミスした時に、「私はいつも失敗してばかりだ」と決めつける</div>
+            <div class="open_detail">
+              <img class="detail" src="{% static 'yagisan/img/lesson/5/2/opinionated_button.png' %}">
+            </div>
+            <div class="explain_detail offscreen">自分がしていることだけに目を向け、根拠が全く不十分なのに、自分の考えが正しいに違いないと決めつけるクセ</div>
+          </td>
+          <td class="white_black low_opacity">
+            <h4>【白黒つける】</h4>
+            <img class="illustration" src="{% static 'yagisan/img/lesson/5/2/white_black.png' %}">
+            <div class="explain">上司からミスを指摘された時に、「やはり自分は仕事ができないのだ」と考える</div>
+            <div class="open_detail">
+              <img class="detail" src="{% static 'yagisan/img/lesson/5/2/white_black_button.png' %}">
+            </div>
+            <div class="explain_detail offscreen">灰色（曖昧な状態）に耐えられず、物事を全て白か黒か、良いか悪いかと言う極端な考え方で割り切ろうとするクセ</div>
+          </td>
+          <td class="regret low_opacity">
+            <h4>【「～すべき」と考える】</h4>
+            <img class="illustration" src="{% static 'yagisan/img/lesson/5/2/regret.png' %}">
+            <div class="explain">できるだけの準備をしても仕事でミスが出た時に、「もっと準備をすべきだった」と自分に無理な期待をして悔やむ</div>
+            <div class="open_detail">
+              <img class="detail" src="{% static 'yagisan/img/lesson/5/2/regret_button.png' %}">
+            </div>
+            <div class="explain_detail offscreen">「こうすべきだ」「あのようにすべきではなかった」とあれこれ思い悩むクセ</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="blame_yourself low_opacity">
+            <h4>【自分を責める】</h4>
+            <img class="illustration" src="{% static 'yagisan/img/lesson/5/2/blame_yourself.png' %}">
+            <div class="explain">みんなで取り組んできたプロジェクトが失敗した時、すぐに「自分が悪かった」と考える</div>
+            <div class="open_detail">
+              <img class="detail" src="{% static 'yagisan/img/lesson/5/2/blame_yourself_button.png' %}">
+            </div>
+            <div class="explain_detail offscreen">よくないことが起きると、何であっても自分が原因だったと考えて、自分を責めてしまうクセ</div>
+          </td>
+          <td class="read_deep low_opacity">
+            <h4>【深読みをする】</h4>
+            <img class="illustration" src="{% static 'yagisan/img/lesson/5/2/read_deep.png' %}">
+            <div class="explain">お昼休み、話をしている時に、相手が携帯電話に目を落としたのを見て、「自分との話に飽きてきたんだ」と決めつける</div>
+            <div class="open_detail">
+              <img class="detail" src="{% static 'yagisan/img/lesson/5/2/read_deep_button.png' %}">
+            </div>
+            <div class="explain_detail offscreen">相手の気持ちを一方的に推測して、そうに違いないと決めつけてしまうクセ</div>
+          </td>
+          <td class="prefetch low_opacity">
+            <h4>【先読みをする】</h4>
+            <img class="illustration" src="{% static 'yagisan/img/lesson/5/2/prefetch.png' %}">
+            <div class="explain">プレゼンをすることになって「緊張してうまく話せないかもしれない」と考えると、ますます緊張して、結局思うように話せなくなり、そして「きっと今度も失敗するだろう」と考えて失敗を繰り返す</div>
+            <div class="open_detail">
+              <img class="detail" src="{% static 'yagisan/img/lesson/5/2/prefetch_button.png' %}">
+            </div>
+            <div class="explain_detail offscreen">自分で悲観的な予測を立ててしまうクセ</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="last_message">
+      <p>「考え方のクセ」は、良し悪しがあるわけではなく、プラスにいきることもあれば、自分を悩ませたり困らせたりする方向に働くこともあります。 <br>
+        自分を悩ませたり、困らせたりする方向に働いた際に、「あ、いつもの考え方のクセが出てきたな」と気が付き、立ち止まれば良いのです。 <br>
+        それぞれの考え方のクセを「自分の個性」と捉えて、日常の中でうまく生かして生きたいですね。</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

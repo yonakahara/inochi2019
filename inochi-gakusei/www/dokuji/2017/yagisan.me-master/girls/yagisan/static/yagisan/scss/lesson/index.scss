@@ -1,0 +1,81 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+// Lesson/Index
+.lesson_frame {
+  background-image: url("/static/yagisan/img/lesson/index/frame.png");
+}
+
+.lesson_title {
+  width: 884px;
+  margin: 0 58px;
+  padding: 40px 0 0 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.lesson_buttons {
+  @include clearfix;
+  width: 1000px;
+  padding: 25px 0 0 0;
+
+  .lesson_button {
+    float: left;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .first {
+    width: 281px;
+    margin: 0 25px 0 49px;
+  }
+
+  .second {
+    width: 260px;
+    margin: 0 5px 0 25px;
+  }
+
+  .third {
+    width: 281px;
+    margin: 0 49px 0 25px;
+  }
+
+  .fourth {
+    width: 258px;
+    margin: 0 25px 0 72px;
+  }
+
+  .fifth {
+    width: 272px;
+    margin: 0 25px 0 -7px;
+  }
+
+  .sixth {
+    width: 253px;
+    margin: 0 77px 0 25px;
+  }
+}
+
+.lesson_close {
+  float: right;
+  margin: -5px 5px 5px 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

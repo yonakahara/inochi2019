@@ -1,0 +1,133 @@
+{% extends "yagisan/lesson/3/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>アサーティブな自己表現をするためには</h3>
+  <div class='lesson_content'>
+    <div class="first">
+      <p class="title">１．「人に好かれなくていい、と思ってみる」</p>
+      <p class="content">人は色んなタイプがいて、色んな価値観や考えを持っています。自分に合った人、合わない人がいて当然なのです。その前提を頭にいつも入れておくと、とても楽になります。全ての人に好かれなくても良いのです。</p>
+    </div>
+    <div class="second">
+      <p class="title">２．主語は「私は～」で返してみよう</p>
+      <p class="content">このように自分の意見を伝えるとき主語を「私は～」にしてみましょう。 そうすることで自分の気持ちや考えを 相手に伝えるとき、自分の発言に責任を 持つことになります。一方、主語を「あなた」にすると批判的な発言になりやすいので注意が必要です。</p>
+      <p class="content">「（あなたは）なんでいつもきちんと片せないの？！」</p>
+      <p class="content">→「（私は）〇〇をこんな感じにしてくれると思ったんだけれど、説明不足だったかな。少し残念。。」という具合です。</p>
+    </div>
+  </div>
+
+  <h3>あなたはどのタイプ？</h3>
+  <div class="lesson_content">
+    <div class="yagisan">
+      <img src="{% static 'yagisan/img/lesson/3/4/yagisan.png' %}" alt="">
+    </div>
+    <div class="checklist">
+      <p class="title">アサーション度チェックリスト</p>
+      <table>
+        <tr>
+          <td>⚪︎あなたは、誰かにいい感じをもったとき、その気持ちを表現できますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、自分の長所や、なしとげたことを人に言うことができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、自分が神経質になっていたり、緊張しているとき、それを受け入れることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、見知らぬ人たちの会話の中に、気楽に入っていくことができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、会話の場から立ち去ったり、別れを言ったりすることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、自分が知らないことや分からないことがあったとき、そのことについて説明を求めることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、人に援助を求めることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたが人と異なった意見や感じをもっているとき、それを表現することができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、自分が間違っているとき、それを認めることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたは、適切な批判を述べることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎人から誉められたとき、素直に対応できますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたの行為を批判されたとき、受け応えができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたに対する不当な要求を拒むことができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎長電話や長話のとき、あなたは自分から切る提案をすることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたの話を中断して話し出した人に、そのことを言えますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたはパーティや催しものへの招待を、受けたり、断ったりできますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎押し売りを断れますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたが注文した通りのものが来なかったとき、そのことを言って交渉できますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたに対する人の好意がわずらわしいとき、断ることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+        <tr>
+          <td>⚪︎あなたが援助や助言を求められたとき、必要であれば断ることができますか。</td>
+          <td class="yes"><input type="image" src="{% static 'yagisan/img/lesson/3/4/yes.png' %}" name="" value="0"></td>
+          <td class="no"><input type="image" src="{% static 'yagisan/img/lesson/3/4/no.png' %}" name="" value="0"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

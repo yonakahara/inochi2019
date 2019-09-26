@@ -1,0 +1,38 @@
+.lesson_content {
+  .navy {
+    color: #1c4587;
+  }
+
+  .signs {
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 550px;
+
+    .title {
+      font-weight: bold;
+    }
+
+    .to_ {
+      width: 30%;
+      margin: 0px 15px 0px 15px;
+      float: left;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .message {
+    border: solid 1px;
+    padding: 5px;
+
+    .blue {
+      color: blue;
+    }
+  }
+
+  .column_method {
+    margin-top: 40px;
+  }
+}

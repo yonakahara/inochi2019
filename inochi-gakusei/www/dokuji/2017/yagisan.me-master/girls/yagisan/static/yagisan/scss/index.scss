@@ -1,0 +1,781 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+
+// Top
+.top {
+  width: 100%;
+  background-color: $BaseWhite;
+
+  .top_background {
+    width: 100%;
+    margin-bottom: -3px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .top_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .top_login {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      margin: 40px 0 0 20px;
+
+      img {
+        width: 100%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .top_logined {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 40px 0 0 20px;
+
+      .top_logined_name {
+        color: $BasePink;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .top_logout {
+        margin-top: 1rem;
+        color: black;
+        font-size: 1.2rem;
+        color: $BasePink;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .top_register {
+    position: absolute;
+    top: 0; //will be rewriteb by js
+    left: 0; //will be rewriteb by js
+    width: 35%;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.headerdummy {
+  width: 100%;
+  position: relative;
+
+  .headerdummy_background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: -50px;
+
+    img {
+      width: 100%;
+      height: 160px; // fixed
+    }
+  }
+}
+
+
+// Aboutus
+.about {
+  width: 100%;
+  position: relative;
+  background-image: url("../img/contact_background.png");
+
+  .about_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto 0 auto;
+
+    .about_content_title {
+      padding: 10% 0 5% 0;
+      margin: 0 auto;
+      width: 240px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .about_content_background {
+      padding: 0 0 10% 0;
+      margin: 0 auto;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .about_sentence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 400px auto 0 auto;
+
+    .about_sentence_first {
+      width: 100%;
+      margin: 2.5rem 0 2.5rem 0;
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+      }
+    }
+
+    .about_sentence_second {
+      width: 100%;
+      margin: 2.5rem 0 2.5rem 0;
+
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .about_more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    margin: 1070px auto 0 auto;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Lesson
+.lesson {
+  width: 100%;
+  //height: 1000px; // by js
+  position: relative;
+  background-image: url("../img/lesson_background.png");
+
+  .lesson_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto 0 auto;
+
+    .lesson_content_title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 70px auto 0 auto;
+      width: 230px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .lesson_content_background {
+      margin: 0 auto;
+      padding: 70px 0 100px 0;
+      width: $BaseWidth;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .lesson_sentence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 270px auto 0 auto;
+
+    .lesson_sentence_first {
+      width: 100%;
+
+      p {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .lesson_start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 350px;
+    margin: 400px auto 0 auto;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .lesson_register {
+    @include clearfix;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 600px auto 0 auto;
+    height: 300px;
+
+    .lesson_register_title {
+      width: 100%;
+      margin: 30px 0 0 0;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .lesson_register_input {
+      float: left;
+      width: 400px;
+      margin: 50px;
+
+      label {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: bold;
+      }
+
+      input {
+        width: 380px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+
+    .lesson_register_submit {
+      width: 200px;
+      margin: 0 auto 50px auto;
+
+      input {
+        width: 200px;
+        height: 50px;
+        line-height: 30px;
+        font-size: 20px;
+        padding: 10px;
+        border: solid 2px gray;
+        background-color: $BaseWhite;
+        font-weight: bold;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// Column
+.column {
+  width: 100%;
+  position: relative;
+  margin-top: -40px;
+  z-index: 10;
+
+  .column_background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 850px;
+    margin-bottom: -3px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .column_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 180px;
+    margin: 90px auto 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .column_sentence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 200px auto 0 auto;
+
+    .column_sentence_first {
+      width: 100%;
+
+      p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+      }
+    }
+
+    .column_sentence_second {
+      width: 100%;
+
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .column_boxes {
+    @include clearfix;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 440px auto 0 auto;
+
+    .column_box {
+      position: relative;
+      float: left;
+      width: 33.33%;
+
+      img.column_box_frame {
+        width: 88%;
+        height: auto;
+        margin: 0 6%;
+        z-index: 10;
+      }
+
+      img.column_box_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 78%;
+        height: auto;
+        margin: 4% auto 0 auto;
+        z-index: 20;
+      }
+
+      img.person {
+        width: 75%;
+        height: 70%;
+      }
+
+      .column_box_sentence_first {
+        width: 100%;
+
+        p {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          margin: 0.7rem 1.7rem;
+          word-break: break-all;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+
+      .column_box_sentence_second {
+        width: 100%;
+
+        p {
+          font-size: 1rem;
+          line-height: 2rem;
+          margin: 0.7 1.7rem;
+          font-weight: bold;
+          text-decoration: underline;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    a:hover {
+      cursor: pointer;
+      color: $BasePink;
+    }
+  }
+
+  .column_index {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 25%;
+    margin: 60% auto 0 auto;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Professor
+.professor {
+  width: 100%;
+  position: relative;
+  margin-top: -50px;
+  background-image: url("../img/lesson_background.png");
+
+  .professor_title {
+    width: 230px;
+    padding: 100px 0 0 0;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .professor_sentence {
+    width: $BaseWidth;
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+
+    .professor_sentence_first {
+      width: 100%;
+
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .professor_introduce {
+    width: 500px;
+    padding: 10px 0 60px 0;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Contactus
+.contact {
+  width: 100%;
+  position: relative;
+  background-image: url("../img/contact_background.png");
+
+  .contact_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: -3px;
+    }
+  }
+
+  .contact_dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 450px;
+    margin: 180px auto 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: -3px;
+    }
+  }
+
+  .contact_sentence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 180px auto 0 auto;
+
+    .contact_sentence_first {
+      width: 100%;
+
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .contact_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 310px;
+    margin: 240px auto 0 auto;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .contact_navi {
+    @include clearfix;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto;
+
+    .contact_navi_backtotop {
+      float: right;
+      width: 200px;
+      margin: 0 15px 10px 0;
+
+      img {
+        width: 100%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+// Modal
+body {
+  position:relative;
+}
+
+.modal {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  top:0;
+  left:0;
+  display:none;
+}
+
+.overLay {
+  position:absolute;
+  top:0;
+  left:0;
+  background:rgba(200,200,200,0.9);
+  width:100%;
+  height:100vh;
+  z-index:1000;
+}
+
+.modal .inner {
+  position:absolute;
+  z-index:1001;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  img {
+    width: 400px;
+    height: 290px;
+  }
+  img.register{
+    height: 430px;
+  }
+}
+
+.modal_account {
+  position: relative;
+  width: 400px;
+  height: 290px;
+
+  .modal_account.register {
+    height: 430px;
+  }
+
+  .modal_account_form {
+    position: absolute;
+    text-align: center;
+    top: 24px;
+    width: 400px;
+    margin: 0 auto;
+    height: 226px;
+
+    .modal_account_form.register {
+      height: 366px;
+    }
+
+    .modal_account_input {
+      padding: 0 30px;
+      height: 70px;
+      input {
+        width: 332px;
+        height: 38px;
+        border: 1px solid #ddd;
+        font-size: 1.3rem;
+        padding: 0;
+        padding-left: 6px;
+      }
+
+      .new_account_name {
+        width: 48%;
+        input {
+          width: 155px;
+        }
+      }
+
+      .last_name {
+        float: left;
+      }
+
+      .first_name {
+        float: right;
+      }
+    }
+
+    .modal_account_submit {
+      text-align: center;
+      padding: 16px 0 10px 0;
+      input {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #ddd;
+        background-color: $BasePink;
+        color: #fff;
+        font-size: 1.3rem;
+        padding: 0;
+      }
+    }
+
+    .account {
+      p {
+        display: inline-block;
+        font-size: 0.7rem;
+      }
+      .modal_change {
+        color: $BasePink;
+        font-size: 0.8rem;
+        display: inline-block;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+div.register {
+  top: 40% !important;
+}
+
+.modal_account_close {
+  padding-left: 390px;
+
+  a {
+    font-size: 1rem;
+  }
+}

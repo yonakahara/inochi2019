@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /girls/$1 [QSA,L]
+</IfModule>
+
+<FilesMatch "^[^\.]+$">
+    SetHandler cgi-script
+</FilesMatch>

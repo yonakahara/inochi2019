@@ -1,0 +1,47 @@
+{% extends "yagisan/lesson/4/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>上手な会話の返し方</h3>
+  <div class='lesson_content'>
+    <div class="points">
+      <div class="first">
+        <p><span class="point_title">POINT1</span>
+          “自分の状況”を伝えて、まず相手に相談します。
+          その上で 「Ａの業務が終わったあとでしたら、書類作成に取り掛かれますが どうでしょうか。」
+          と譲歩案を出してみるといいでしょう。</p>
+      </div>
+      <div class="second">
+        <p><span class="point_title">POINT2</span>
+          自分の感情・気持ちを表す言葉を用いることで正直な気持ちを伝えやすくなります。
+          もし自分のことで手いっぱいなら「実はお客様から宿題を頂きました。明日までに仕上げなくてはならないので、
+          申し訳ないですが企画書の作成は今は出来ません。」と、ていねいに、しかし、はっきりと伝えます。</p>
+      </div>
+    </div>
+    <div id="others_answer" class="others_answer">
+      <p class="title">他の受講者はこのような会話の返し方をしています</p>
+      <input type="hidden" name="dialogue_sex" value="2">
+      <input type="hidden" name="dialogue_to" value="1">
+      <div id="dialogues" class="dialogues">
+        <div id="dialogue_wrap" class="dialogue_wrap offscreen">
+          <div id="dialogue_first" class="dialogue">
+            <div id="dialogue_type_1">D:&nbsp<span></span></div>
+            <div id="dialogue_type_2">E:&nbsp<span></span></div>
+            <div id="dialogue_type_3">S:&nbsp<span></span></div>
+          </div>
+          <div id="dialogue_second" class="dialogue">
+            <div id="dialogue_type_1">D:&nbsp<span></span></div>
+            <div id="dialogue_type_2">E:&nbsp<span></span></div>
+            <div id="dialogue_type_3">S:&nbsp<span></span></div>
+          </div>
+        </div>
+      </div>
+      <a href="/lesson/4/4">
+        <div id="return_to_dialogue_button" class="return_to_dialogue_button">他の会話を選ぶ</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

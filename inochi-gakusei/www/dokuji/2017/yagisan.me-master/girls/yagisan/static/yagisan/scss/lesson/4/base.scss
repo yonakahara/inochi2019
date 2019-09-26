@@ -1,0 +1,111 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+body {
+  background-color: #fffb8f ;
+}
+
+.lesson_group_desc {
+  float: left;
+  height: 40px;
+  margin: 25px 0 5px 10px;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+// common button
+.share_button {
+  width: 160px;
+  padding: 10px 0;
+  line-height: 30px;
+  font-size: 30px;
+  margin: 20px 0 0 685px;
+  background-color: $BasePink;
+  text-align: center;
+  border-radius: 5px;
+  color: $BaseWhite;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.return_to_dialogue_button {
+  width: 200px;
+  padding: 10px 0;
+  line-height: 30px;
+  font-size: 22px;
+  margin: 20px 0 0 720px;
+  background-color: $BasePink;
+  text-align: center;
+  border-radius: 5px;
+  color: $BaseWhite;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// common points
+.points {
+
+  div {
+    margin: 0 0 20px 0;
+  }
+
+  .point_title {
+    font-weight: bold;
+  }
+}
+
+// common dialogue
+.others_answer {
+  .title {
+    margin: 1rem 0 0 0;
+    font-size: 1.6rem !important;
+    font-weight: bold;
+  }
+}
+
+.dialogues {
+  width: 100%;
+
+  .dialogue_wrap {
+    @include clearfix;
+    width: 920px;
+
+    .dialogue {
+      float: left;
+      width: 378px;
+      margin: 20px;
+      padding: 20px;
+      border: $BasePink solid 1px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+
+      div {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: $BasePink;
+
+        span {
+          color: black;
+        }
+      }
+    }
+  }
+}

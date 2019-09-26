@@ -1,0 +1,188 @@
+$BasePink: #f18b9c;
+
+.lesson_content {
+  height: 1050px;
+}
+
+.lesson_content > p {
+  font-weight: bold;
+}
+
+.cycle {
+  margin-top: 30px;
+  height: 400px;
+
+  .cycle_background {
+    width: 90%;
+  }
+
+  .cycle_title {
+    position: relative;
+    top: -130px;
+    left: 20px;
+
+    .cycle_title_first {
+      color: Darkorange;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  .detail {
+    position: relative;
+    top: -100px;
+    left: 35px;
+    color: white;
+
+    .pink {
+      color: $BasePink;
+    }
+  }
+
+  .D {
+    width: 300px;
+  }
+
+  .arrow_right {
+    width: 10%;
+    position: relative;
+    top: -175px;
+    left: 300px;
+    margin-right: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .E {
+    width: 300px;
+    position: relative;
+    top: -290px;
+    left: 420px;
+
+    .detail {
+      left: 15px;
+    }
+  }
+
+  .arrow_down {
+    width: 5%;
+    position: relative;
+    top: -350px;
+    left: 530px;
+    margin-right: 0px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .S {
+    width: 300px;
+    position: relative;
+    top: -350px;
+    left: 425px;
+
+    .detail {
+      left: 45px;
+    }
+  }
+
+  .arrow_left {
+    width: 10%;
+    position: relative;
+    top: -530px;
+    left: 300px;
+    margin-right: 0px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .C {
+    width: 300px;
+    position: relative;
+    top: -640px;
+    left: 0px;
+
+    .detail {
+      top: -120px;
+      left: 20px;
+      font-size: 0.99rem;
+    }
+  }
+}
+
+.yagisan {
+  width: 30%;
+  position: relative;
+  top: -350px;
+  left: 660px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.points {
+  position: relative;
+  top: -250px;
+
+  .midashi, .point_midashi {
+    font-weight: bold;
+  }
+
+  .point_detail {
+    margin-left: 30px;
+  }
+
+  .describe {
+    width: 800px;
+    border: solid 1px #a8cc98;
+    border-radius: 20px;
+    padding: 5px 0px 5px 20px;
+
+    .point {
+      width: 500px;
+      background-color: #d9ead3;
+      border-radius: 20px;
+      padding: 5px 0px 5px 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .express {
+    width: 800px;
+    border: solid 1px #f4cccc;
+    border-radius: 20px;
+    padding: 5px 0px 5px 20px;
+    margin-top: 30px;
+
+    .point {
+      width: 500px;
+      background-color: #f7dbdb;
+      border-radius: 20px;
+      padding: 5px 0px 5px 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .suggest {
+    width: 800px;
+    border: solid 1px #90b6f0;
+    border-radius: 20px;
+    padding: 5px 0px 5px 20px;
+    margin-top: 30px;
+
+    .point {
+      width: 500px;
+      background-color: #cfe2f3;
+      border-radius: 20px;
+      padding: 5px 0px 5px 10px;
+      margin-top: 10px;
+    }
+  }
+}

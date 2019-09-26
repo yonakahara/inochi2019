@@ -1,0 +1,170 @@
+@import "mixin.less";
+@import "mixin-module.less";
+
+
+//=============================================================
+// ■ Base [update:2015/12/10]
+//=============================================================
+
+/*
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, a{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+
+    /* background:transparent; */ /* deleated */
+    /* added */
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* added */
+img{
+    vertical-align:bottom;
+    font-size:0;
+    line-height: 0;
+}
+
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+ol, ul, li{/*added*/
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline: none;
+}
+a:focus{    outline: none;  }
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+sup {
+    vertical-align: super;
+    font-size: .83em;
+}
+table {
+    /* deleated
+    border-collapse:collapse;
+    border-spacing:0;
+    */
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align: baseline;
+}
+
+/* added */
+label{  display: block;    }
+
+
+//==============================================================
+// ■ keyframes
+//==============================================================
+
+// spin
+// http://on-ze.com/archives/510
+//----------------------------------------------
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+    0% {-ms-transform: rotate(0deg);}
+    100% {-ms-transform: rotate(360deg);}
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+// flash
+// http://www.nxworld.net/tips/flashing-effects-using-css-or-jquery.html
+//----------------------------------------------
+@-webkit-keyframes flash {
+    0% {      opacity: 0.3;    }
+    100% {    opacity: 1;      }
+}
+@-moz-keyframes flash {
+    0% {      opacity: 0.3;    }
+    100% {    opacity: 1;      }
+}
+@-ms-keyframes flash {
+    0% {      opacity: 0.3;    }
+    100% {    opacity: 1;      }
+}
+@keyframes flash {
+    0% {      opacity: 0.3;    }
+    100% {    opacity: 1;      }
+}
+
+
+
+

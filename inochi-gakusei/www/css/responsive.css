@@ -1,0 +1,749 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (max-width: 1024px){
+	 
+	.container{
+	margin:0 auto;
+	padding:0 3%;
+	width: 94%;
+	}
+	
+	/**/
+	.header-logo{
+	display: none;
+	}
+	.header-logo-font{
+		height: 26px;
+		margin: 12px 0;
+	}
+	
+	
+	.header-right{
+	width: 60%;
+	}
+	.menu-font{
+	font-size: 12px;
+	}
+	.link-zone p{
+	font-size: 12px;
+	}
+	/**/
+	
+	
+	.top-wrapper{
+	padding: 70px 0 0px 0;/*
+	background-color: #CC2F1F;*/
+	background-image: url(../image/inochigif.gif);
+	}
+	.top-img-box{
+		display:block;
+		width: 100%;
+		height: auto;
+	}
+	.top-img-box img{
+		margin: 0 auto;
+		display: block;
+	}
+	.sumaho-top-img-box{
+	display: none;
+}
+	
+	h2{
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 7px;
+	font-family:Arial, Helvetica, "sans-serif";
+	}
+	
+	
+	
+	.aboutUs{
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 70px 0 0px 0;
+	}
+	.gakusei-p{
+	font-size: 15px;
+	width: 80%;
+	margin: 30px auto;
+	color: #CC2F1F;
+	text-align: center;
+	}
+	.about-p{
+	font-size: 15px;
+	width: 100%;
+	margin: 30px auto;
+	}
+	.about-text-title{
+	font-size: 27px;
+	font-family: "Yu Gothic";
+}
+.about-text-second-title{
+	font-size: 25px;
+}
+	
+	.mirai-second-title{
+	color: #CC2F1F;
+	font-size: 32px;
+	text-align: center;
+	display: block;
+	margin-top: 40px;
+	font-weight: 400;
+}
+	.mirai-img{
+	width: 30%;
+	height: auto;
+	float: clear;
+	display: block;
+	margin: 20px 35%;
+	text-align: center;
+	border-radius: 30px;
+	}
+	.mirai-project-about{
+		width:100%;
+		float: left;
+		margin-top: 30px;
+	}
+	.mirai-text{
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+		word-break:break-all;
+		font-size: 20px;
+	}
+	.memory{
+		margin: 20px 0;
+		overflow: hidden;
+	}
+	.memory-text{
+		text-align: center;
+		width: 80%;
+		font-size: 20px;
+		margin: 0 auto;
+		word-break:break-all;
+	}
+	
+	/**/
+.SUPPORTERS-wrapper{
+	width: 80%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.supporter-second-title{
+	text-align: center;
+	font-size: 30px;
+}
+.supporter-third-title{
+	text-align: center;
+	font-size: 21px;
+}
+.suppoters-box{
+	width:90%;
+	overflow: hidden;
+	margin: 50px auto;
+	text-align: center;
+}
+.supporter{
+	width: 33.33%;
+	height: 250px;
+	float: left;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.riji-big{
+	width: 40%;
+	text-align: center;
+	margin: 30px  30% 70px 30%;
+	
+}
+.supporter-img{
+	width: 60%;
+	height: auto;
+}
+.supporter-name{
+	font-size: 20px;
+	margin: 7px auto;
+}
+.supporter-from{
+	font-size: 12px;
+}
+.supporter-position{
+	font-size: 12px;
+}
+
+
+/**/
+	/*pc版スライダー*/
+
+.sliders-project{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+}
+.slider-Forum-project-box{
+	text-decoration: none;
+	height: 350px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: inline-block;
+	background-color: rgba(0,0,0,1.00);
+	background-image: url(../image/forum.jpg);
+}
+
+.slider-dokuji-project-box{
+	text-decoration: none;
+	height: 350px;
+	overflow: hidden;
+	display: block;
+	/*background-color: rgba(0,0,0,1.00);*/
+	background-image: url(../image/dokuji-use.JPG);
+}
+.slider-wakazo-project-box{
+	text-decoration: none;
+	height: 350px;
+	overflow: hidden;
+	display: block;
+	/*background-color: rgba(0,0,0,1.00);*/
+	background-image: url(../image/wakazo.jpg);
+}
+.slider-link-box{
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+}
+.slider-black-zoom{
+	display:block;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.70);
+	background-color: rgba(230,0,3,0.70);
+}
+
+h3{
+	width: 80%;
+	text-align: center;
+	margin: 10px 0;
+	display: inline-block;
+	font-size: 30px;
+	color: #fff;
+	border-top: solid 3px rgba(255,255,255,0.50);
+	border-bottom: solid 3px rgba(255,255,255,0.50);
+	border-radius: 10px;
+}
+.slider-forum-link{
+	text-decoration: none;
+	color: #fff;
+	
+}
+
+	
+.slider-forum-text{
+	color: #ffffff;
+	width: 80%;
+	margin: 25px auto;
+	text-align: center;
+	display: block;
+	font-size: 30px;
+}
+.slider-wakazo-text{
+	color: #fff;
+	margin: 25px auto;
+	font-size: 40px;
+}
+.slider-dokuji-text{
+	font-size: 30px;
+	margin: 20px auto;
+	width: 80%;
+	color: #fff;
+}
+.slider-tatti{
+	color: rgba(255,255,255,0.70);
+	font-size: 20px;
+}
+
+/*slider-css*/
+ul {
+  list-style: none;
+}
+
+.slide-wrapper {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #5e6f84;
+	background-color: #f4f4f4;
+	padding:50px 0;
+  
+}
+
+.slide-title {
+  font-size: 70px;
+  margin: 20px auto;
+	text-align: center;
+	display: inline-block;
+	font-family:Arial, Helvetica, "sans-serif";
+	color: #000;
+}
+
+
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.index-btn-wrapper {
+  font-size: 16px;
+  margin:20px auto;
+	display: block;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: auto;
+  padding: 6px;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-hover{
+  color: #fff;
+  background-color: #5cabd0;
+}
+
+	
+	
+	.link-box{
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	}
+	
+	.information{
+	width: 70%;
+	float: clear;
+		display: inline-block;
+		margin:30px 15%;
+	}
+	.information-title{
+	border-bottom: solid 3px rgba(255,0,4,0.70);
+	width: 90%;
+	}
+	.black-zoom{
+	display:block;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	overflow: hidden;
+	background-color: rgba(230,0,3,0.70);
+	}
+	.forum-text{
+	color: #ffffff;
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+	display: block;
+	font-size: 20px;
+	}
+	.wakazo-text{
+		color: #fff;
+		margin: 30px auto;
+		font-size: 28px;
+	}
+	.dokuji-text{
+		font-size: 20px;
+		margin: 50px auto;
+		width: 80%;
+		color: #fff;
+	}
+	.tatti{
+	color: rgba(255,255,255,0.70);
+	background-color: rgba(255,255,255,0.10);
+	font-size: 18px;
+    }
+
+	.umekomi-wrapper{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin: 30px auto;
+		float: clear;
+	}
+	.umekomi-wrapper iframe{
+		width: 340px;
+		height: 500px;
+	text-align: center;
+	display: block;
+	margin:0 auto;
+		float: clear;
+	}
+	
+}
+
+
+
+
+@media screen and (max-width:640px){
+	
+	/**/
+	.toggle{
+	display: block;
+	position: fixed;
+	z-index: 30;
+	line-height: 50px;
+		top: 5px;
+		left: 3%;
+		font-size: 40px;
+		color: #fff;
+	}
+	.fa-times{
+	display: none;
+	color: #000;
+	}
+	.fa-bars{
+		display: block;
+		text-shadow: 2px 2px  #000000;
+	}
+	.toggle-menus{
+		display: none;
+	}
+	
+	
+	
+	header{
+		display: none;
+	}
+	.header-right{
+		display: none;
+	}
+	
+	.zone-title{
+		margin-top: 10px;
+		padding: 10px;
+		background-color: #CC2F1F;
+		color: #fff;
+	}
+	
+	/**/
+	
+	.top-wrapper{
+		padding: 30px 0 10px 0;
+		height: 300px;
+		background-image: url(../image/inochigif.gif);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: auto 100%;
+	}
+	.top-img-box{
+		display:none;
+	}
+	.top-img-box img{
+		display: none;
+	}
+	
+	
+	
+	.aboutUs{
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 30px 0;
+	}
+	h2{
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	font-size: 16px;
+	text-align: center;
+	border-bottom: double 2px rgba(204,47,31,0.70);
+	border-radius: 2px;
+	font-family:Arial, Helvetica, "sans-serif";
+	}
+	.gakusei-p{
+	font-size: 15px;
+	width: 100%;
+	margin: 30px auto;
+	color: #CC2F1F;
+	text-align: center;
+	}
+	.about-text-title{
+	font-size: 27px;
+	font-family: "Yu Gothic";
+	}
+	.about-text-second-title{
+		font-size: 25px;
+	}
+	.aboutUs-text{
+	width: 96%;
+	margin: 10px auto;
+	padding: 30px 0px;
+		font-size: 14px;
+	background-color: rgba(253,255,255,0.0);
+	border-left: solid 0px rgba(253,255,255,0.35);
+	border-right: solid 0px rgba(253,255,255,0.35);
+	border-radius: 20px;
+	}
+	.about-span{
+		font-size: 22px;
+	}
+	.aboutUs-text img{
+	width: 90%;
+	height: auto;
+	float: left;
+	margin: 5px 5% 10px 5%;
+	}
+	.about-p{
+	font-size: 14px;
+	width: 100%;
+	margin: 20px auto;
+	}
+	.about-span img{
+	width: 60%;
+	height: auto;
+	text-align: center;
+	display: block;
+	margin: 5px 20%;
+	}
+	.jukeihyou-sumaho img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0;
+	}
+	.jukeihyou{
+		display: none;
+	}
+	.jukeihyou-sumaho{
+		display: block;
+		margin-top: 30px;
+	}
+	.mission-wrapper{
+	padding-top: 0px;
+	width: 100%;
+	margin: 0 auto;
+	}
+	.history-wrapper{
+		padding-top: 30px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	
+	.mirai-project-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0 10px 0;
+	overflow: hidden;
+	}
+	.mirai-project-about{
+		margin-top: 0px;
+	}
+	.mirai-second-title{
+	color: #CC2F1F;
+	font-size: 18px;
+	text-align: center;
+	display: block;
+	margin-top: 25px;
+	font-weight: 600;
+}
+	.mirai-img{
+		width: 70%;
+		height: auto;
+		text-align: center;
+		display: block;
+		margin: 30px 15%;
+	}
+	.mirai-text{
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		word-break:break-all;
+		font-size: 14px;
+	}
+	.memory{
+		margin: 20px 0;
+		overflow: hidden;
+	}
+	.memory-text{
+		text-align: center;
+		width: 100%;
+		font-size: 14px;
+		margin: 0 auto;
+		word-break:break-all;
+	}
+	
+	
+	
+		/**/
+	.SUPPORTERS-wrapper{
+		width: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+	.supporter-second-title{
+		text-align: center;
+		font-size: 18px;
+	}
+	.supporter-third-title{
+		text-align: center;
+		font-size: 15px;
+	}
+	.suppoters-box{
+		width:100%;
+		overflow: hidden;
+		margin: 30px auto 15px auto;
+		text-align: center;
+	}
+	.supporter{
+		width: 50%;
+		height: auto;
+		float: clear;
+		text-align: center;
+		margin-bottom: 30px;
+		height: 220px;
+	}
+	.riji-big{
+	width: 60%;
+	text-align: center;
+	margin: 20px  20% 40px 20%;
+	
+	}
+	.supporter-img{
+		width: 50%;
+		height: auto;
+	}
+	.supporter-name{
+		font-size: 17px;
+		margin: 4px auto;
+	}
+	.supporter-from{
+		font-size: 12px;
+	}
+	.supporter-position{
+		font-size: 12px;
+	}
+
+
+	/**/
+	
+	.project-title-img{
+	margin-bottom: 30px;
+	}
+
+	
+	
+	.inochi-mirai-link{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin-left:  auto;
+	margin-right:  auto;
+		margin-bottom: 30px;
+		margin-top: 0px;
+	padding: 7px;
+	border: solid 1px rgba(204,47,31,0.70);
+	width: 150px;
+		font-size: 12px;
+	border-radius: 10px;
+	}
+	
+	
+	.slide-wrapper {
+		display: none;
+	}
+	.projects-wrapper{
+		display: block;
+	}
+	
+	.black-zoom{
+	display:block;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	overflow: hidden;
+	background-color: rgba(230,0,3,0.70);
+	}
+	h3{
+	width: 80%;
+	font-size: 20px;
+	}
+	.forum-text{
+	color: #ffffff;
+	width: 80%;
+	margin: 30px auto;
+	text-align: center;
+	display: block;
+	font-size: 20px;
+	}
+	.wakazo-text{
+		color: #fff;
+		margin: 30px auto;
+		font-size: 28px;
+	}
+	.dokuji-text{
+		font-size: 20px;
+		margin: 30px auto;
+		width: 80%;
+		color: #fff;
+	}
+	.contact-title-img{
+	margin-bottom: 0px;
+}
+	
+	footer{
+	margin: 0 auto;
+	overflow: hidden;
+	display: inline-block;
+	padding: 30px 0;
+	}
+	.information{
+		overflow: hidden;
+	width: 80%;
+	margin: 10px 10%;
+	float: clear;
+	display: inline-block;
+		
+	}
+	
+	.umekomi-wrapper iframe{
+	width: 340px;
+	height: 350px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	}
+	
+	.information-title{
+	border-bottom: solid 3px rgba(255,0,4,0.70);
+	width: 100%;
+	}
+	.information p{
+		font-size: 12px;
+	}
+	
+	
+}
+	
+	
+	
+	

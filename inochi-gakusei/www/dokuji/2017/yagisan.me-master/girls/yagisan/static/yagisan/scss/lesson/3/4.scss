@@ -1,0 +1,44 @@
+.lesson_content {
+  height: 400px; 
+}
+
+.title {
+  font-weight: bold;
+}
+
+.content {
+  font-size: 0.98rem !important;
+  margin-top: 10px;
+}
+
+.second {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.yagisan {
+  width: 10%;
+  position: relative;
+  top: -100px;
+  left: 300px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.checklist {
+  position: relative;
+  top: -120px;
+
+  input {
+    width: 60px;
+  }
+
+  .no {
+
+    input {
+      margin-left: 10px;
+    }
+  }
+}

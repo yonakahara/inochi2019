@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  python:
+    build: .
+    ports:
+      - '80:8000'
+    volumes:
+      - .:/usr/code
+    links:
+      - 'mysql:mysql'
+    environment:
+      - DB_NAME=yagisan
+      - DB_USER=yagisan
+      - DB_PASS=yagisan
+      - DB_HOST=mysql
+      - DB_PORT=3306
+    command: "sh /usr/code/docker-entrypoint.sh"
+  mysql:
+    build: ./mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./mysql/sql:/root/sql
+    environment:
+      - MYSQL_ROOT_PASSWORD=yagisan
+      - MYSQL_DATABASE=yagisan
+      - MYSQL_USER=yagisan
+      - MYSQL_PASSWORD=yagisan

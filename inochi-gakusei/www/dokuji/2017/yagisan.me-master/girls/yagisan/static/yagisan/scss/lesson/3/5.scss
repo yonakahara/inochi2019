@@ -1,0 +1,109 @@
+.lesson_content {
+  height: 300px;
+}
+
+.offscreen {
+  display: none;
+}
+
+.good {
+  height: 300px;
+
+  .how_many_yes {
+
+    img {
+      width: 250px;
+      height: 50px;
+    }
+
+    p {
+      position: relative;
+      top: -45px;
+      left: 10px;
+    }
+  }
+
+  .yagisan {
+    width: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .hukidashi {
+    width: 600px;
+    position: relative;
+    top: -400px;
+    left: 300px;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      width: 80%;
+      margin: auto;
+      position: relative;
+      top: -250px;
+    }
+  }
+}
+
+.bad {
+  height: 300px;
+
+  .how_many_yes {
+
+    img {
+      width: 250px;
+      height: 50px;
+    }
+
+    p {
+      position: relative;
+      top: -45px;
+      left: 10px;
+    }
+  }
+
+  .yagisan_offensive {
+    width: 200px;
+    position: relative;
+    top: -50px;
+    left: -20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .yagisan_non_assertion {
+    width: 200px;
+    position: relative;
+    top: -150px;
+    left: 80px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .hukidashi {
+    width: 600px;
+    position: relative;
+    top: -550px;
+    left: 300px;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      width: 80%;
+      margin: auto;
+      position: relative;
+      top: -250px;
+    }
+  }
+}

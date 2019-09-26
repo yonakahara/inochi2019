@@ -1,0 +1,36 @@
+{% extends "yagisan/base.html" %}
+{% load static %}
+{% block body %}
+
+<div id="column" class="column">
+  <div class="column_content">
+    <div class="column_content_title">
+      <img src="{% static 'yagisan/img/column/title.png' %}">
+    </div>
+    <div class="column_content_background">
+      <img src="{% static 'yagisan/img/column_content.png' %}">
+    </div>
+  </div>
+  <div class="column_sentence">
+    <div id="{{ column_id }}" class="column_sentence_first">
+      認知行動療法−１
+    </div>
+    <div class="column_sentence_second">
+      <p>
+        「落ち込み」「不安」「イライラ」など，自分をつらくさせる感情を毎日誰でも経験します。<br>
+        <br>
+        もし，その感情が自分を圧倒するほど大きくなりすぎてしまうと，感情に振り回されて自分自身をコントロールすることが難しくなってしまいます。<br>
+        <br>
+        そういった感情を“なくす”ことを目指すのではなく，自分を困らせるほど感情が大きくなりすぎないように，上手に“つきあっていく”のに，認知行動療法が役に立ちます。
+      </p>
+    </div>
+    <a href="/column">
+      <div id="column_back" class="column_back">
+        <img src="{% static 'yagisan/img/column/back.png' %}" class="default">
+        <img src="{% static 'yagisan/img/column/back_over.png' %}" class="over offscreen">
+      </div>
+    </a>
+  </div>
+</div>
+
+{% endblock %}

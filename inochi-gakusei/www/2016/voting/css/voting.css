@@ -1,0 +1,233 @@
+html{height:100%;}
+body{height:100%;}
+header{
+	background-image:url(../../img/voting_back.png);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;	
+	background-size:cover;
+	min-height:100%;
+}
+p.header{
+	color:#fff;
+	background-color: rgba(255,255,255,0);
+}
+.top-title{
+	padding-top:200px;
+}
+#message{
+	margin:60px 0 60px 0;
+	line-height: 50px;
+	letter-spacing: 7px;
+}
+div.center{
+	text-align: center;
+}
+div.center img{
+	margin:30px auto 30px auto;
+}
+div.voting h3, div.center h3{
+	letter-spacing: 5px;
+	margin:0 0 15px 0;
+}
+div.voting h3{
+	background-color: #10253f;
+	color:#fff;
+}
+#glid{
+	height:300px;
+}
+.lecpic{
+  	background-repeat: no-repeat;	
+	background-size:cover;
+	background-position:center;
+	height:100%;
+	padding:0;
+}
+#situation{
+	background-image: url(../../img/situation.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:100%;
+  	background-position: center;	
+}
+#lecpic_contain, #lecpic_contain2 {
+	height:100%;
+}
+#lecpic1{
+	background-image:url(../../img/lecpic1.jpg);
+	height:50%;
+}
+#lecpic2{
+	background-image:url(../../img/lecpic2.jpg);
+	height:50%;
+}
+#lecpic3{
+	background-image:url(../../img/lecpic3.jpg);
+}
+#lecpic4{
+	background-image:url(../../img/lecpic4.jpg);
+}
+#lecpic5{
+	background-image:url(../../img/lecpic5.jpg);
+	height:50%;
+}
+#lecpic6{
+	background-image:url(../../img/lecpic6.jpg);
+	height:50%;
+}
+@media screen and (max-width : 768px){
+  #glid {
+  	height:500px;
+  }
+  #situation {
+  	height:50%;
+  }
+  #lecpic2, #lecpic4 {
+  	background-image:none;
+  	height:0;
+  }
+  #lecpic1 {
+  	height:100%;
+  }
+  #lecpic5, #lecpic6 {
+  	height:50%;
+  }
+  #lecpic3 {
+  	height:25%;
+  	margin: 0 15px 0 15px;
+  }
+  #explanation {
+  	height:50% !important;
+  }
+  #lecpic_contain {
+  	height:25%;
+  }
+  #lecpic_contain2 {
+  	height:50%;
+  }  
+}
+#explanation{
+	background-image: url(../../img/explanation.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height:100%;
+  	background-position: center;	
+}
+
+.voting{
+	margin-top:100px;
+	padding: 20px 0px 0 0px;
+	border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+#voting_ex {
+	margin:10px 0 30px 0 ;
+	padding:20px 20px 20px 20px;
+	border: dashed 2.5px #aaa;
+}
+
+.team_pic {
+	display:inline-block;margin:0 20px 0 0;vertical-align:top;width:20%;
+}
+#presen {
+	display:inline-block;width:75%;text-align:left;margin-bottom:30px;
+}
+div#presen p {
+	margin-bottom:20px;
+}
+#presen_video {
+	display:inline-block;width:45%;height:260px;margin-right: 30px;
+}
+#presen_idea {
+	display:inline-block;
+	vertical-align: inherit;
+	width:45%;
+}
+@media screen and (max-width : 768px){
+	#presen {
+		width:100%;
+	}
+	#presen_video {
+		width:320px;height:180px;
+	}
+	#presen_idea {
+		width:320px;
+	}
+}
+
+.result {
+	background: url(../img/bubble.png) no-repeat center center;
+	background-size:contain;
+	margin:0 50px 0 20px;
+	padding:15px 20px 15px 40px;
+	color: #10253f;
+	font-size: 2.1rem;
+}
+
+
+/* btn */
+.fb_button {
+	width:260px;
+}
+
+.btn_area {
+	position: relative;
+	display:inline-block;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.btn_vote {
+	width:220px;
+	margin-top:8px !important;
+	margin-bottom:30px;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+	padding:5px 15px 5px 25px;
+	background:#aaa;
+	transition: all 0.2s linear;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.btn_vote.on {
+	background-color: #fd616b;
+	animation: anime_01 0.2s;
+}
+
+@keyframes anime_01 {
+	50% {
+		right: -10px;
+		bottom: -10px;
+		width: 250px;
+		height: 80px;
+	}
+}
+
+.ico_heart {
+	background: url(../img/bubble.png) no-repeat center center;
+	background-size:contain;
+	margin:0 0 0 20px;
+	padding:15px 20px 15px 40px;
+	color: #10253f;
+	font-size: 2.1rem;
+}
+
+@media screen and (max-width : 768px){
+	.fb_button {
+		width:180px;
+	}
+	.result {
+		margin:0 30px 0 10px;
+		padding:15px 10px 15px 20px;
+		font-size: 1.6rem;
+	}
+	.btn_vote {
+		width:180px;
+	}
+	.ico_heart {
+		font-size:1.6rem;
+		padding:15px 10px 15px 20px;
+	}
+}

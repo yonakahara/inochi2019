@@ -1,0 +1,76 @@
+{% extends "yagisan/lesson/2/base.html" %}
+{% load static %}
+{% block lesson_window_inner %}
+
+<div class="lesson_wrap">
+  <h3>自分のストレスをチェックしよう！</h3>
+
+  <div class='lesson_content'>
+    <div class="first">
+      <p>ストレスによって、交感神経の活性化やストレスホルモンの分泌が促進されることで起こるさまざまな身体症状のほかに...</p>
+
+      <p><br>実は、女性にとって大切な「女性ホルモン」の分泌も、ストレスによって乱れます。</p>
+
+      <p><br>「女性ホルモン」には、卵巣から分泌されるエストロゲンとプロゲステロンがあります。
+      <br>それぞれ、どのような働きがあるのか見てみましょう。</p>
+
+      <div class="yagisan">
+          <img src="{% static 'yagisan/img/lesson/2/3/yagisan.png' %}" alt="">
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="second_title">
+        <p>2つの大切な女性ホルモン</p>
+      </div>
+      <div class="second_content">
+        <div class="left">
+          <div class="title">
+            <p>プロゲステロン</p>
+          </div>
+          <div class="detail">
+            <p>・妊娠をサポートする</p>
+            <p class="small">妊娠を継続させる働きがある。</p>
+
+            <p><br>・基礎体温を上昇させる</p>
+
+            <p><br>・乳腺の発育を促進する</p>
+
+            <p class="small">他には、血糖値を正常にする。体脂肪を減らす。</p>
+            <p class="small">ホルモンバランスを調整する。など</p>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="title">
+            <p>エストロゲン</p>
+          </div>
+          <div class="detail">
+            <p>・女性らしい体をつくる</p>
+            <p class="small">月経を起こしたり、妊娠ができるように準備をしたりする。</p>
+            <p class="small">また、美肌を作る働きもある。</p>
+
+            <p><br>・基礎体温を下げる</p>
+            <p class="small">血管を拡張させて熱を下げる働きがある。</p>
+
+            <p><br>・自律神経を整える</p>
+            <p class="small">エストロゲンの減少が原因である更年期障害は、ほてり、発汗などの自律神経症状が現れる。</p>
+
+            <p><br>・骨を丈夫にする</p>
+            <p class="small">骨からカルシウムが溶け出すことを抑制する。</p>
+
+            <p class="small">他には、血中の善玉・悪玉コレステロールを正常化し、動脈硬化も抑制する。など</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="third">
+      <div class="woman">
+        <img src="{% static 'yagisan/img/lesson/2/3/woman.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

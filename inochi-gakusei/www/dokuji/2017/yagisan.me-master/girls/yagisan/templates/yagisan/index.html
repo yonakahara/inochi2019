@@ -1,0 +1,299 @@
+{% extends "yagisan/base.html" %}
+{% load static %}
+
+{% block session %}
+<input type="hidden" name="user_id" value="{{ user_id }}">
+<input type="hidden" name="user_nickname" value="{{ user_nickname }}">
+{% endblock %}
+
+{% block top %}
+<div id="top" class="top">
+  <div id="top_background" class="top_background">
+    <img src="{% static 'yagisan/img/top_background.png' %}">
+  </div>
+  <div class="top_wrap">
+    {% if user_id %}
+    <div id="top_login" class="top_logined">
+      <div id="top_logined_name" class="top_logined_name">ようこそ、{{ user_nickname }}さん</div>
+      <div id="top_logout" class="top_logout offscreen">ログアウトする</div>
+    </div>
+    {% else %}
+    <div id="top_login" class="top_login modalOpen">
+      <img src="{% static 'yagisan/img/top_login.png' %}" class="default">
+      <img src="{% static 'yagisan/img/top_login_over.png' %}" class="over offscreen">
+    </div>
+    {% endif %}
+  </div>
+  <div id="top_register" class="top_register">
+    <img src="{% static 'yagisan/img/top_register.png' %}" class="default">
+    <img src="{% static 'yagisan/img/top_register_over.png' %}" class="over offscreen">
+  </div>
+</div>
+{% endblock %}
+
+{% block body %}
+<div id="headerdummy" class="headerdummy offscreen">
+  <div class="headerdummy_background">
+    <img src="{% static 'yagisan/img/header_background.png' %}">
+  </div>
+</div>
+
+<div id="about" class="about">
+  <div class="about_content">
+    <div class="about_content_title">
+      <img src="{% static 'yagisan/img/about_content_title.png' %}">
+    </div>
+    <div class="about_content_background">
+      <img src="{% static 'yagisan/img/about_content.png' %}">
+    </div>
+  </div>
+  <div class="about_sentence">
+    <div class="about_sentence_first">
+      <p>小さい頃は、自分の心に、全力だった。</p>
+      <p>好きなことには、人の目も気にせず没頭して。</p>
+      <p>嫌なことがあったら、気がすむまで泣いて、悩んで。<br>
+        どうして自分はこんなに思いをしてるんだろう、ってずっと考えて。</p>
+    </div>
+    <div class="about_sentence_first">
+      <p>でも、大人になった私は、色んなことを我慢、ガマン。</p>
+      <p>仕事があるから、好きなことなんて、考えている暇はない。<br>
+        嫌なことはさらっと流して、忘れちゃう。</p>
+      <p>そんなあなたは、ありのままの自分の心、見つめてますか？</p>
+    </div>
+    <div class="about_sentence_second">
+      <p>『ほぐれて、八木さん』は、</p>
+      <p>働く女性が、自分のストレス状況や考え方のくせを知り、</p>
+      <p>自分のストレス原因に対する考え方、</p>
+      <p>対処の仕方を見つめ直しながら、</p>
+      <p>より柔軟にストレスに対処できるよう、応援する教材です。</p>
+    </div>
+  </div>
+  <div id="about_more" class="about_more">
+    <a href="/about">
+      <img src="{% static 'yagisan/img/about_more.png' %}" class="default">
+      <img src="{% static 'yagisan/img/about_more_over.png' %}" class="over offscreen">
+    </a>
+  </div>
+</div>
+
+<div id="lesson" class="lesson">
+  <div class="lesson_content">
+    <div class="lesson_content_title">
+      <img src="{% static 'yagisan/img/lesson_content_title.png' %}">
+    </div>
+    <div class="lesson_content_background">
+      <img src="{% static 'yagisan/img/lesson_content_background.png' %}">
+    </div>
+  </div>
+  <div class="lesson_sentence">
+    <div class="lesson_sentence_first">
+      <p>教材は全６コースです。より効果的な学習効果をあげるために、全コースの受講をおすすめします。<br>
+        ステップアップ式で、前のコースの受講が終わらないと、次のコースへは進めないようになっています。<br>
+        所要時間】1-4コース：約５分、5-6コース：約１０分</p>
+    </div>
+  </div>
+  <div id="lesson_start" class="lesson_start">
+    <img src="{% static 'yagisan/img/lesson_start.png' %}" class="default">
+    <img src="{% static 'yagisan/img/lesson_start_over.png' %}" class="over offscreen">
+  </div>
+  <!-- <div id="lesson_register" class="lesson_register offscreen">
+       <form>
+       <div class="lesson_register_title">
+       ユーザー登録
+       </div>
+       <div class="lesson_register_input">
+       <label for="message">お名前</label><br>
+       <input type="text" name="name" placeholder="八木太郎">
+       </div>
+       <div class="lesson_register_input">
+       <label for="email">メールアドレス</label><br>
+       <input type="email" name="email" placeholder="taro@yagisan.me" />
+       </div>
+       <div class="lesson_register_submit">
+       <input id="lesson_register_submit" type="submit" value="登録する" />
+       </div>
+       </form>
+       </div> -->
+</div>
+
+<div id="column" class="column">
+  <div class="column_background">
+    <img src="{% static 'yagisan/img/column_background.png' %}">
+  </div>
+  <div class="column_title">
+    <img src="{% static 'yagisan/img/column_title.png' %}">
+  </div>
+  <div class="column_sentence">
+    <div class="column_sentence_first">
+      <p>女性に合ったストレス対処法をはじめ、<br>
+        あなたの心に寄り添う記事を掲載しています。</p>
+    </div>
+    <div class="column_sentence_second">
+      <p>医学、心理学分野の論文を参考にした科学的エビデンスに基づく記事や、<br>
+        心のケアおプロフェッショナルによる記事など、<br>
+        「本当に役に立つ」情報を、現役の医学生、心理学生が厳選してお伝えしていきます。</p>
+    </div>
+  </div>
+  <div class="column_boxes">
+    <a href="/column/1">
+      <div class="column_box">
+        <img src="{% static 'yagisan/img/column_box_frame.png' %}" class="column_box_frame">
+        <img src="{% static 'yagisan/img/column_box_img_yagi.png' %}" class="column_box_img">
+        <div class="column_box_sentence_first">
+          <p>「ほぐれて、八木さん」開設</p>
+        </div>
+      </div>
+    </a>
+    <a href="/column/2">
+      <div class="column_box">
+        <img src="{% static 'yagisan/img/column_box_frame.png' %}" class="column_box_frame">
+        <img src="{% static 'yagisan/img/column_box_img_yagi.png' %}" class="column_box_img">
+        <!-- <img src="{% static 'yagisan/img/home_column.jpg' %}" class="column_box_img person"> -->
+        <div class="column_box_sentence_first">
+          <p>認知行動療法−１</p>
+        </div>
+        <!--
+             <div class="column_box_sentence_second">
+             <a><p>続きを読む</p></a>
+             </div>
+           -->
+      </div>
+    </a>
+    <a href="/column/3">
+      <div class="column_box">
+        <img src="{% static 'yagisan/img/column_box_frame.png' %}" class="column_box_frame">
+        <img src="{% static 'yagisan/img/column_box_img_yagi.png' %}" class="column_box_img">
+        <!-- <img src="{% static 'yagisan/img/home_column.jpg' %}" class="column_box_img person"> -->
+        <div class="column_box_sentence_first">
+          <p>認知行動療法−2</p>
+        </div>
+        <!--
+             <div class="column_box_sentence_second">
+             <a><p>続きを読む</p></a>
+             </div>
+           -->
+      </div>
+    </a>
+  </div>
+  <!--
+       <div id="column_index" class="column_index">
+       <img src="{% static 'yagisan/img/column_index.png' %}" class="default">
+       <img src="{% static 'yagisan/img/column_index_over.png' %}" class="over offscreen">
+       </div>
+     -->
+</div>
+
+<div id="professor" class="professor">
+  <div class="professor_title">
+    <img src="{% static 'yagisan/img/professor_title.png' %}">
+  </div>
+  <div class="professor_sentence">
+    <div class="professor_sentence_first">
+      <p>この教材作成には、現役医学生、心理学生だけではなく、<br>
+        様々な教授の方にも監修していただいています。<br>
+        教材作成に関わってくださった方々をご紹介します。</p>
+    </div>
+  </div>
+  <a href="/professor">
+    <div id="professor_introduce" class="professor_introduce">
+      <img src="{% static 'yagisan/img/professor_introduce.png' %}" class="default">
+      <img src="{% static 'yagisan/img/professor_introduce_over.png' %}" class="over offscreen">
+    </div>
+  </a>
+</div>
+
+<div id="contact" class="contact">
+  <!--      <div class="contact_background">
+       <img src="{% static 'yagisan/img/contact_background.png' %}">
+       </div>-->
+  <div class="contact_content">
+    <img src="{% static 'yagisan/img/contact_content.png' %}">
+  </div>
+  <div class="contact_dots">
+    <img src="{% static 'yagisan/img/contact_dots.png' %}">
+  </div>
+  <div class="contact_sentence">
+    <div class="contact_sentence_first">
+      <p>教材およびプロジェクトに関するお問い合わせ</p>
+    </div>
+  </div>
+  <a href="/contact">
+    <div id="contact_info" class="contact_info">
+      <img src="{% static 'yagisan/img/contact_info.png' %}" class="default">
+      <img src="{% static 'yagisan/img/contact_info_over.png' %}" class="over offscreen">
+    </div>
+  </a>
+  <div class="contact_navi">
+    <div class="contact_navi_backtotop">
+      <a href="#top">
+        <img src="{% static 'yagisan/img/footer_backtotop.png' %}">
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block modal %}
+<div id="modal" class="modal">
+  <div class="overLay modalClose"></div>
+  <div class="inner">
+    <div class="modal_account modal_login">
+      <img src="{% static 'yagisan/img/column_background.png' %}">
+      <div class="modal_account_form">
+        <form id="modal_login_form">
+          <div class="modal_account_input">
+            <label for="email"></label><br>
+            <input type="email" name="email" placeholder="メールアドレス">
+          </div>
+          <div class="modal_account_input">
+            <label for="message"></label><br>
+            <input type="password" name="password" placeholder="パスワード">
+          </div>
+          <div class="modal_account_submit">
+            <input id="modal_login_submit" type="submit" value="ログイン" />
+          </div>
+          <div class="account new_account">
+            <p>アカウントをお持ちでない方</p>
+            <div id="modal_change_register" class="modal_change">新規登録</div>
+          </div>
+        </form>
+
+        <!-- register_f orm -->
+        <form id="modal_register_form" class="offscreen">
+          <div class="modal_account_input">
+            <div class = "new_account_name last_name">
+              <label for="last_name"></label><br>
+              <input type="text" name="last_name" placeholder="姓">
+            </div>
+            <div class="new_account_name first_name">
+              <label for="first_name"></label><br>
+              <input type="text" name="first_name" placeholder="名">
+            </div>
+          </div>
+          <div class="modal_account_input">
+            <label for="nickname"></label><br>
+            <input type="text" name="nickname" placeholder="ニックネーム">
+          </div>
+          <div class="modal_account_input">
+            <label for="email"></label><br>
+            <input type="email" name="email" placeholder="メールアドレス">
+          </div>
+          <div class="modal_account_input">
+            <label for="message"></label><br>
+            <input type="password" name="password" placeholder="パスワード">
+          </div>
+          <div class="modal_account_submit">
+            <input id="modal_register_submit" type="submit" value="新規登録" />
+          </div>
+          <div class="account already_account">
+            <p>既にアカウントをお持ちの方</p>
+            <div id="modal_change_login" class="modal_change">ログイン</div>
+        </form>
+      </div>
+    </div>
+    <div class="modal_account_close">
+      <a href="" class="modalClose">✕</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1529 @@
+- model: yagisan.questionnaire
+  pk: 1
+  fields:
+    sentence: ストレスのセルフケアに対する関心は上がりましたか？
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnaire
+  pk: 2
+  fields:
+    sentence: 今後も自分にはストレス対策が必要だと思いますか？
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnaire
+  pk: 3
+  fields:
+    sentence: どのLessonが最も役に立ちましたか？
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnaire
+  pk: 4
+  fields:
+    sentence: 教材のデザインはどうでしたか？
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnaire
+  pk: 5
+  fields:
+    sentence: どの八木さんが一番すきですか？
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 1
+  fields:
+    questionnaire: 1
+    sentence: とても上がった
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 2
+  fields:
+    questionnaire: 1
+    sentence: やや上がった
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 3
+  fields:
+    questionnaire: 1
+    sentence: 変わらない
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 4
+  fields:
+    questionnaire: 1
+    sentence: 下がった
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 5
+  fields:
+    questionnaire: 2
+    sentence: とても必要だと思う
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 6
+  fields:
+    questionnaire: 2
+    sentence: やや必要だと思う
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 7
+  fields:
+    questionnaire: 2
+    sentence: あまり必要ではない
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 8
+  fields:
+    questionnaire: 2
+    sentence: 全く必要ではない
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 9
+  fields:
+    questionnaire: 3
+    sentence: Lesson1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 10
+  fields:
+    questionnaire: 3
+    sentence: Lesson2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 11
+  fields:
+    questionnaire: 3
+    sentence: Lesson3
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 12
+  fields:
+    questionnaire: 3
+    sentence: Lesson4
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 13
+  fields:
+    questionnaire: 3
+    sentence: Lesson5
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 14
+  fields:
+    questionnaire: 3
+    sentence: Lesson6
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 15
+  fields:
+    questionnaire: 4
+    sentence: とても気に入った
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 16
+  fields:
+    questionnaire: 4
+    sentence: やや気に入った
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 17
+  fields:
+    questionnaire: 4
+    sentence: どちらでもない
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 18
+  fields:
+    questionnaire: 4
+    sentence: 気に入らなかった
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 19
+  fields:
+    questionnaire: 5
+    sentence: yagisan1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 20
+  fields:
+    questionnaire: 5
+    sentence: yagisan2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 21
+  fields:
+    questionnaire: 5
+    sentence: yagisan3
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 22
+  fields:
+    questionnaire: 5
+    sentence: yagisan4
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 23
+  fields:
+    questionnaire: 5
+    sentence: yagisan5
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionnairechoice
+  pk: 24
+  fields:
+    questionnaire: 5
+    sentence: yagisan6
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 1
+  fields:
+    sentence: 証拠もないのに、良くない結論を予想してしまうことがある。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 2
+  fields:
+    sentence: 何か友達とトラブルがあると「友達が私を嫌いになった」と感じてしまうほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 3
+  fields:
+    sentence: 根拠もないのに、事態はこれから確実に悪くなると考えることがある。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 4
+  fields:
+    sentence: 人のふとした言動をきっかけにして「あの人は私を避けている」と感じることがある。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 5
+  fields:
+    sentence: 自分に関係がないとわかっていることでも、自分に関連付けて考えるほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 6
+  fields:
+    sentence: 他人の成功や長所は過大に考え、他人の失敗や短所は過小評価するほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 7
+  fields:
+    sentence: 物事は完璧か悲惨かのどちらしかない、といった具合に極端に考えるほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 8
+  fields:
+    sentence: 「○○しなければならない」と考えて自分にプレッシャーを与えてしまうことがある。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 9
+  fields:
+    sentence: 「○○すべきだったのに」と考えて、後悔してしまうことが多い。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 10
+  fields:
+    sentence: 何か悪いことが一度自分に起こると、何度も繰り返して起こるように感じるほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 11
+  fields:
+    sentence: たったひとつでも良くないことがあると、世の中すべてそうだと感じてしまう。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 12
+  fields:
+    sentence: トラブルやミスが起きると、本来は自分に関係がないことでも自分を責めてしまうほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 13
+  fields:
+    sentence: 物事を極端に白か黒かのどちらかに分けて考えるほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 14
+  fields:
+    sentence: 根拠もないのに、人が私に悪く反応したと早合点してしまうことがある。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 15
+  fields:
+    sentence: 自分の失敗や短所は過大に考え、自分の成功や長所は過小評価するほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 16
+  fields:
+    sentence: あいまいな状況は苦手で、物事を良いか悪いかなどははっきりさせたいと考えるほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 17
+  fields:
+    sentence: 一度立てた計画は、どんな困難があってもやり遂げるべきだと思うほうである。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.fifthquestion
+  pk: 18
+  fields:
+    sentence: 何か悪いことが起こると、何か自分のせいであるように考えてしまう。
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestion
+  pk: 1
+  fields:
+    sentence: 雇用形態
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestion
+  pk: 2
+  fields:
+    sentence: 職種
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestion
+  pk: 3
+  fields:
+    sentence: 年齢
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestion
+  pk: 4
+  fields:
+    sentence: 過去１ヶ月間に大うつ病と診断されていない
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestion
+  pk: 5
+  fields:
+    sentence: 過去３ヶ月間に合計15日以上、健康的理由により仕事を休んでいない
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestion
+  pk: 6
+  fields:
+    sentence: 過去１ヶ月間に医療機関での治療を受けていない
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 1
+  fields:
+    prequestion: 1
+    sentence: 正社員
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 2
+  fields:
+    prequestion: 1
+    sentence: 契約社員
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 3
+  fields:
+    prequestion: 1
+    sentence: 派遣社員
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 4
+  fields:
+    prequestion: 2
+    sentence: 経営・経営企画・社業全般
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 5
+  fields:
+    prequestion: 2
+    sentence: 営業・販売
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 6
+  fields:
+    prequestion: 2
+    sentence: 企画・調査・マーケティング
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 7
+  fields:
+    prequestion: 2
+    sentence: 広報・宣伝
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 8
+  fields:
+    prequestion: 2
+    sentence: 総務
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 9
+  fields:
+    prequestion: 2
+    sentence: 経理・財務
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 10
+  fields:
+    prequestion: 2
+    sentence: 人事
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 11
+  fields:
+    prequestion: 2
+    sentence: 製造・生産
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 12
+  fields:
+    prequestion: 2
+    sentence: 研究・技術開発
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 13
+  fields:
+    prequestion: 2
+    sentence: 情報システム
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 14
+  fields:
+    prequestion: 2
+    sentence: その他
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 15
+  fields:
+    prequestion: 3
+    sentence: ～20歳
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 16
+  fields:
+    prequestion: 3
+    sentence: 21～25歳
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 17
+  fields:
+    prequestion: 3
+    sentence: 26～30歳
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 18
+  fields:
+    prequestion: 3
+    sentence: 31～35歳
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 19
+  fields:
+    prequestion: 3
+    sentence: 36～40歳
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 20
+  fields:
+    prequestion: 3
+    sentence: 41～50歳
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 21
+  fields:
+    prequestion: 3
+    sentence: 51～60歳
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 22
+  fields:
+    prequestion: 3
+    sentence: 61歳～
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 23
+  fields:
+    prequestion: 4
+    sentence: 'Yes'
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 24
+  fields:
+    prequestion: 4
+    sentence: 'No'
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 25
+  fields:
+    prequestion: 5
+    sentence: 'Yes'
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 26
+  fields:
+    prequestion: 5
+    sentence: 'No'
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 27
+  fields:
+    prequestion: 6
+    sentence: 'Yes'
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.prequestionchoice
+  pk: 28
+  fields:
+    prequestion: 6
+    sentence: 'No'
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 1
+  fields:
+    sentence: 非常にたくさんの仕事を<br>しなければならない
+    group: A
+    number: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 2
+  fields:
+    sentence: 時間内に仕事が<br>処理しきれない
+    group: A
+    number: 2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 3
+  fields:
+    sentence: 一生懸命<br>働かなければならない
+    group: A
+    number: 3
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 4
+  fields:
+    sentence: かなり注意を<br>集中する必要がある
+    group: A
+    number: 4
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 5
+  fields:
+    sentence: 高度の知識や技術が必要な<br>むずかしい仕事だ
+    group: A
+    number: 5
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 6
+  fields:
+    sentence: 勤務時間中はいつも仕事のことを<br>考えていなければならない
+    group: A
+    number: 6
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 7
+  fields:
+    sentence: からだを大変よく使う仕事だ
+    group: A
+    number: 7
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 8
+  fields:
+    sentence: 自分のペースで仕事ができる
+    group: A
+    number: 8
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 9
+  fields:
+    sentence: 自分で仕事の順番・やり方を<br>決めることができる
+    group: A
+    number: 9
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 10
+  fields:
+    sentence: 職場の仕事の方針に<br>自分の意見を反映できる
+    group: A
+    number: 10
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 11
+  fields:
+    sentence: 自分の技能や知識を<br>仕事で使うことが少ない
+    group: A
+    number: 11
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 12
+  fields:
+    sentence: 私の部署内で<br>意見のくい違いがある
+    group: A
+    number: 12
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 13
+  fields:
+    sentence: 私の部署と他の部署とは<br>うまが合わない
+    group: A
+    number: 13
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 14
+  fields:
+    sentence: 私の職場の雰囲気は<br>友好的である
+    group: A
+    number: 14
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 15
+  fields:
+    sentence: 私の職場の作業環境（騒音、照明、<br>温度、換気など）はよくない
+    group: A
+    number: 15
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 16
+  fields:
+    sentence: 仕事の内容は<br>自分にあっている
+    group: A
+    number: 16
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 17
+  fields:
+    sentence: 働きがいのある仕事だ
+    group: A
+    number: 17
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 18
+  fields:
+    sentence: 活気がわいてくる
+    group: B
+    number: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 19
+  fields:
+    sentence: 元気がいっぱいだ
+    group: B
+    number: 2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 20
+  fields:
+    sentence: 生き生きする
+    group: B
+    number: 3
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 21
+  fields:
+    sentence: 怒りを感じる
+    group: B
+    number: 4
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 22
+  fields:
+    sentence: 内心腹立たしい
+    group: B
+    number: 5
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 23
+  fields:
+    sentence: イライラしている
+    group: B
+    number: 6
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 24
+  fields:
+    sentence: ひどく疲れた
+    group: B
+    number: 7
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 25
+  fields:
+    sentence: へとへとだ
+    group: B
+    number: 8
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 26
+  fields:
+    sentence: だるい
+    group: B
+    number: 9
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 27
+  fields:
+    sentence: 気がはりつめている
+    group: B
+    number: 10
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 28
+  fields:
+    sentence: 不安だ
+    group: B
+    number: 11
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 29
+  fields:
+    sentence: 落ち着かない
+    group: B
+    number: 12
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 30
+  fields:
+    sentence: ゆううつだ
+    group: B
+    number: 13
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 31
+  fields:
+    sentence: 何をするのも面倒だ
+    group: B
+    number: 14
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 32
+  fields:
+    sentence: 物事に集中できない
+    group: B
+    number: 15
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 33
+  fields:
+    sentence: 気分が晴れない
+    group: B
+    number: 16
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 34
+  fields:
+    sentence: 仕事が手につかない
+    group: B
+    number: 17
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 35
+  fields:
+    sentence: 悲しいと感じる
+    group: B
+    number: 18
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 36
+  fields:
+    sentence: めまいがする
+    group: B
+    number: 19
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 37
+  fields:
+    sentence: 体のふしぶしが痛む
+    group: B
+    number: 20
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 38
+  fields:
+    sentence: 頭が重かったり頭痛がする
+    group: B
+    number: 21
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 39
+  fields:
+    sentence: 首筋や肩がこる
+    group: B
+    number: 22
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 40
+  fields:
+    sentence: 腰が痛い
+    group: B
+    number: 23
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 41
+  fields:
+    sentence: 目が疲れる
+    group: B
+    number: 24
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 42
+  fields:
+    sentence: 動悸や息切れがする
+    group: B
+    number: 25
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 43
+  fields:
+    sentence: 胃腸の具合が悪い
+    group: B
+    number: 26
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 44
+  fields:
+    sentence: 食欲がない
+    group: B
+    number: 27
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 45
+  fields:
+    sentence: 便秘や下痢をする
+    group: B
+    number: 28
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 46
+  fields:
+    sentence: よく眠れない
+    group: B
+    number: 29
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 47
+  fields:
+    sentence: 上司
+    group: C1
+    number: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 48
+  fields:
+    sentence: 職場の同僚
+    group: C1
+    number: 2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 49
+  fields:
+    sentence: 配偶者、家族、友人等
+    group: C1
+    number: 3
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 50
+  fields:
+    sentence: 上司
+    group: C2
+    number: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 51
+  fields:
+    sentence: 職場の同僚
+    group: C2
+    number: 2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 52
+  fields:
+    sentence: 配偶者、家族、友人等
+    group: C2
+    number: 3
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 53
+  fields:
+    sentence: 上司
+    group: C3
+    number: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 54
+  fields:
+    sentence: 職場の同僚
+    group: C3
+    number: 2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 55
+  fields:
+    sentence: 配偶者、家族、友人等
+    group: C3
+    number: 3
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 56
+  fields:
+    sentence: 仕事に満足だ
+    group: D
+    number: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.question
+  pk: 57
+  fields:
+    sentence: 家庭生活に満足だ
+    group: D
+    number: 2
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.user
+  pk: 1
+  fields:
+    first_name: 八木
+    last_name: メイ
+    nickname: 八木
+    email: yagi@yagisan.me
+    password: yagisan
+    sex: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.user
+  pk: 2
+  fields:
+    first_name: 八木
+    last_name: メイ
+    nickname: メイ
+    email: mei@yagisan.me
+    password: yagisan
+    sex: 1
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 1
+  fields:
+    question: 1
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 2
+  fields:
+    question: 2
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 3
+  fields:
+    question: 3
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 4
+  fields:
+    question: 4
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 5
+  fields:
+    question: 5
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 6
+  fields:
+    question: 6
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 7
+  fields:
+    question: 7
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 8
+  fields:
+    question: 8
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 9
+  fields:
+    question: 9
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 10
+  fields:
+    question: 10
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 11
+  fields:
+    question: 11
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 12
+  fields:
+    question: 12
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 13
+  fields:
+    question: 13
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 14
+  fields:
+    question: 14
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 15
+  fields:
+    question: 15
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 16
+  fields:
+    question: 16
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 17
+  fields:
+    question: 17
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 18
+  fields:
+    question: 18
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 19
+  fields:
+    question: 19
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 20
+  fields:
+    question: 20
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 21
+  fields:
+    question: 21
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 22
+  fields:
+    question: 22
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 23
+  fields:
+    question: 23
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 24
+  fields:
+    question: 24
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 25
+  fields:
+    question: 25
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 26
+  fields:
+    question: 26
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 27
+  fields:
+    question: 27
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 28
+  fields:
+    question: 28
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 29
+  fields:
+    question: 29
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 30
+  fields:
+    question: 30
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 31
+  fields:
+    question: 31
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 32
+  fields:
+    question: 32
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 33
+  fields:
+    question: 33
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 34
+  fields:
+    question: 34
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 35
+  fields:
+    question: 35
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 36
+  fields:
+    question: 36
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 37
+  fields:
+    question: 37
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 38
+  fields:
+    question: 38
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 39
+  fields:
+    question: 39
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 40
+  fields:
+    question: 40
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 41
+  fields:
+    question: 41
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 42
+  fields:
+    question: 42
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 43
+  fields:
+    question: 43
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 44
+  fields:
+    question: 44
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 45
+  fields:
+    question: 45
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 46
+  fields:
+    question: 46
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 47
+  fields:
+    question: 47
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 48
+  fields:
+    question: 48
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 49
+  fields:
+    question: 49
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 50
+  fields:
+    question: 50
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 51
+  fields:
+    question: 51
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 52
+  fields:
+    question: 52
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 53
+  fields:
+    question: 53
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 54
+  fields:
+    question: 54
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 55
+  fields:
+    question: 55
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 56
+  fields:
+    question: 56
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'
+- model: yagisan.questionuser
+  pk: 57
+  fields:
+    question: 57
+    user: 1
+    answer: 1
+    is_last: 0
+    created_at: '2017-07-09 00:00:00'
+    updated_at: '2017-07-09 00:00:00'

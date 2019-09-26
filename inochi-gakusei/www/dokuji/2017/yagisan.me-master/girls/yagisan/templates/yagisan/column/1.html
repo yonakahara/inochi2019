@@ -1,0 +1,41 @@
+{% extends "yagisan/base.html" %}
+{% load static %}
+{% block body %}
+
+<div id="column" class="column">
+  <div class="column_content">
+    <div class="column_content_title">
+      <img src="{% static 'yagisan/img/column/title.png' %}">
+    </div>
+    <div class="column_content_background">
+      <img src="{% static 'yagisan/img/column_content.png' %}">
+    </div>
+  </div>
+  <div class="column_sentence">
+    <div id="{{ column_id }}" class="column_sentence_first">
+      『ほぐれて、八木さん』開設<span>（2017-05-25-THU）</span>
+    </div>
+    <div class="column_sentence_second">
+      <p>
+        『ほぐれて、八木さん』は、働く女性が自分のストレス状況や考え方のくせを知り、自分のストレス原因に対する考え方、対処の仕方を見つめ直しながら、より柔軟にストレスに対処できるよう、応援する教材です。<br>
+        <br>
+        この教材は、医学や心理学を学ぶ女子大学生が、約半年間、真剣に働く女性のメンタルヘルスについて調査し、学び考え、作り上げました。<br>
+        さらに、医学生、心理学部生だけでなく、デジタルハリウッド大阪校の学生、京大理学部生のプログラマー、京都市立芸術大学出身のイラストレーターなど、多彩な「若者の力」がこの教材には注ぎ込まれています。<br>
+        <br>
+        この教材では、専門家のアドバイスのもと、”効果がある”と実証されている内容しか載せていません。<br>
+        <br>
+        働く女性の皆さん、この教材を受講すれば、心がすーっとラクになっていくことを実感できるはずです。<br>
+        <br>
+        ※LESSONは７月９日に公開予定です。
+      </p>
+    </div>
+    <a href="/column">
+      <div id="column_back" class="column_back">
+        <img src="{% static 'yagisan/img/column/back.png' %}" class="default">
+        <img src="{% static 'yagisan/img/column/back_over.png' %}" class="over offscreen">
+      </div>
+    </a>
+  </div>
+</div>
+
+{% endblock %}

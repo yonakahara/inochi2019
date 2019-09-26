@@ -1,0 +1,95 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+// Definition
+$BaseWhite: #fff;
+$BasePink: #f18b9c;
+$BaseWidth: 1000px;
+
+
+// Column
+.column {
+  width: 100%;
+  position: relative;
+  background-image: url("../../img/contact_background.png");
+
+  .column_content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 0 auto 0 auto;
+
+    .column_content_title {
+      padding: 10% 0 5% 0;
+      margin: 0 auto 0 0;
+      width: 240px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .column_content_background {
+      padding: 0 0 10% 0;
+      margin: 0 auto;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .column_sentence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: $BaseWidth;
+    margin: 200px auto 0 auto;
+
+    .column_sentence_first {
+      width: 100%;
+      margin: 100px 0 50px 0;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      text-align: center;
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+
+    .column_sentence_second {
+      width: 100%;
+      margin: 2.5rem 0;
+
+      p {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        margin: 1rem 50px;
+      }
+    }
+  }
+
+  .column_back {
+    width: 360px;
+    padding: 10px 0 60px 0;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -4,12 +4,27 @@
   Fonts: Anton & Open Sans & Noto Sans JP
   -------------------------------------
   Colors:
-    CG Red:  #E03838
+    SDGs 1 R:#D12A3F
+    SDGs 2 B:#C89931
+    SDGs 3 G:#2C9145
+    SDGs 4 R:#AF2534
+    SDGs 5 O:#DC3E32
+    SDGs 6 B:#00A3C6
+    SDGs 7 Y:#F2AF2A
+    SDGs 8 R:#7B1E33
+    SDGs 9 O:#E2652B
+    SDGs 10 P:#CF1E76
+    SDGs 11 Y:#EC9534
+    SDGs 12 B:#C28431
+    SDGs 13 G:#466E3A
+    SDGs 14 B:#0074A7
+    SDGs 15 G:#3CA347
+    SDGs 16 B:#154B77
+    SDGs 17 B:#1F2F53
     Grey:         #212226
     White Smoke:  #F4F4F4
     White:        #FFFFFF
     Black:        #000000
-    Yellow:       #F3EA5A
 ======================================*/
 
 /* =====================================
@@ -59,10 +74,10 @@ section {
 }
 
 #preloader img {
-  width: 120px;
+  width: 300px;
   position: fixed;
-  top: 45%;
-  left: 50%;
+  top: 43%;
+  left: 37%;
   margin-top: -65px;
   margin-left: -60px;
 }
@@ -87,6 +102,10 @@ section {
   margin-bottom: 5px;
 }
 
+.center {
+  text-align:center;
+}
+
 .navbar {
   background: #212226;
   color: #fff;
@@ -95,7 +114,7 @@ section {
 }
 
 .navbar-toggler {
-  color: #F3EA5A;
+  color: #DC3E32;
 }
 
 .navbar .navbar-toggler {
@@ -128,7 +147,7 @@ ul.navbar-nav>li>a {
 }
 
 ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-nav>li>a:focus {
-  color: #F3EA5A;
+  color: #DC3E32;
 }
 
 /* white navigaton */
@@ -147,7 +166,19 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .white-navbar .navbar-toggler:hover {
-  color: #F3EA5A;
+  color: #DC3E32;
+}
+
+.fb-share-button { /* Facebook */
+    display: inline-block;
+    height: 20px;
+}
+.fb_iframe_widget span {
+    vertical-align: top !important;
+}
+
+.twitter-share-button {
+  vertical-align: top !important;
 }
 
 /* .white-navbar ul.navbar-nav>li>a {
@@ -166,7 +197,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   height: 100%;
 }
 
-#home-bg-video {
+#background-pic {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -174,7 +205,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   transform: translateX(-50%) translateY(-50%);
   min-width: 100%;
   min-height: 135%;
-  width: auto;
+  width: 100%;
   height: auto;
   z-index: -1;
   /* background: url("../video/inochi-forum.gif") no-repeat; */
@@ -212,7 +243,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 #home-heading h1 span {
-  color: #F3EA5A;
+  color: #fff; /*#DC3E32*/
   font-weight: 500;
 }
 
@@ -237,14 +268,14 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .btn-red {
-  color: #F3EA5A;
-  border: 1px solid #F3EA5A;
+  color: #DC3E32;
+  border: 1px solid #DC3E32;
 }
 
 .btn-red:hover, .btn-red:focus {
   color: #fff;
-  background-color: #F3EA5A;
-  border: 1px solid #F3EA5A;
+  background-color: #DC3E32;
+  border: 1px solid #DC3E32;
 }
 
 .btn-home {
@@ -254,13 +285,13 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 
 .btn-home:hover, .btn-home:focus, .btn-conversion:hover, .btn-conversion:focus {
   color: #fff;
-  background-color: #F3EA5A;
-  border: 1px solid #F3EA5A;
+  background-color: #DC3E32;
+  border: 1px solid #DC3E32;
 }
 
 .btn-conversion {
-  color: #F3EA5A;
-  border: 1px solid #F3EA5A;
+  color: #DC3E32;
+  border: 1px solid #DC3E32;
 }
 
 .ticket-btn {
@@ -295,7 +326,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 #arrow-down:hover, #arrow-down:focus {
-  color: #F3EA5A
+  color: #DC3E32
 }
 
 
@@ -328,7 +359,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   line-height: 30px;
   display: inline-block;
   padding-left: 5px;
-  border-left: 5px solid #F3EA5A;
+  border-left: 5px solid #DC3E32;
 }
 
 .heading h3 {
@@ -340,7 +371,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   font-size: 16px;
   line-height: 15px;
   margin-bottom: 0;
-  color: #F3EA5A;
+  color: #DC3E32;
 }
 
 /* =====================================
@@ -359,7 +390,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 #about-copy h2 span {
-  color: #F3EA5A;
+  color: #DC3E32;
 }
 
 #about-info {
@@ -455,12 +486,12 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .about-events-title h3 {
-  color: #F3EA5A;
+  color: #DC3E32;
   font-size: 18px;
 }
 
 .about-events-title h5 {
-  color: #F3EA5A;
+  color: #DC3E32;
   font-size: 14px;
 }
 
@@ -612,14 +643,14 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 .presenter-info p{
-  color: #F3EA5A;
+  color: #DC3E32;
   font-size: 14px;
   line-height: 20px;
   margin: 12px 0;
 }
 
 .guest-info p {
-  color: #F3EA5A;
+  color: #DC3E32;
   font-size: 10px;
   line-height: 14px;
   margin: 5px 0;
@@ -729,7 +760,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   font-size: 12px;
 }
 
-.content-title h4 span {
+.content-title h4 {
   color: #fff;
   font-size: 10px;
 }
@@ -810,12 +841,18 @@ ul.contact-lists li a {
   organizers
 ======================================*/
 
+.float-center {
+  float: right;
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
 
-#main-organizers, #backups, #supporters {
+#main-organizers, #backups, #supporters, {
   margin: 35px 0 25px 0;
 }
 
-#main-organizers h2, #backups h2, #supporters h2 {
+#main-organizers h2, #backups h2, #supporters h2, {
   font-size: 32px;
   margin-bottom: 10px;
 }
@@ -826,6 +863,7 @@ ul.contact-lists li a {
 
 #main-organizer-logo img {
   height: 120px;
+  object-fit: contain;
 }
 
 
@@ -851,6 +889,15 @@ ul.contact-lists li a {
   font-size: 10px;
 }
 
+#donation-parter h2 {
+  font-size: 24px;
+}
+
+#donation-parter img {
+  height: 80px;
+  margin-top: 20px;
+  object-fit: contain;
+}
 
 #supporters h3,
 #supporters h4,
@@ -877,28 +924,26 @@ ul.contact-lists li a {
 
 #supporters img{
   object-fit: contain;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 
 #platinum img {
-  height: 80px;
+  height: 150px;
 }
 
 #silver img {
-  height: 75px;
+  height: 130px;
 }
 
 #bronze img {
-  height: 60px;
-}
-
-#donation img {
-  height: 45px;
+  height: 70px;
 }
 
 #friends img {
-  height: 45px;
+  height: 55px;
 ｝
+
+
 
 
 /* =====================================
@@ -931,7 +976,7 @@ footer p {
 }
 
 footer p span {
-  color: #F3EA5A;
+  color: #DC3E32;
 }
 
 /* =====================================
