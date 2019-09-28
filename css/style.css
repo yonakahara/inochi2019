@@ -788,7 +788,8 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   font-family:  "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
 }
 
-#event-03 .main-guest {
+#event-03 .main-
+ {
   margin: 20px 0 50px 0;
 }
 
@@ -940,7 +941,7 @@ ul.contact-lists li a {
 }
 
 #friends img {
-  height: 55px;
+  height: 80px;
 ｝
 
 
