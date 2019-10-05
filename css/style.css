@@ -203,13 +203,13 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  min-width: 100%;
-  min-height: 135%;
-  width: 100%;
+  /*min-width: 100%;
+  min-height: 135%;*/
+  width: 130%;
   height: auto;
   z-index: -1;
   /* background: url("../video/inochi-forum.gif") no-repeat; */
-  background-size: cover;
+  background-size: contain;
 }
 
 #home-overlay {
@@ -680,6 +680,75 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 
 
 /* =====================================
+  Special about nishino
+======================================*/
+
+#event-sp{
+  background-color: #D9D9D9;
+  width: 100%;
+}
+
+.under {
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+@media screen and (min-width: 769px) {
+  #nishino img{
+    text-align: right;
+    float: right;
+    height: 400px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nishino-iphone img {
+    text-align: right;
+    float: right;
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+/* =====================================
+  Special about ori
+======================================*/
+
+#event-sp-ori{
+  background-color: #e9ecef;
+  width: 100%;
+}
+
+.under-ori {
+  background: linear-gradient(transparent 50%, #868e96 50%);
+}
+
+@media screen and (min-width: 769px) {
+  #ori img{
+    text-align: left;
+    float: left;
+    height: 350px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ori-iphone img {
+    text-align: left;
+    float: left;
+    height: 150px;
+    object-fit: contain;
+  }
+}
+
+/* =====================================
+  Event 00
+======================================*/
+#event-00{
+  background-color: #f4f4f4;
+}
+
+/* =====================================
   Event 01
 ======================================*/
 #event-01{
@@ -849,11 +918,11 @@ ul.contact-lists li a {
   text-align: left;
 }
 
-#main-organizers, #backups, #supporters, {
+#main-organizers, #backups, #supporters, #donation-parter {
   margin: 35px 0 25px 0;
 }
 
-#main-organizers h2, #backups h2, #supporters h2, {
+#main-organizers h2, #backups h2, #supporters h2, #donation-parter {
   font-size: 32px;
   margin-bottom: 10px;
 }
@@ -888,10 +957,6 @@ ul.contact-lists li a {
 
 #backups p{
   font-size: 10px;
-}
-
-#donation-parter h2 {
-  font-size: 24px;
 }
 
 #donation-parter img {

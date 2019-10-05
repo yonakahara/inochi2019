@@ -616,11 +616,11 @@
     margin: 3px 10px;
   }
 
-  #event-01 .heading h4, #event-02 .heading h4, #event-03 .heading h4{
+  #event-00 .heading h4, #event-01 .heading h4, #event-02 .heading h4, #event-03 .heading h4, #event-04 .heading h4{
     font-size: 11px;
   }
 
-  #event-01 .heading h3, #event-02 .heading h3, #event-03 .heading h3{
+  #event-00 .heading h3, #event-01 .heading h3, #event-02 .heading h3, #event-03 .heading h3, #event-04 .heading h3{
     font-size: 13px;
   }
 
@@ -911,11 +911,11 @@
     margin:  8px 15px;
   }
 
-  #event-01 .heading h4, #event-02 .heading h4, #event-03 .heading h4{
+  #event-00 .heading h4, #event-01 .heading h4, #event-02 .heading h4, #event-03 .heading h4, #event-04 .heading h4{
     font-size: 10px;
   }
 
-  #event-01 .heading h3, #event-02 .heading h3, #event-03 .heading h3{
+  #event-00 .heading h3, #event-01 .heading h3, #event-02 .heading h3, #event-03 .heading h3, #event-04 .heading h3{
     font-size: 12px;
     line-height: 24px;
   }
