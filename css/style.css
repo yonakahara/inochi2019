@@ -742,6 +742,14 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 /* =====================================
+  Special about kokusho-chan
+======================================*/
+
+#moderator{
+  background-color: #f5f4f9;
+}
+
+/* =====================================
   Event 00
 ======================================*/
 #event-00{
