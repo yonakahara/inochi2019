@@ -248,7 +248,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 }
 
 #home-btn {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 
@@ -378,6 +378,12 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   About
 ======================================*/
 
+
+
+/* =====================================
+  Highlights
+======================================*/
+
 /* #about-copy h2, #about-body p{
   text-align: center;
 } */
@@ -406,7 +412,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 #about-info h3 {
   font-size: 22px;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 250%;
 }
 
 #about-info h4 {
@@ -414,6 +420,8 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   font-weight: 400;
   line-height: 30px;
   margin: 25px 0 0 0;
+  margin-left: 10%;
+  margin-left: 10%;
 }
 
 .about-events {
@@ -686,6 +694,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 #event-sp{
   background-color: #D9D9D9;
   width: 100%;
+  padding-left: 10%; 
 }
 
 .under {
@@ -717,6 +726,9 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 #event-sp-ori{
   background-color: #e9ecef;
   width: 100%;
+  padding-right: 10%;
+  padding-left: 2%;
+  padding-top: 10%;
 }
 
 .under-ori {
@@ -747,6 +759,7 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 
 #moderator{
   background-color: #f5f4f9;
+  padding-top: 10%;
 }
 
 /* =====================================
@@ -874,6 +887,10 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
   Schedule
 ======================================*/
 
+#schedule {
+  background-color: #f4f4f4;
+}
+
 #time-table {
   margin: 0 auto;
 }
@@ -881,6 +898,48 @@ ul.navbar-nav>li>a:hover, ul.navbar-nav>li>a:focus, .navbar-collapse ul.navbar-n
 #time-table h6 {
   margin-left: 5px;
 }
+
+
+/* =====================================
+  Access
+======================================*/
+
+#access {
+  background-color: white;
+}
+
+#access-info {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+#access-info h3, h4{
+  font-family:  "Open Sans", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans", sans-serif;
+  /* text-align: center; */
+}
+
+#access-info h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+#access-info h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 25px 0 0 0;
+}
+
+#access-info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 25px 0 0 0;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
 
 
 /* =====================================
