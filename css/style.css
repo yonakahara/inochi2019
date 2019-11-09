@@ -93,6 +93,32 @@ section {
   margin-top: -45px;
   margin-left: -45px;
 }
+/* =====================================
+  NavScroll
+======================================*/
+#navScroll {
+    height: calc(100% - 74px);
+    position: fixed;
+    color: #FFF;
+    z-index: 98;
+    top: 74px;
+}
+.span {margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.strong {margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
 
 /* =====================================
   Navbar
